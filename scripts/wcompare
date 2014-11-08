@@ -8,7 +8,7 @@ if [ "${1}" == "do" ] ; then
   DO="TRUE"
 fi
 
-OVERLAY="common-stuff"
+OVERLAY="two-overlay"
 
 GCCOVERLAY="`ls -altrh /etc/portage/make.conf | awk -F "/" {'print$8'}`"
 

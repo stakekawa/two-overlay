@@ -174,7 +174,6 @@ net-wireless/wpa_supplicant
 sci-astronomy/celestia
 sci-astronomy/stellarium
 sci-mathematics/octave
-sci-misc/boinc
 sys-apps/ethtool
 sys-apps/freedoshd
 sys-apps/gentoo-functions

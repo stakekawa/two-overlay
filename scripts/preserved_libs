@@ -2,7 +2,7 @@
 
 EXE="preserved_libs"
 
-OVERLAY="common-stuff"
+OVERLAY="two-overlay"
 
 if [ ! -e /usr/local/sbin/${EXE} ] ; then
   ln -s /usr/local/overlays/${OVERLAY}/scripts/${EXE} /usr/local/sbin/${EXE}
