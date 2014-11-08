@@ -1,0 +1,46 @@
+#!/bin/bash
+
+EXE="crea_pacchetti"
+
+OVERLAY="common-stuff"
+
+if [ ! -e /usr/local/sbin/${EXE} ] ; then
+  ln -s /usr/local/overlays/${OVERLAY}/scripts/${EXE} /usr/local/sbin/${EXE}
+fi
+
+if [ ! -h /usr/local/sbin/${EXE} ] ; then
+  rm -f /usr/local/sbin/${EXE}
+  ln -s /usr/local/overlays/${OVERLAY}/scripts/${EXE} /usr/local/sbin/${EXE}
+fi
+
+cd /var/db/pkg/
+
+NCATEGORY="`ls | grep -v virtual | wc -l`"
+NI="1"
+
+COUNT="1"
+
+for i in `ls | grep -v virtual` ; do
+
+  cd $i
+  NPACKAGES="`ls | wc -l`"
+  NJ="1"
+  for j in `ls | grep -v MERG` ; do
+    PRINT_COUNT="\033[34;1m\033[1m ${COUNT} >>>\033[0m"
+    if [ "${COUNT}" -lt "1000" ] ; then
+      PRINT_COUNT="\033[34;1m\033[1m  ${COUNT} >>>\033[0m"
+    fi
+    if [ "${COUNT}" -lt "100" ] ; then
+      PRINT_COUNT="\033[34;1m\033[1m   ${COUNT} >>> \033[0m"
+    fi
+    if [ "${COUNT}" -lt "10" ] ; then
+      PRINT_COUNT="\033[34;1m\033[1m    ${COUNT} >>> \033[0m"
+    fi
+    echo -e "${PRINT_COUNT} Doing category \033[33;1m\033[1m${NI}\033[0m of \033[31;1m\033[1m${NCATEGORY}\033[0m, package \033[33;1m\033[1m${NJ}\033[0m of \033[31;1m\033[1m${NPACKAGES}\033[0m\t\033[0m\033[32;1m\033[1m${i}/${j}\033[0m"
+    quickpkg --include-config=y =$i/$j > /dev/null
+    NJ=$(( NJ+1 ))
+    COUNT=$(( COUNT+1 ))
+  done
+  cd ..
+  NI=$(( NI+1 ))
+done

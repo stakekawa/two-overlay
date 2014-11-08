@@ -1,0 +1,72 @@
+#!/bin/bash
+
+EXE="wcompare"
+
+DO="FALSE"
+
+if [ "${1}" == "do" ] ; then
+  DO="TRUE"
+fi
+
+OVERLAY="common-stuff"
+
+GCCOVERLAY="`ls -altrh /etc/portage/make.conf | awk -F "/" {'print$8'}`"
+
+if [ "${GCCOVERLAY}" == "two-overlay" ] ; then
+  TYPE="`ls -altrh /etc/portage/make.conf | awk -F ">" {'print$2'} | awk -F "." {'print$3'}`"
+else
+  TYPE="`ls -altrh /etc/portage/make.conf | awk -F ">" {'print$2'} | awk -F "." {'print$4'}`"
+fi
+
+echo ""
+
+if [ "${TYPE}" == "desktop" ] || [ "${TYPE}" == "server" ] || [ "${TYPE}" == "node" ] || [ "${TYPE}" == "mobile" ] || [ "${TYPE}" == "minimal" ] ; then
+  echo -e " TYPE is \033[36;1m\033[1m${TYPE}\033[0m ... Good!"
+  echo -e " GCC is \033[36;1m\033[1m${GCCOVERLAY}\033[0m ... Good!"
+else
+  echo -e "\033[31;1m\033[1m TYPE ${TYPE} is not known! Exiting...\033[0m"
+  exit 1
+fi
+
+echo ""
+
+if [ ! -e /usr/local/sbin/${EXE} ] ; then
+  ln -s /usr/local/overlays/${OVERLAY}/scripts/${EXE} /usr/local/sbin/${EXE}
+fi
+
+if [ ! -h /usr/local/sbin/${EXE} ] ; then
+  rm -f /usr/local/sbin/${EXE}
+  ln -s /usr/local/overlays/${OVERLAY}/scripts/${EXE} /usr/local/sbin/${EXE}
+fi
+
+WORLDFILE="/usr/local/overlays/common-stuff/portage/world.${TYPE}"
+
+if [ "${GCCOVERLAY}" == "two-overlay" ] ; then
+  WORLDFILE="/usr/local/overlays/${GCCOVERLAY}/portage/world.${TYPE}"
+fi
+
+WORLDLOCAL="/tmp/world.local"
+
+if [ "`uname -m`" == "x86_64" ] && [ "${TYPE}" != "minimal" ] ; then
+  if [ -e /usr/local/overlays/${GCCOVERLAY}/portage/world.64 ] && [ "${TYPE}" != "minimal" ] ; then
+    NEWWORLDFILE="/tmp/world"
+    cat ${WORLDFILE} /usr/local/overlays/${GCCOVERLAY}/portage/world.64 | sort -u > "${NEWWORLDFILE}"
+    WORLDFILE="${NEWWORLDFILE}"
+  fi
+fi
+
+cat /var/lib/portage/world | sort -u > ${WORLDLOCAL}
+
+echo -e "\033[31;1m\033[1m Stuff to emerge:\033[0m"
+echo ""
+diff ${WORLDLOCAL} ${WORLDFILE} | grep \> | awk {'print$2'}
+echo ""
+
+echo -e "\033[32;1m\033[1m Stuff to unemerge (maybe):\033[0m"
+echo ""
+diff ${WORLDLOCAL} ${WORLDFILE} | grep \< | awk {'print$2'}
+echo ""
+
+if [ "${DO}" == "TRUE" ] ; then
+  emerge -uqvk `diff ${WORLDLOCAL} ${WORLDFILE} | grep \> | awk {'print$2'}`
+fi

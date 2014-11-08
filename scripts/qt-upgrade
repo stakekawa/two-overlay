@@ -1,0 +1,29 @@
+#!/bin/bash
+
+EXE="qt-upgrade"
+
+USEBINPKG="$1"
+
+OVERLAY="common-stuff"
+
+if [ ! -e /usr/local/sbin/${EXE} ] ; then
+  ln -s /usr/local/overlays/${OVERLAY}/scripts/${EXE} /usr/local/sbin/${EXE}
+fi
+
+if [ ! -h /usr/local/sbin/${EXE} ] ; then
+  rm -f /usr/local/sbin/${EXE}
+  ln -s /usr/local/overlays/${OVERLAY}/scripts/${EXE} /usr/local/sbin/${EXE}
+fi
+
+OPT="-qv1D"
+
+if [ "${USEBINPKG}" == "k" ] ; then
+  echo "Using binary packages (if they exist)..."
+  OPT="-qv1Dk"
+fi
+
+emerge -qvC `ls /var/db/pkg/x11-libs/ | grep qt` `ls /var/db/pkg/dev-qt/ | grep qt`
+
+emerge ${OPT} dev-qt/qtcore
+
+

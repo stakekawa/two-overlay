@@ -1,0 +1,32 @@
+#!/bin/bash
+
+EXE="ora"
+
+OVERLAY="common-stuff"
+
+if [ ! -e /usr/local/sbin/${EXE} ] ; then
+  ln -s /usr/local/overlays/${OVERLAY}/scripts/${EXE} /usr/local/sbin/${EXE}
+fi
+
+if [ ! -h /usr/local/sbin/${EXE} ] ; then
+  rm -f /usr/local/sbin/${EXE}
+  ln -s /usr/local/overlays/${OVERLAY}/scripts/${EXE} /usr/local/sbin/${EXE}
+fi
+
+NTPSERVER=`cat /etc/conf.d/net | grep ntp | awk -F '="' {'print$2'} | sed -e 's/"//g' | sort -u | head -n 1`
+
+echo ""
+/etc/init.d/ntpd stop
+echo ""
+echo -e "Current date  : \033[31;1m\033[1m `date` \033[0m"
+echo ""
+echo -e "Updating with : \033[36;1m\033[1m ${NTPSERVER} \033[0m"
+echo ""
+ntpdate -u ${NTPSERVER}
+echo ""
+echo -e "Updated date  : \033[32;1m\033[1m `date` \033[0m"
+echo ""
+/etc/init.d/ntpd start
+echo ""
+hwclock --systohc
+

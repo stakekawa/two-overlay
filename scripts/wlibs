@@ -1,0 +1,54 @@
+#!/bin/bash
+
+EXE="wlibs"
+
+DO="FALSE"
+
+if [ "${1}" == "do" ] ; then
+  DO="TRUE"
+fi
+
+OVERLAY="two-overlay"
+
+if [ ! -e /usr/local/sbin/${EXE} ] ; then
+  ln -sf /usr/local/overlays/${OVERLAY}/scripts/${EXE} /usr/local/sbin/${EXE}
+fi
+
+if [ ! -h /usr/local/sbin/${EXE} ] ; then
+  rm -f /usr/local/sbin/${EXE}
+  ln -sf /usr/local/overlays/${OVERLAY}/scripts/${EXE} /usr/local/sbin/${EXE}
+fi
+
+for i in `cat /usr/local/overlays/${OVERLAY}/txt/libs.txt` ; do
+
+  LIB=${i}
+
+  if [ "`uname -m`" == "x86_64" ] ; then
+
+    LIB="`echo ${i} | sed -e 's/lib\//lib64\//'`"
+
+  fi
+
+  if [ -e ${LIB} ] ; then
+
+    echo ""
+    echo -e "\033[34;1m\033[1m Check of library\033[0m\033[32;1m\033[1m ${i} \033[0m"
+    echo ""
+
+    revdep-rebuild --library ${LIB}} -i -- -qvk
+
+    if [ "$?" == "0" ] ; then
+
+      mv -f ${LIB} /tmp/
+
+    fi
+
+  else
+
+    echo ""
+    echo -e "\033[34;1m\033[1m Library\033[0m\033[32;1m\033[1m ${LIB}\033[0m\033[34;1m\033[1m does not exist! :-) \033[0m"
+    echo ""
+
+  fi
+
+done

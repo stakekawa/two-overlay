@@ -1,0 +1,20 @@
+#!/bin/bash
+
+EXE="googleit"
+
+OVERLAY="common-stuff"
+
+if [ ! -e /usr/local/sbin/${EXE} ] ; then
+  ln -s /usr/local/overlays/${OVERLAY}/scripts/${EXE} /usr/local/sbin/${EXE}
+fi
+
+if [ ! -h /usr/local/sbin/${EXE} ] ; then
+  rm -f /usr/local/sbin/${EXE}
+  ln -s /usr/local/overlays/${OVERLAY}/scripts/${EXE} /usr/local/sbin/${EXE}
+fi
+
+if [ -e "/usr/lib/firefox/searchplugins/google.xml" ] ; then
+
+  sed -i -e 's/www.google.com/www.google.it/' /usr/lib/firefox/searchplugins/google.xml
+
+fi
