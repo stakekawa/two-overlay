@@ -1,0 +1,14 @@
+--- kernel/nv-linux.h.orig	2013-10-30 12:44:01.059111282 +0100
++++ kernel/nv-linux.h	2013-10-30 12:45:39.005291064 +0100
+@@ -1028,7 +1028,11 @@
+ #endif
+ 
+ #if !defined(NV_VMWARE)
++#if LINUX_VERSION_CODE >= KERNEL_VERSION(3, 11, 0)
++#define NV_NUM_PHYSPAGES                totalram_pages
++#else
+ #define NV_NUM_PHYSPAGES                num_physpages
++#endif
+ #define NV_GET_CURRENT_PROCESS()        current->tgid
+ #define NV_IN_ATOMIC()                  in_atomic()
+ #define NV_LOCAL_BH_DISABLE()           local_bh_disable()

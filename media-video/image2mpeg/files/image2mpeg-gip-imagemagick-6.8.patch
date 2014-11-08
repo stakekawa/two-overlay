@@ -1,0 +1,11 @@
+--- src/gip/gip.h.orig	2013-09-03 13:10:13.758320457 +0200
++++ src/gip/gip.h	2013-09-03 13:12:48.352313564 +0200
+@@ -9,7 +9,7 @@
+ #ifndef __GIP_H__
+ #define __GIP_H__ 1
+ 
+-#if HAVE_LIBMAGICKCORE
++#if HAVE_LIBMAGICKCORE || HAVE_LIBMAGICKCORE_6_Q16
+ #define HAVE_LIBMAGICK	1
+ #endif
+ #if HAVE_LIBMAGICK

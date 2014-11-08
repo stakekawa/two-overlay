@@ -1,0 +1,4 @@
+sys-auth/fprint_demo ~x86 ~amd64
+sys-auth/fprintd ~x86 ~amd64
+sys-auth/libfprint ~x86 ~amd64
+sys-auth/pam_fprint ~x86 ~amd64

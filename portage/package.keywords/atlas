@@ -1,0 +1,2 @@
+sci-libs/blas-atlas ~x86 ~amd64
+sci-libs/lapack-atlas ~x86 ~amd64

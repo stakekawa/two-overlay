@@ -1,0 +1,8 @@
+/var/log/auth.log {
+    monthly
+    notifempty
+    missingok
+    compress
+    create 0600 root root
+    rotate 6
+}

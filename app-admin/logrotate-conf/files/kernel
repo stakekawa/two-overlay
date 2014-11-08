@@ -1,0 +1,7 @@
+/var/log/kern.log {
+    maxage 365
+    size=10M
+    notifempty
+    missingok
+    compress
+}

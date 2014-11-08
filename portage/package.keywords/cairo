@@ -1,0 +1,7 @@
+=dev-libs/lzo-2.06-r1 ~x86 ~amd64
+=dev-libs/openssl-1.0.1h-r2 ~x86 ~amd64
+=dev-util/pkgconfig-0.28-r1 ~x86 ~amd64
+=media-libs/freetype-2.5.3-r1 ~x86 ~amd64
+=net-print/cups-1.7.3 ~x86 ~amd64
+=sys-libs/gdbm-1.10-r1 ~x86 ~amd64
+=virtual/pkgconfig-0-r1 ~x86 ~amd64

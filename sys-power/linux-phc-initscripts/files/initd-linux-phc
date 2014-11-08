@@ -1,0 +1,71 @@
+#!/sbin/runscript
+
+depend() 
+{
+  need localmount
+  need logger
+}
+
+
+sysfs_check() 
+{
+  # Check that the sysfs interface exists
+
+  if [ -e /sys/devices/system/cpu/cpu0/cpufreq/phc_vids ] ; then
+    return 0
+  else
+    return 1
+  fi
+
+  if [ "${ISCONFIGURED}" == "yes" ] ; then
+    return 0
+  else
+    return 1
+  fi
+}
+
+set_custom_table()
+{
+  for i in `seq 0 $(( ${NCPU} - 1 ))` ; do
+    if [ -e /sys/devices/system/cpu/cpu${i}/cpufreq/phc_vids ] ; then
+      echo "${CUSTOM_VTABLE}" > /sys/devices/system/cpu/cpu${i}/cpufreq/phc_vids
+    fi
+  done
+  return $?
+}
+
+set_default_table()
+{
+  for i in `seq 0 $(( ${NCPU} - 1 ))` ; do
+    if [ -e /sys/devices/system/cpu/cpu${i}/cpufreq/phc_vids ] ; then
+      echo "`cat /sys/devices/system/cpu/cpu${i}/cpufreq/phc_default_vids`" > /sys/devices/system/cpu/cpu${i}/cpufreq/phc_vids
+    fi
+  done
+  return $?
+}
+
+
+start() 
+{
+  ebegin "Changing CPU voltages table"
+
+  if [ "$IS_CONFIGURED" = "yes" ]; then
+    sysfs_check || return 1
+    set_custom_table
+    eend $?
+  else
+    eend 1 "Config not set in /etc/conf.d/linux-phc"
+  fi
+}
+
+stop() 
+{
+  if [ "$SWITCH_BACK" = "yes" ]; then
+
+    ebegin "Switching back to default CPU voltage table"
+    sysfs_check || eend 1 "Something went wrong..."
+    set_default_table
+
+    eend $?
+  fi 
+}

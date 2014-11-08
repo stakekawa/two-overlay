@@ -1,0 +1,22 @@
+--- main/Module.mk.orig	2014-09-19 15:16:53.841949735 +0200
++++ main/Module.mk	2014-09-19 15:16:57.923949553 +0200
+@@ -164,15 +164,11 @@
+ 		$(LD) $(LDFLAGS) -o $@ $(SSH2RPDO) $(SNPRINTFO) $(STRLCPYO) \
+ 		   $(SYSLIBS)
+ 
+-$(H2ROOT):      $(H2ROOTO) $(ROOTLIBSDEP) $(MINICERNLIB)
+-		$(LD) $(LDFLAGS) -o $@ $(H2ROOTO) \
+-		   $(RPATH) $(ROOTLIBS) $(MINICERNLIB) \
+-		   $(F77LIBS) $(SYSLIBS)
++$(H2ROOT):      $(ROOTLIBSDEP) $(MINICERNLIB)
++		$(F77) -o $@ $(H2ROOTS1) `cernlib packlib` -I$(ROOT_SRCDIR)/include $(RPATH) $(ROOTLIBS) $(F77LIBS) $(SYSLIBS) $(MINICERNLIB) -lstdc++
+ 
+-$(G2ROOT):      $(G2ROOTO) $(ORDER_) $(MINICERNLIB)
+-		$(F77LD) $(F77LDFLAGS) -o $@ $(G2ROOTO) \
+-		   $(RPATH) $(MINICERNLIB) \
+-		   $(F77LIBS) $(SYSLIBS)
++$(G2ROOT):	$(ORDER_) $(MINICERNLIB)
++		$(F77) -o $@ $(G2ROOTS) `cernlib packlib` $(F77LIBS) $(SYSLIBS)
+ 
+ ifneq ($(F77),)
+ all-$(MODNAME): $(ROOTEXE) $(ROOTNEXE) $(PROOFSERVEXE) $(PROOFSERVSH) \

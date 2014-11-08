@@ -1,0 +1,44 @@
+#!/sbin/runscript
+
+depend() 
+{
+	need net
+}
+
+start() 
+{
+	ebegin "Starting synergy server"
+
+	local PARAMS=""
+
+	#set the config file and check if it exists
+        if [ -z "${CONFIG}" ] ; then
+                if [ ! -f "/etc/synergy.conf" ]; then
+                        ewarn "You did not set the config file correctly"
+                        eend 1
+                fi
+                PARAMS="${PARAMS} -c /etc/synergy.conf"
+        else
+		if [ ! -f "${CONFIG}" ]; then
+			ewarn "The specified config file does not exist"
+			eend 1
+                fi
+                PARAMS="${PARAMS} -c ${CONFIG}"
+        fi
+
+	if [ -z "${LISTEN}" ] ; then
+		PARAMS="${PARAMS} -a ${ADDRESS}"
+        fi
+
+	PARAMS="${PARAMS} -l ${LOG} --daemon ${OPTIONS} --display ${DISPLAY}"
+
+	start-stop-daemon --start --exec /usr/bin/synergys --logfile ${LOG} -- ${PARAMS} 
+
+        eend $?
+}
+
+stop() {
+        ebegin "Stopping synergy server"
+        start-stop-daemon --stop --quiet --exec /usr/bin/synergys
+        eend $?
+}

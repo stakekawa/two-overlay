@@ -1,0 +1,14 @@
+# /etc/conf.d/linux-phc
+
+NCPU=8
+
+# Switch back to phc_default_vids if linux-phc is stopped? [yes/no]
+SWITCH_BACK="yes"
+
+# Custom voltages that will be applied at boot time
+CUSTOM_VTABLE="30 24 18 13 9"
+
+# Set the following to "yes" when the all the settings are configured
+# This is a safety to disable setting the voltages with the default
+# values of this file that are probably wrong for your CPU 
+IS_CONFIGURED="no"

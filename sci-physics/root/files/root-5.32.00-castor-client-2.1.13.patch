@@ -1,0 +1,36 @@
+--- io/castor/src/TCastorFile.cxx.orig	2012-10-29 14:31:40.333025139 +0100
++++ io/castor/src/TCastorFile.cxx	2012-10-29 14:43:49.134323008 +0100
+@@ -59,6 +59,20 @@
+ #endif
+ 
+ #ifdef R__CASTOR2
++#if defined(DLL_DECL)
++#undef DLL_DECL
++#endif
++#if !defined(_WIN32)
++#define DLL_DECL
++#else
++#if defined(_EXPORTING) && defined(_DLL)
++#define DLL_DECL __declspec(dllexport) 
++#elif defined(_IMPORTING)
++#define DLL_DECL __declspec(dllimport)
++#else
++#define DLL_DECL
++#endif
++#endif
+ #include <stager_api.h>       // For the new CASTOR 2 Stager
+ #endif
+ #define RFIO_KERNEL           // Get access to extra symbols in the headers
+@@ -89,8 +103,10 @@
+ {
+    // Function that checks whether we should use the old or new stager API.
+ 
+-   int version = use_castor2_api();
+-   return version;
++   // between castor 2.1.9 and 2.1.13 common/castor1compat.c was removed,
++   // where use_castor2_api was just return 1, so fix it here
++
++   return 1;
+ }
+ 
+ #else

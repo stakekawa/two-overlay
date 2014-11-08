@@ -1,0 +1,10 @@
+/var/log/smartd.log {
+    maxage 365
+    size=1M
+    notifempty
+    missingok
+    compress
+    postrotate
+        /etc/init.d/smartd reload > /dev/null 2>&1 || true
+    endscript
+}

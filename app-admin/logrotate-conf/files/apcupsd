@@ -1,0 +1,11 @@
+/var/log/apcupsd.log {
+    monthly
+    size=100k
+    notifempty
+    missingok
+    compress
+    rotate 1
+    postrotate
+        /etc/init.d/apcupsd restart > /dev/null 2>&1 || true
+    endscript
+}

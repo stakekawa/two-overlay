@@ -1,0 +1,11 @@
+--- configure.ac.old	2013-09-03 13:02:37.553340796 +0200
++++ configure.ac	2013-09-03 13:06:04.753331558 +0200
+@@ -77,7 +77,7 @@
+ 	#
+ 	#	use ImageMagick
+ 	#
+-	AC_CHECK_LIB(Magick,main,,[ AC_CHECK_LIB(MagickCore,main,,exit 1) ])
++	AC_CHECK_LIB(Magick,main,,[ AC_CHECK_LIB(MagickCore-6.Q16,main,,exit 1) ])
+ 	CFLAGS="$CFLAGS $( Magick-config --cflags )"
+ 	LDFLAGS="$LDFLAGS $( Magick-config --ldflags )"
+ 	LIBS="$LIBS $( Magick-config --libs )"

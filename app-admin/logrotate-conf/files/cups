@@ -1,0 +1,13 @@
+/var/log/cups/page_log /var/log/cups/access_log /var/log/cups/error_log {
+    monthly
+    size=100k
+    notifempty
+    missingok
+    compress
+    rotate 3
+    create 0664 root lp
+    sharedscripts
+    postrotate
+        /etc/init.d/cupsd restart > /dev/null 2>&1 || true
+    endscript
+}

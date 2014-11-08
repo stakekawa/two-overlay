@@ -1,0 +1,7 @@
+/var/log/cron.log {
+    monthly
+    notifempty
+    missingok
+    compress
+    rotate 4
+}

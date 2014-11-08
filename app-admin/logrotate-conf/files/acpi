@@ -1,0 +1,8 @@
+/var/log/acpi.log /var/log/acpid.log {
+    monthly
+    size=1M
+    notifempty
+    missingok
+    compress
+    rotate 3
+}

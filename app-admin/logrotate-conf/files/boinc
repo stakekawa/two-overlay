@@ -1,0 +1,8 @@
+/var/lib/boinc/boinc.log {
+    monthly
+    notifempty
+    missingok
+    compress
+    rotate 3
+    create 0664 boinc boinc
+}

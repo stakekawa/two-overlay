@@ -1,0 +1,11 @@
+/var/log/dhcp.log {
+	compress
+	weekly
+	rotate 6
+	size=+1024k
+	notifempty
+	missingok
+        postrotate
+        	/etc/init.d/dhcpd restart > /dev/null 2>&1 || true
+        endscript
+}

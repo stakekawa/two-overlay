@@ -1,0 +1,16 @@
+# /etc/conf.d/synergys
+
+# The location of the config file
+CONFIG="/etc/synergy.conf"
+
+# Listen to the address
+LISTEN="127.0.0.1:24800"
+
+# Display
+DISPLAY="localhost:0"
+
+# Log file
+LOG="/var/log/synergys.log"
+
+# Other options
+OPTIONS=""

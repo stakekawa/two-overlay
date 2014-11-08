@@ -1,0 +1,6 @@
+/var/log/synergyc.log /var/log/synergys.log {
+    monthly
+    notifempty
+    missingok
+    compress
+}

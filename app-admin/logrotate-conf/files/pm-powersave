@@ -1,0 +1,8 @@
+/var/log/pm-powersave.log /var/log/pm-suspend.log {
+    monthly
+    size=1M
+    notifempty
+    missingok
+    compress
+    rotate 3
+}

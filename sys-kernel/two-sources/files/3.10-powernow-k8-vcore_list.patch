@@ -1,0 +1,192 @@
+diff -uNr linux-3.10-orig/drivers/cpufreq/powernow-k8.c linux-3.10/drivers/cpufreq/powernow-k8.c
+--- linux-3.10-orig/drivers/cpufreq/powernow-k8.c	2013-07-01 00:13:29.000000000 +0200
++++ linux-3.10/drivers/cpufreq/powernow-k8.c	2013-09-05 10:26:10.253756246 +0200
+@@ -26,10 +26,11 @@
+  *  Tables for specific CPUs can be inferred from AMD's processor
+  *  power and thermal data sheets, (e.g. 30417.pdf, 30430.pdf, 43375.pdf)
+  */
+-
++//PATCHED WITH GRAFROTZ-Edition of the powernow-Patch for Kernel 3.0.0
+ #include <linux/kernel.h>
+ #include <linux/smp.h>
+ #include <linux/module.h>
++#include <linux/moduleparam.h>
+ #include <linux/init.h>
+ #include <linux/cpufreq.h>
+ #include <linux/slab.h>
+@@ -49,6 +50,18 @@
+ #define VERSION "version 2.20.00"
+ #include "powernow-k8.h"
+ 
++//static int vcore_list[16] = { 0 };
++static int vcore_list[16] = { 1450,1400,1350,1350,1350 };
++static int vcore_list_count = 0;
++module_param_array(vcore_list, int, &vcore_list_count, 0644);
++MODULE_PARM_DESC(vcore_list, "List of new voltages to use, order must match freq_list");
++
++//static int freq_list[16] = { 0 };
++static int freq_list[16] = { 2400,2200,2000,1800,1000 };
++static int freq_list_count = 0;
++module_param_array(freq_list, int, &freq_list_count, 0644);
++MODULE_PARM_DESC(freq_list, "List of new frequencies to use, order must match vcore_list"); 
++
+ /* serialize freq changes  */
+ static DEFINE_MUTEX(fidvid_mutex);
+ 
+@@ -69,12 +82,23 @@
+ 	return 800 + (fid * 100);
+ }
+ 
++static u32 find_fid_from_freq(u32 freq)
++{
++   return (freq - 800) / 100;
++}
++
+ /* Return a frequency in KHz, given an input fid */
+ static u32 find_khz_freq_from_fid(u32 fid)
+ {
+ 	return 1000 * find_freq_from_fid(fid);
+ }
+ 
++/* Return a vid from a voltage in mV */
++static u32 find_vid_from_millivolts(u32 vcore)
++{
++   return (1550-vcore)/25;
++}
++
+ /* Return the vco fid for an input fid
+  *
+  * Each "low" fid has corresponding "high" fid, and you can get to "low" fids
+@@ -359,11 +383,11 @@
+ 	u32 vcoreqfid, vcocurrfid, vcofiddiff;
+ 	u32 fid_interval, savevid = data->currvid;
+ 
+-	if (data->currfid == reqfid) {
++	/*if (data->currfid == reqfid) {
+ 		printk(KERN_ERR PFX "ph2 null fid transition 0x%x\n",
+ 				data->currfid);
+ 		return 0;
+-	}
++	}*/
+ 
+ 	pr_debug("ph2 (cpu%d): starting, currfid 0x%x, currvid 0x%x, "
+ 		"reqfid 0x%x\n",
+@@ -597,6 +621,7 @@
+ static int fill_powernow_table(struct powernow_k8_data *data,
+ 		struct pst_s *pst, u8 maxvid)
+ {
++	printk(KERN_INFO PFX "fill_powernow_table() entry"); 
+ 	struct cpufreq_frequency_table *powernow_table;
+ 	unsigned int j;
+ 
+@@ -623,13 +648,18 @@
+ 	if (check_pst_table(data, pst, maxvid))
+ 		return -EINVAL;
+ 
+-	powernow_table = kmalloc((sizeof(struct cpufreq_frequency_table)
+-		* (data->numps + 1)), GFP_KERNEL);
++	/*powernow_table = kmalloc((sizeof(struct cpufreq_frequency_table)
++		* (data->numps + 1)), GFP_KERNEL);*/
++	if ( freq_list_count > data->numps )
++		data->numps = freq_list_count;
++		powernow_table = kmalloc((sizeof(struct cpufreq_frequency_table) * (data->numps + 1)), GFP_KERNEL);
++	
+ 	if (!powernow_table) {
+ 		printk(KERN_ERR PFX "powernow_table memory alloc failure\n");
+ 		return -ENOMEM;
+ 	}
+ 
++	if ( ( vcore_list_count <= 1 ) || ( freq_list_count <= 1 ) ) {
+ 	for (j = 0; j < data->numps; j++) {
+ 		int freq;
+ 		powernow_table[j].index = pst[j].fid; /* lower 8 bits */
+@@ -639,13 +669,30 @@
+ 	}
+ 	powernow_table[data->numps].frequency = CPUFREQ_TABLE_END;
+ 	powernow_table[data->numps].index = 0;
+-
++	printk(KERN_INFO PFX "Wrong fucking side of things vcore:%d, freq:%d.\n",
++		vcore_list_count,
++		freq_list_count);      
++	}
++	else {
++		for (j = 0; j < freq_list_count ; j++) {
++			printk(KERN_INFO PFX "PTL: Requested %dMHz with %dmV\n",
++				freq_list[j],
++				vcore_list[j]);
++			powernow_table[j].index = find_fid_from_freq(freq_list[j]);
++			powernow_table[j].index |= (find_vid_from_millivolts(vcore_list[j]) << 8);
++			powernow_table[j].frequency = find_khz_freq_from_fid(find_fid_from_freq(freq_list[j]));
++		} /* for ( freq_list_count )*/
++		printk(KERN_INFO PFX "PTL: Performed required adjustments.\n");
++		powernow_table[freq_list_count].frequency = CPUFREQ_TABLE_END;
++		powernow_table[freq_list_count].index = 0;
++	}
+ 	if (query_current_values_with_pending_wait(data)) {
+ 		kfree(powernow_table);
+ 		return -EIO;
+ 	}
+ 
+-	pr_debug("cfid 0x%x, cvid 0x%x\n", data->currfid, data->currvid);
++	//pr_debug("cfid 0x%x, cvid 0x%x\n", data->currfid, data->currvid);
++	printk(KERN_INFO PFX "cfid 0x%x, cvid 0x%x\n", data->currfid, data->currvid);
+ 	data->powernow_table = powernow_table;
+ 	if (cpumask_first(cpu_core_mask(data->cpu)) == data->cpu)
+ 		print_basics(data);
+@@ -655,7 +702,8 @@
+ 		    (pst[j].vid == data->currvid))
+ 			return 0;
+ 
+-	pr_debug("currfid/vid do not match PST, ignoring\n");
++	//pr_debug("currfid/vid do not match PST, ignoring\n");
++	printk(KERN_INFO PFX "currfid/vid do not match PST, ignoring\n");
+ 	return 0;
+ }
+ 
+@@ -793,9 +841,13 @@
+ 	}
+ 
+ 	/* fill in data->powernow_table */
+-	powernow_table = kmalloc((sizeof(struct cpufreq_frequency_table)
+-		* (data->acpi_data.state_count + 1)), GFP_KERNEL);
+-	if (!powernow_table) {
++	/*powernow_table = kmalloc((sizeof(struct cpufreq_frequency_table)
++		* (data->acpi_data.state_count + 1)), GFP_KERNEL);*/
++	if ( freq_list_count >  data->acpi_data.state_count )
++		data->acpi_data.state_count =  freq_list_count;
++		powernow_table = kmalloc((sizeof(struct cpufreq_frequency_table) * (data->acpi_data.state_count + 1)), GFP_KERNEL);
++
++if (!powernow_table) {
+ 		pr_debug("powernow_table memory alloc failure\n");
+ 		goto err_out;
+ 	}
+@@ -864,10 +916,18 @@
+ 
+ 		pr_debug("   %d : fid 0x%x, vid 0x%x\n", i, fid, vid);
+ 
+-		index = fid | (vid<<8);
++		/*index = fid | (vid<<8);
++		
+ 		powernow_table[i].index = index;
+ 
+-		freq = find_khz_freq_from_fid(fid);
++		freq = find_khz_freq_from_fid(fid);*/
++		
++		printk(KERN_INFO PFX "Requested %dMHz with %dmV\n",
++			freq_list[i],
++			vcore_list[i]);
++		index = (find_fid_from_freq(freq_list[i])) | (find_vid_from_millivolts(vcore_list[i]) << 8);
++		powernow_table[i].index = index;
++		freq = find_khz_freq_from_fid(find_fid_from_freq(freq_list[i]));
+ 		powernow_table[i].frequency = freq;
+ 
+ 		/* verify frequency is OK */
+@@ -891,6 +951,8 @@
+ 				(unsigned int)
+ 				(data->acpi_data.states[i].core_frequency
+ 				 * 1000));
++			//invalidate_entry(powernow_table, i);
++		if ( ( freq_list_count <= 1 ) || ( !freq_list_count ) )
+ 			invalidate_entry(powernow_table, i);
+ 			continue;
+ 		}

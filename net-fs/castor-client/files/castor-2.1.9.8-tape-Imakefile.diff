@@ -1,0 +1,19 @@
+diff -uNr castor-2.1.9-orig/tape/Imakefile castor-2.1.9/tape/Imakefile
+--- castor-2.1.9-orig/tape/Imakefile	2010-08-02 09:00:46.000000000 +0200
++++ castor-2.1.9/tape/Imakefile	2010-08-27 11:41:00.640000065 +0200
+@@ -80,11 +80,11 @@
+ sendscsicmd.Osuf:	sendscsicmd.c ../h/Ctape.h ../h/scsictl.h
+ 	@if [ -f "/usr/src/linux/include/scsi/sg.h" ] ;\
+ 	then \
+-		echo $(CC) -c -I$(INCLUDES) $(MTCCFLAGS) -DTAPE -DSCSIINC="\"/usr/src/linux/include/scsi/sg.h\"" sendscsicmd.c ;\
+-		$(CC) -c -I$(INCLUDES) $(MTCCFLAGS) -DTAPE -DSCSIINC="\"/usr/src/linux/include/scsi/sg.h\"" sendscsicmd.c ;\
++		echo $(CC) -c -I$(INCLUDES) -I/lib/modules/`uname -r`/source/include $(MTCCFLAGS) -DTAPE -DSCSIINC="\"/usr/src/linux/include/scsi/sg.h\"" sendscsicmd.c ;\
++		$(CC) -c -I$(INCLUDES) -I/lib/modules/`uname -r`/source/include $(MTCCFLAGS) -DTAPE -DSCSIINC="\"/usr/src/linux/include/scsi/sg.h\"" sendscsicmd.c ;\
+ 	else \
+-		echo $(CC) -c -I$(INCLUDES) $(MTCCFLAGS) -DTAPE -DSCSIINC="\"/usr/include/scsi/sg.h\"" sendscsicmd.c ;\
+-		$(CC) -c -I$(INCLUDES) $(MTCCFLAGS) -DTAPE -DSCSIINC="\"/usr/include/scsi/sg.h\"" sendscsicmd.c ;\
++		echo $(CC) -c -I$(INCLUDES) -I/lib/modules/`uname -r`/source/include $(MTCCFLAGS) -DTAPE -DSCSIINC="\"/usr/include/scsi/sg.h\"" sendscsicmd.c ;\
++		$(CC) -c -I$(INCLUDES) -I/lib/modules/`uname -r`/source/include $(MTCCFLAGS) -DTAPE -DSCSIINC="\"/usr/include/scsi/sg.h\"" sendscsicmd.c ;\
+ 	fi
+ 
+ usrlocate.Osuf:	usrlocate.c ../h/Ctape.h ../h/serrno.h

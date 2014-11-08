@@ -1,0 +1,12 @@
+diff -uNr xmorph-20060817-orig//gtkmorph/fourier.cc xmorph-20060817//gtkmorph/fourier.cc
+--- xmorph-20060817-orig//gtkmorph/fourier.cc	2005-04-06 16:01:35.000000000 +0200
++++ xmorph-20060817//gtkmorph/fourier.cc	2012-05-17 16:23:58.757737793 +0200
+@@ -3,6 +3,8 @@
+ */
+ #include "config.h"
+ 
++#include <cstring>
++
+ #include <gtk/gtk.h>
+ #ifdef USE_IMLIB
+ #include <gdk_imlib.h>

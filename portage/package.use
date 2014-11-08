@@ -1,0 +1,90 @@
+app-arch/bzip2 static static-libs
+app-cdr/brasero libburn
+app-editors/nano justify
+app-emulation/virtualbox extensions
+app-office/akonadi-server soprano
+app-text/djvu qt3
+app-text/texlive cjk context doc epspdf extra games graphics humanities jadetex music omega pstricks publishers science tex4ht xetex
+app-text/texlive-core cjk xetex
+dev-cpp/glog gflags
+dev-db/sqlite fts3 secure-delete unlock-notify
+dev-java/swing-layout source
+dev-lang/lua deprecated
+dev-lang/mono moonlight
+dev-lang/php bcmath calendar cdb cgi cli ctype gd mysqli pcre posix sockets tokenizer zip xmlwriter xsl xslt
+dev-lang/python sqlite
+dev-libs/libgcrypt static-libs
+dev-libs/libgpg-error static-libs
+dev-libs/libxml2 python
+dev-libs/lzo static-libs
+dev-libs/openssl static-libs
+dev-libs/popt static-libs
+dev-python/PyQt4 declarative script sql
+dev-vcs/subversion extras webdav-serf
+games-fps/quake2-data videos
+games-fps/worldofpadman maps
+games-strategy/warzone2100 videos
+gnome-base/gvfs archive gdu gnome
+gnome-extra/nm-applet -bluetooth
+mail-client/thunderbird replytolist system-sqlite
+media-gfx/blender player python_single_target_python3_3
+media-gfx/graphicsmagick -imagemagick
+media-gfx/grub-splash-naturalgentoo grub2
+media-gfx/hugin enblend sift
+media-gfx/pstoedit plotutils
+media-libs/freetype static-libs
+media-libs/jpeg static-libs
+media-libs/lcms static-libs
+media-libs/libjpeg-turbo static-libs
+media-libs/libmng lcms static-libs
+media-libs/libmp4v2 utils
+media-libs/libpng apng static-libs
+media-libs/mesa g3dvl gbm r600-llvm-compiler xa xvmc
+media-libs/mlt kdenlive melt movit
+media-plugins/audacious-plugins gtk3 -gtk
+media-sound/audacious gtk3 -gtk
+media-sound/audacity vamp
+media-video/dvd-slideshow themes
+media-video/ffmpeg fdk opus
+media-video/mplayer2 quvi real yuv4mpeg
+media-video/totem -nsplugin
+media-video/transcode -pic
+media-video/ushare dlna
+net-analyzer/wireshark gtk3 smi -gtk2 -qt4
+net-dns/avahi mdnsresponder-compat
+net-dns/bind dlz berkdb -threads
+net-fs/samba server
+net-libs/libsoup gnome
+net-misc/curl -gnutls
+net-misc/dhcp server
+net-misc/networkmanager dhcpd gnome modemmanager nss resolvconf -dhclient
+net-misc/openssh tcpd
+net-misc/tigervnc -server
+net-nds/openldap sasl
+net-p2p/transmission xfs
+net-print/cups avahi usb
+net-print/hplip hpcups hpijs
+net-wireless/wpa_supplicant ap eap-sim p2p smartcard wps
+razorqt-base/razorqt-panel alsa clock colorpicker cpuload desktopswitch mainmenu mount networkmonitor pulseaudio quicklaunch screensaver sensors showdesktop taskbar tray volume
+sci-astronomy/stellarium stars
+sci-libs/hdf5 -threads
+sci-mathematics/octave-forge ginac qhull
+sci-physics/root castor cern fits graphviz qt4 rfio -debug -mysql -reflex
+sys-apps/pciutils network-cron
+sys-cluster/maui pbs
+sys-fs/ntfs3g extras suid xattr -external-fuse
+sys-fs/udev extras gudev hwdb
+sys-libs/gpm static-libs
+sys-libs/zlib minizip static-libs
+sys-power/cpufreqd nforce2 nvidia
+virtual/jpeg static-libs
+virtual/udev gudev hwdb
+www-client/firefox pgo system-jpeg system-sqlite
+www-client/links suid
+www-plugins/adobe-flash 32bit 64bit -sse2check
+www-servers/lighttpd fastcgi memcache mysql php
+x11-base/xorg-server xnest xorg xvfb
+x11-drivers/xf86-video-ati glamor
+xfce-base/thunar plugins
+xfce-base/xfce4-session gnome-keyring
+xfce-base/xfdesktop thunar

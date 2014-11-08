@@ -1,0 +1,24 @@
+--- Makefile.orig	2009-11-14 18:37:10.578303025 +0100
++++ Makefile	2009-11-14 18:37:41.607180002 +0100
+@@ -222,9 +222,6 @@
+ ifeq ($(BUILDGLOBUS),yes)
+ MODULES      += net/globusauth
+ endif
+-ifneq ($(F77),)
+-MODULES      += misc/minicern hist/hbook
+-endif
+ ifeq ($(BUILDXRD),yes)
+ ifneq ($(XROOTDDIR),)
+ MODULES      += net/netx
+@@ -258,9 +255,9 @@
+                 graf3d/gl graf3d/ftgl io/rfio io/castor \
+                 montecarlo/pythia6 montecarlo/pythia8 misc/table \
+                 sql/mysql sql/pgsql sql/sapdb net/srputils graf3d/x3d \
+-                rootx net/rootd io/dcache io/chirp hist/hbook graf2d/asimage \
++                rootx net/rootd io/dcache io/chirp graf2d/asimage \
+                 net/ldap net/krb5auth net/rpdutils net/globusauth \
+-                bindings/pyroot bindings/ruby io/gfal misc/minicern \
++                bindings/pyroot bindings/ruby io/gfal \
+                 graf2d/qt gui/qtroot gui/qtgsi net/xrootd net/netx net/alien \
+                 proof/proofd proof/proofx proof/clarens proof/peac \
+                 sql/oracle io/xmlparser math/mathmore cint/reflex cint/cintex \

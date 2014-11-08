@@ -1,0 +1,9 @@
+/var/log/ConsoleKit/history {
+    monthly
+    compress
+    missingok
+    rotate 3
+    postrotate
+        /etc/init.d/consolekit reload > /dev/null 2>&1 || true
+    endscript
+}

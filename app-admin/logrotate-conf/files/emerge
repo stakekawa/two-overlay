@@ -1,0 +1,7 @@
+/var/log/emerge.log {
+    weekly
+    notifempty
+    missingok
+    compress
+    create 0664 portage portage
+}

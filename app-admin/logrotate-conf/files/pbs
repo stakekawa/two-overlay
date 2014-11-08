@@ -1,0 +1,38 @@
+/var/log/pbs_sched.log {
+    monthly
+    size=10M
+    notifempty
+    missingok
+    compress
+    create 0664 root root
+    sharedscripts
+    postrotate
+        /etc/init.d/pbs_sched reload > /dev/null 2>&1 || true
+    endscript
+}
+
+/var/log/pbs_server.log {
+    monthly
+    size=10M
+    notifempty
+    missingok
+    compress
+    create 0664 root root
+    sharedscripts
+    postrotate
+        /etc/init.d/pbs_server reload > /dev/null 2>&1 || true
+    endscript
+}
+
+/var/log/pbs_mon.log {
+    monthly
+    size=10M
+    notifempty
+    missingok
+    compress
+    create 0664 root root
+    sharedscripts
+    postrotate
+        /etc/init.d/pbs_mom reload > /dev/null 2>&1 || true
+    endscript
+}

@@ -1,0 +1,8 @@
+/var/log/lpr.log {
+    monthly
+    rotate 2
+    size=100k
+    notifempty
+    missingok
+    compress
+}

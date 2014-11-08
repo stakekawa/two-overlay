@@ -1,0 +1,6 @@
+sci-physics/cernlib ~x86 ~amd64
+sci-physics/cernlib-montecarlo ~x86 ~amd64
+<sci-physics/clhep-2.0.4.0 ~x86 ~amd64
+sci-physics/geant ~x86 ~amd64
+sci-physics/paw ~x86 ~amd64
+sci-physics/root ~x86 ~amd64

@@ -1,0 +1,10 @@
+# /etc/conf.d/synergyc
+
+# Listen to the address
+SERVER="remote:24800"
+
+# Log file
+LOG="/var/log/synergyc.log"
+
+# Other options
+OPTIONS=""

@@ -1,0 +1,26 @@
+#!/sbin/runscript
+
+depend() 
+{
+	need net
+	after xdm
+}
+
+start() 
+{
+	ebegin "Starting synergy client"
+
+	local PARAMS
+
+	PARAMS="-l ${LOG} --daemon ${OPTIONS} ${SERVER}"
+
+	start-stop-daemon --start --exec /usr/bin/synergys -- ${PARAMS}
+
+        eend $?
+}
+
+stop() {
+        ebegin "Stopping synergy client"
+        start-stop-daemon --stop --quiet --exec /usr/bin/synergyc
+        eend $?
+}

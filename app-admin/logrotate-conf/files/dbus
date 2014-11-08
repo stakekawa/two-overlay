@@ -1,0 +1,10 @@
+/var/log/dbus.log {
+    maxage 365
+    size=1M
+    notifempty
+    missingok
+    compress
+    postrotate
+        /etc/init.d/dbus reload > /dev/null 2>&1 || true
+    endscript
+}

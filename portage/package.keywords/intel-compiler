@@ -1,0 +1,3 @@
+dev-lang/icc ~x86 ~amd64
+dev-lang/ifc ~x86 ~amd64
+sci-libs/ipp ~x86 ~amd64

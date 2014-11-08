@@ -1,0 +1,6 @@
+#!/bin/bash
+THIS="`echo $0 | awk -F "/" {'print$NF'} | awk -F "." {'print$1'}`"
+cp /usr/share/mailmessages/${THIS}.txt /tmp/
+sed -i -e s/HOSTNAME/`hostname`/ /tmp/${THIS}.txt
+mail s.takekawa@gmail.com -s "`hostname` ${THIS}" < /tmp/${THIS}.txt
+rm -f /tmp/${THIS}.txt
