@@ -13,7 +13,7 @@ ACCEPT_KEYWORDS="x86"
 DISTDIR="/mnt/distfiles"
 PKGDIR=/mnt/packages
 PORTDIR="/usr/portage"
-PORTDIR_OVERLAY="/usr/local/overlays/two-overlay /usr/local/overlays/daq"
+PORTDIR_OVERLAY="/usr/local/overlays/two-overlay"
 
 SYNC="rsync://rsync.gentoo.org/gentoo-portage"
 
