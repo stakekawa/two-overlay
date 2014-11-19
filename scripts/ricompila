@@ -1,0 +1,91 @@
+#!/bin/bash
+
+EXE="ricompila"
+
+OVERLAY="two-overlay"
+
+if [ ! -e /usr/local/sbin/${EXE} ] ; then
+  ln -s /usr/local/overlays/${OVERLAY}/scripts/${EXE} /usr/local/sbin/${EXE}
+fi
+
+if [ ! -h /usr/local/sbin/${EXE} ] ; then
+  rm -f /usr/local/sbin/${EXE}
+  ln -s /usr/local/overlays/${OVERLAY}/scripts/${EXE} /usr/local/sbin/${EXE}
+fi
+
+echo ""
+
+if [ "${1}" == "" ] ; then
+
+  echo "Uso: ricompila lista_pacchetti.txt"
+  echo ""
+  exit
+
+elif [ ! -e ${1} ] ; then
+
+  echo "${1} non esiste! Exiting..."
+  echo ""
+  exit
+
+else
+
+  LISTA="${1}"
+  echo -e "Compilando pacchetti dal file \033[36;1m\033[1m${LISTA}\033[0m"
+  echo ""
+
+fi
+
+FATTI="`echo ${LISTA} | sed -e 's/.txt//'`_done.txt"
+LTO="`echo ${LISTA} | sed -e 's/.txt//'`_lto.txt"
+FAILED="`echo ${LISTA} | sed -e 's/.txt//'`_failed.txt"
+
+for i in `cat ${LISTA}` ; do
+
+  PACCHETTO="${i}"
+
+  echo -n  "Emerging ${PACCHETTO}... "
+
+  touch ${FATTI}
+
+  if [ -e ${FATTI} ] ; then
+
+    cat ${FATTI} | grep ${PACCHETTO} &> /dev/null
+
+  fi
+
+  if [ "$?" == "1" ] ; then
+
+    echo -e "\033[32;1m\033[1myes!\033[0m"
+    echo ""
+    emerge -qv1 ${PACCHETTO}
+
+    if [ "$?" == "0" ] ; then
+
+      echo ${PACCHETTO} >> ${FATTI}
+
+    else
+
+      no-lto-emerge -qv1 ${PACCHETTO}
+
+      if [ "$?" == "0" ] ; then
+
+        echo ${PACCHETTO} >> ${FATTI}
+        echo ${PACCHETTO} >> ${LTO}
+
+      else
+
+        echo ${PACCHETTO} >> ${FAILED}
+
+      fi
+
+    fi
+
+  else
+
+    echo -e "\033[32;1m\033[1malready done!\033[0m"
+
+  fi
+
+  echo ""
+
+done
