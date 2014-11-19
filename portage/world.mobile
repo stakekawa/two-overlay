@@ -192,12 +192,9 @@ sys-apps/smartmontools
 sys-apps/tuxonice-userui
 sys-apps/usbutils
 sys-apps/v86d
-sys-apps/wd-diag
 sys-block/gpart
 sys-boot/grub
 sys-boot/syslinux
-sys-devel/gcc:4.7
-sys-devel/gcc:4.8
 sys-devel/gdb
 sys-fs/dmg2img
 sys-fs/dosfstools
