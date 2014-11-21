@@ -2,7 +2,7 @@ USE="32bit 64bit 4kstacks X a52 aac acpi aiglx alsa amr animation-rtl asf audaci
 
 CHOST="x86_64-pc-linux-gnu"
 
-CFLAGS="-march=core2 -O2 -pipe -fomit-frame-pointer -flto=2 -fuse-linker-plugin"
+CFLAGS="-march=native -O2 -pipe -fomit-frame-pointer -flto=2 -fuse-linker-plugin"
 
 CXXFLAGS="${CFLAGS}"
 
@@ -13,7 +13,7 @@ ACCEPT_KEYWORDS="amd64"
 DISTDIR="/mnt/distfiles"
 PKGDIR=/mnt/packages
 PORTDIR="/usr/portage"
-PORTDIR_OVERLAY="/usr/local/overlays/two-overlay"
+PORTDIR_OVERLAY="/usr/local/overlays/two-overlay /usr/local/overlays/mm"
 
 SYNC="rsync://rsync.gentoo.org/gentoo-portage"
 

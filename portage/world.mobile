@@ -70,7 +70,6 @@ dev-tex/latex-calendar
 dev-tex/latex-compassmemo
 dev-util/android-sdk-update-manager
 dev-util/cgdb
-dev-util/eclipse-sdk
 dev-util/netbeans
 dev-vcs/git
 dev-vcs/subversion
@@ -93,7 +92,6 @@ mail-filter/spamassassin
 media-fonts/freefonts
 media-fonts/terminus-font
 media-fonts/ubuntu-font-family
-media-gfx/blender
 media-gfx/gimmage
 media-gfx/gimp
 media-gfx/gphoto2

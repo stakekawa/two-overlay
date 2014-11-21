@@ -43,7 +43,7 @@ for i in `cat ${LISTA}` ; do
 
   PACCHETTO="${i}"
 
-  echo -n  "Emerging ${PACCHETTO}... "
+  echo -en  "Emerging \e[0;32m${PACCHETTO}\033[0m ... "
 
   touch ${FATTI}
 

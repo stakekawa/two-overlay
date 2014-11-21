@@ -11,7 +11,7 @@ dev-db/sqlite fts3 secure-delete unlock-notify
 dev-java/swing-layout source
 dev-lang/lua deprecated
 dev-lang/mono moonlight
-dev-lang/php bcmath calendar cdb cgi cli ctype gd mysqli pcre posix sockets tokenizer zip xmlwriter xsl xslt
+dev-lang/php bcmath calendar cdb cgi cli ctype gd mysqli pcre posix sockets sysvipc tokenizer xmlreader xmlwriter xsl xslt zip
 dev-lang/python sqlite
 dev-libs/libgcrypt static-libs
 dev-libs/libgpg-error static-libs
@@ -36,6 +36,7 @@ media-gfx/pstoedit plotutils
 media-libs/freetype static-libs
 media-libs/jpeg static-libs
 media-libs/lcms static-libs
+media-libs/libcanberra alsa
 media-libs/libjpeg-turbo static-libs
 media-libs/libmng lcms static-libs
 media-libs/libmp4v2 utils
@@ -51,6 +52,7 @@ media-video/mplayer2 quvi real yuv4mpeg
 media-video/totem -nsplugin
 media-video/transcode -pic
 media-video/ushare dlna
+net-analyzer/zabbix agent curl frontend openipmi proxy ssh
 net-analyzer/wireshark gtk3 smi -gtk2 -qt4
 net-dns/avahi mdnsresponder-compat
 net-dns/bind dlz berkdb -threads
@@ -72,6 +74,7 @@ sci-libs/hdf5 -threads
 sci-mathematics/octave-forge ginac qhull
 sci-physics/root castor cern fits graphviz qt4 rfio -debug -mysql -reflex
 sys-apps/pciutils network-cron
+sys-apps/util-linux tty-helpers
 sys-cluster/maui pbs
 sys-fs/ntfs3g extras suid xattr -external-fuse
 sys-fs/udev extras gudev hwdb
