@@ -1,0 +1,17 @@
+#!/bin/bash
+
+EXE="no-lto-emerge"
+
+OVERLAY="two-overlay"
+
+if [ ! -e /usr/local/sbin/${EXE} ] ; then
+  ln -s /usr/local/overlays/${OVERLAY}/scripts/${EXE} /usr/local/sbin/${EXE}
+fi
+
+if [ ! -h /usr/local/sbin/${EXE} ] ; then
+  rm -f /usr/local/sbin/${EXE}
+  ln -s /usr/local/overlays/${OVERLAY}/scripts/${EXE} /usr/local/sbin/${EXE}
+fi
+
+MYFLAGS="`cat /etc/portage/make.conf  | grep CFLAGS | grep -v CXX | sed -e 's/ -flto=2 -fuse-linker-plugin//' | awk -F \\" {'print$2'}`"
+LDFLAGS="-Wl,-O1 -Wl,--as-needed" CFLAGS="${MYFLAGS}" CXXFLAGS="${MYFLAGS}" emerge $*
