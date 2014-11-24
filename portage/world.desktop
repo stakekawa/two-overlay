@@ -22,6 +22,7 @@ app-dicts/aspell-it
 app-editors/kile
 app-editors/nano
 app-editors/scite
+app-editors/scite-locale-it
 app-editors/xemacs
 app-emacs/auctex
 app-emacs/psgml
