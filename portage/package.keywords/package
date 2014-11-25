@@ -11,7 +11,6 @@ media-gfx/iscan-data ~x86 ~amd64
 media-gfx/iscan ~x86 ~amd64
 media-gfx/posterazor ~x86 ~amd64
 media-libs/libgpod ~x86 ~amd64
-media-libs/win32codecs ~x86 ~amd64
 media-sound/gpodder ~x86 ~amd64
 media-video/cinelerra ~x86 ~amd64
 media-video/mplayer2 ~x86 ~amd64
@@ -27,7 +26,6 @@ net-misc/youtube-dl ~x86 ~amd64
 net-wireless/iw ~x86 ~amd64
 net-wireless/ndiswrapper ~x86 ~amd64
 net-wireless/wpa_supplicant ~x86 ~amd64
-sci-calculators/pgcalc2 ~x86 ~amd64
 sci-geosciences/googleearth ~x86 ~amd64
 sci-misc/boinc ~x86 ~amd64
 sci-physics/jaxodraw ~x86 ~amd64
@@ -37,7 +35,6 @@ sys-apps/microcode-ctl ~x86 ~amd64
 sys-apps/microcode-data ~x86 ~amd64
 sys-apps/renameutils ~x86 ~amd64
 sys-apps/smartmontools ~x86 ~amd64
-sys-auth/policykit ~x86 ~amd64
 sys-block/scsirastools ~x86 ~amd64
 sys-cluster/maui ~x86 ~amd64
 sys-cluster/torque ~x86 ~amd64
@@ -46,23 +43,19 @@ sys-fs/f2fs-tools ~x86 ~amd64
 sys-fs/xfsdump ~x86 ~amd64
 sys-fs/xfsprogs ~x86 ~amd64
 sys-kernel/genkernel-next ~x86 ~amd64
-sys-power/cpufreqd ~x86 ~amd64
 sys-power/iasl ~x86 ~amd64
 sys-power/nvclock ~x86 ~amd64
 sys-power/suspend ~x86 ~amd64
-www-client/arora ~x86 ~amd64
 www-plugins/adobe-flash ~x86 ~amd64
 www-plugins/google-talkplugin ~x86 ~amd64
 x11-libs/libva-vdpau-driver ~x86 ~amd64
 x11-libs/libvdpau ~x86 ~amd64
 x11-misc/pcmanfm ~x86 ~amd64
 x11-misc/redshift ~x86 ~amd64
-x11-plugins/msn-pecan ~x86 ~amd64
 x11-plugins/pidgin-encryption ~x86 ~amd64
 x11-plugins/pidgin-latex ~x86 ~amd64
 x11-plugins/pidgin-libnotify ~x86 ~amd64
 x11-themes/faenza-icon-theme ~x86 ~amd64
-x11-themes/faenza-xfce-icon-theme ~x86 ~amd64
 x11-themes/gtk-engines-nodoka ~x86 ~amd64
 x11-themes/gtk-engines-quartz ~x86 ~amd64
 x11-themes/gtk-engines-ubuntulooks ~x86 ~amd64

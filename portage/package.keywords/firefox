@@ -1,5 +1,3 @@
-=dev-db/sqlite-3.8.3.1 ~x86 ~amd64
-=dev-libs/nspr-4.10.6-r1 ~x86 ~amd64
 =dev-libs/nss-3.17.1 ~x86 ~amd64
 mail-client/thunderbird ~x86 ~amd64
 mail-client/thunderbird-bin ~x86 ~amd64

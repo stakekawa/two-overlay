@@ -89,6 +89,7 @@ www-plugins/adobe-flash 32bit 64bit -sse2check
 www-servers/lighttpd fastcgi memcache mysql php
 x11-base/xorg-server xnest xorg xvfb
 x11-drivers/xf86-video-ati glamor
+x11-libs/libva egl
 xfce-base/thunar plugins
 xfce-base/xfce4-session gnome-keyring
 xfce-base/xfdesktop thunar
