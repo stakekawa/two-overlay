@@ -10,6 +10,8 @@ fi
 
 OVERLAY="two-overlay"
 
+WORLDOVERLAY="two-overlay"
+
 GCCOVERLAY="`ls -altrh /etc/portage/make.conf | awk -F "/" {'print$8'}`"
 
 if [ "${GCCOVERLAY}" == "two-overlay" ] ; then
@@ -39,34 +41,29 @@ if [ ! -h /usr/local/sbin/${EXE} ] ; then
   ln -s /usr/local/overlays/${OVERLAY}/scripts/${EXE} /usr/local/sbin/${EXE}
 fi
 
-WORLDFILE="/usr/local/overlays/two-overlay/portage/world.${TYPE}"
-
-if [ "${GCCOVERLAY}" == "two-overlay" ] ; then
-  WORLDFILE="/usr/local/overlays/${GCCOVERLAY}/portage/world.${TYPE}"
-fi
-
+WORLDCOMMON="/usr/local/overlays/${WORLDOVERLAY}/portage/world.common"
+WORLDTYPE="/usr/local/overlays/${WORLDOVERLAY}/portage/world.${TYPE}"
 WORLDLOCAL="/tmp/world.local"
+WORLDTYPE="/tmp/world"
 
-if [ "`uname -m`" == "x86_64" ] && [ "${TYPE}" != "minimal" ] ; then
-  if [ -e /usr/local/overlays/${GCCOVERLAY}/portage/world.64 ] && [ "${TYPE}" != "minimal" ] ; then
-    NEWWORLDFILE="/tmp/world"
-    cat ${WORLDFILE} /usr/local/overlays/${GCCOVERLAY}/portage/world.64 | sort -u > "${NEWWORLDFILE}"
-    WORLDFILE="${NEWWORLDFILE}"
-  fi
+if [ "`uname -m`" == "x86_64" ] ; then
+    cat ${WORLDCOMMON} ${WORLDTYPE} /usr/local/overlays/${GCCOVERLAY}/portage/world.64 | sort -u > "${WORLDTYPE}"
+else
+    cat ${WORLDCOMMON} ${WORLDTYPE} | sort -u > "${WORLDTYPE}"
 fi
 
 cat /var/lib/portage/world | sort -u > ${WORLDLOCAL}
 
 echo -e "\033[31;1m\033[1m Stuff to emerge:\033[0m"
 echo ""
-diff ${WORLDLOCAL} ${WORLDFILE} | grep \> | awk {'print$2'}
+diff ${WORLDLOCAL} ${WORLDTYPE} | grep \> | awk {'print$2'}
 echo ""
 
 echo -e "\033[32;1m\033[1m Stuff to unemerge (maybe):\033[0m"
 echo ""
-diff ${WORLDLOCAL} ${WORLDFILE} | grep \< | awk {'print$2'}
+diff ${WORLDLOCAL} ${WORLDTYPE} | grep \< | awk {'print$2'}
 echo ""
 
 if [ "${DO}" == "TRUE" ] ; then
-  emerge -uqvk `diff ${WORLDLOCAL} ${WORLDFILE} | grep \> | awk {'print$2'}`
+  emerge -uqvk `diff ${WORLDLOCAL} ${WORLDTYPE} | grep \> | awk {'print$2'}`
 fi
