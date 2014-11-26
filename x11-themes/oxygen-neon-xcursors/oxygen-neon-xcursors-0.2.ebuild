@@ -1,8 +1,7 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright s.takekawa@gmail.com
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-themes/gentoo-xcursors/gentoo-xcursors-0.3.1.ebuild,v 1.18 2010/10/17 03:07:26 leio Exp $
 
-EAPI="4"
+EAPI=5
 
 DESCRIPTION="Stylized oxygen mouse theme created for use with dark desktop"
 HOMEPAGE="http://xfce-look.org/content/show.php/Oxygen+Neon?content=137109"

@@ -67,7 +67,6 @@ dev-java/oracle-jdk-bin
 dev-lang/gnat-gcc
 dev-tex/cpp2latex
 dev-tex/latex-calendar
-dev-tex/latex-compassmemo
 dev-util/android-sdk-update-manager
 dev-util/cgdb
 dev-util/netbeans
@@ -193,7 +192,6 @@ sys-block/gpart
 sys-boot/grub
 sys-boot/syslinux
 sys-devel/gdb
-sys-fs/dmg2img
 sys-fs/dosfstools
 sys-fs/exfat-utils
 sys-fs/extundelete

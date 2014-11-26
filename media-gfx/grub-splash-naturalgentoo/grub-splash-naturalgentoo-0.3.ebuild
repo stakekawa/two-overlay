@@ -1,10 +1,9 @@
-# Copyright 1999-2008 Gentoo Foundation
+# Copyright s.takekawa@gmail.com
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
 
-EAPI="4"
+EAPI=5
 
-inherit eutils mount-boot
+inherit mount-boot
 
 DESCRIPTION="Natural Gentoo theme for grub2"
 HOMEPAGE=""

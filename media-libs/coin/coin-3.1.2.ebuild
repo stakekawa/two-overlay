@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/media-libs/coin/Attic/coin-3.1.2.ebuild,v 1.3 2010/06/25 20:26:39 reavertm dead $
 
-EAPI=2
+EAPI=5
 
 inherit eutils
 

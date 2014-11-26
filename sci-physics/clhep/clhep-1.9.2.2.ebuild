@@ -1,6 +1,5 @@
-# Copyright 1999-2005 Gentoo Foundation
+# Copyright s.takekawa@gmail.com
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
 
 inherit eutils
 
@@ -25,12 +24,12 @@ RDEPEND=""
 S=${WORKDIR}/${PV}/CLHEP
 
 src_compile() {
-	
+
 	einfo ""
 	einfo "Be careful with choosing the right gcc version (3.3.x or 3.4.x)"
 	einfo "Press CTRL+C now to check or change it"
 	einfo ""
-	
+
 	cd ${S}
 	./configure \
 		--prefix=/opt/clhep || die "./configure failed"

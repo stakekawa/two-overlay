@@ -1,8 +1,7 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright s.takekawa@gmail.com
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-perl/Net-XWhois/Attic/Net-XWhois-0.90.ebuild,v 1.12 2010/07/24 19:57:08 tove dead $
 
-EAPI="5"
+EAPI=5
 
 MODULE_AUTHOR=VIPUL
 inherit perl-module

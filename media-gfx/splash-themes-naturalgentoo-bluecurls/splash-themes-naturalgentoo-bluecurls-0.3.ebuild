@@ -1,8 +1,5 @@
-# Copyright 1999-2008 Gentoo Foundation
+# Copyright s.takekawa@gmail.com
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
-
-inherit eutils
 
 DESCRIPTION="Natural Gentoo Blue Curl theme"
 HOMEPAGE="http://kde-look.org/content/show.php/BlueCurls+fbcondecor%2Bgensplash?content=128161"

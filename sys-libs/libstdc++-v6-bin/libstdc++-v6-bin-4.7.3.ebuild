@@ -1,8 +1,7 @@
-# Copyright 1999-2007 Gentoo Foundation
+# Copyright s.takekawa@gmail.com
 # Distributed under the terms of the GNU General Public License v2
-# $Header:
 
-EAPI="5"
+EAPI=5
 
 DESCRIPTION="Compatibility package for running binaries linked against a gcc 4.7 libstdc++"
 HOMEPAGE="http://gcc.gnu.org/libstdc++/"

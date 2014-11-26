@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/media-libs/freeimage/freeimage-3.15.3-r2.ebuild,v 1.4 2013/06/13 12:29:48 xmw Exp $
 
-EAPI="4"
+EAPI=5
 
 inherit toolchain-funcs eutils multilib
 

@@ -2,6 +2,8 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/media-libs/libopenraw/libopenraw-0.0.2.ebuild,v 1.15 2008/03/20 14:19:10 drac Exp $
 
+EAPI=5
+
 DESCRIPTION="Decoding library for RAW image formats"
 HOMEPAGE="http://libopenraw.freedesktop.org"
 SRC_URI="http://${PN}.freedesktop.org/download/${P}.tar.gz"

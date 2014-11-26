@@ -1,8 +1,7 @@
-# Copyright 1999-2008 Gentoo Foundation
+# Copyright s.takekawa@gmail.com
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
 
-inherit eutils
+EAPI=5
 
 DESCRIPTION="Natural Gentoo Advanced theme"
 HOMEPAGE="http://kde-look.org/content/show.php/natural_gentoo+advanced+theme?content=124959"

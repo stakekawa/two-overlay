@@ -2,6 +2,8 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
+EAPI=5
+
 inherit eutils games
 
 DESCRIPTION="A clone and enhancement of Super Pang, a fast-paced action game that involves popping balloons with a harpoon"

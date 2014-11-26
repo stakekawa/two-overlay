@@ -1,8 +1,7 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright s.takekawa@gmail.com
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-text/xpdf/xpdf-3.02-r4.ebuild,v 1.12 2011/10/18 21:56:02 dilfridge Exp $
 
-EAPI=4
+EAPI=5
 
 inherit fdo-mime gnome2 eutils flag-o-matic toolchain-funcs
 

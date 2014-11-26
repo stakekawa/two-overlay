@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header:
 
-EAPI=4
+EAPI=5
 
 DESCRIPTION="Epson Inkjet Printer Driver (ESC/P-R) for Linux"
 HOMEPAGE="http://avasys.jp/eng/linux_driver/index.php"

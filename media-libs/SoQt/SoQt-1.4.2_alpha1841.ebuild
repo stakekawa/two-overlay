@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/media-libs/SoQt/SoQt-1.4.2_alpha1841.ebuild,v 1.1 2009/12/22 16:23:12 tommy Exp $
 
-EAPI="2"
+EAPI=5
 
 inherit flag-o-matic
 

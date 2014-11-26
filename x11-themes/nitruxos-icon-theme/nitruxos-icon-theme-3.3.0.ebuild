@@ -1,6 +1,5 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright s.takekawa@gmail.com
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-themes/faenza-xfce-icon-theme/faenza-xfce-icon-theme-0.2.1.ebuild,v 1.1 2012/01/10 18:43:06 ssuominen Exp $
 
 EAPI=5
 inherit gnome2-utils

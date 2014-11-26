@@ -1,10 +1,9 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright s.takekawa@gmail.com
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-apps/memtest86+/memtest86+-4.20-r1.ebuild,v 1.3 2012/09/12 12:53:54 johu Exp $
 
-EAPI=4
+EAPI=5
 
-inherit mount-boot eutils
+inherit mount-boot
 
 DESCRIPTION="Western Digital Diagnostic tool cdrom image"
 HOMEPAGE=""

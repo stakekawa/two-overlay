@@ -1,8 +1,8 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright s.takekawa@gmail.com
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-physics/clhep/clhep-2.0.4.6.ebuild,v 1.7 2011/02/13 17:37:57 armin76 Exp $
 
-EAPI=2
+EAPI=5
+
 inherit autotools eutils
 
 DESCRIPTION="High Energy Physics C++ library"

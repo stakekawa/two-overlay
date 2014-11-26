@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/sys-cluster/maui/maui-3.3.1-r2.ebuild,v 1.4 2011/10/31 10:30:09 jlec Exp $
 
-EAPI="4"
+EAPI=5
 
 inherit eutils multilib
 

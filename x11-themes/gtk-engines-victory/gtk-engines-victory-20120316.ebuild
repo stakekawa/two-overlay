@@ -1,8 +1,7 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright s.takekawa@gmail.com
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
 
-EAPI="4"
+EAPI=5
 
 DESCRIPTION="Victory (Strikes Again) theme for GTK+-2, GTK+-3 and xfwm4, gnome-shell, ..."
 HOMEPAGE="http://xfce-look.org/content/show.php/Victory+%28Strikes+Again%29?content=123936"

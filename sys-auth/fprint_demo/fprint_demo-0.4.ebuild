@@ -1,8 +1,7 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright s.takekawa@gmail.com
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-auth/fprint_demo/fprint_demo-0.4.ebuild,v 1.1 2010/10/17 22:05:03 xmw Exp $
 
-EAPI=3
+EAPI=5
 
 DESCRIPTION="a simple GTK+ application to demonstrate and test libfprint's capabilities"
 HOMEPAGE="http://www.reactivated.net/fprint/wiki/Fprint_demo"

@@ -1,8 +1,9 @@
-# Copyright 1999-2008 Gentoo Foundation
+# Copyright s.takekawa@gmail.com
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
 
-inherit eutils mount-boot
+EAPI=5
+
+inherit mount-boot
 
 DESCRIPTION="Natural Gentoo theme"
 HOMEPAGE="http://www.kde-look.org/content/show.php/Natural+Gentoo?content=49074"
