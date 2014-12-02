@@ -44,26 +44,27 @@ fi
 WORLDCOMMON="/usr/local/overlays/${WORLDOVERLAY}/portage/world.common"
 WORLDTYPE="/usr/local/overlays/${WORLDOVERLAY}/portage/world.${TYPE}"
 WORLDLOCAL="/tmp/world.local"
-WORLDTYPE="/tmp/world"
+WORLDREF="/tmp/world"
 
 if [ "`uname -m`" == "x86_64" ] ; then
-    cat ${WORLDCOMMON} ${WORLDTYPE} /usr/local/overlays/${GCCOVERLAY}/portage/world.64 | sort -u > "${WORLDTYPE}"
+    cat ${WORLDCOMMON} ${WORLDTYPE} /usr/local/overlays/${GCCOVERLAY}/portage/world.64 | sort -u > ${WORLDREF}
 else
-    cat ${WORLDCOMMON} ${WORLDTYPE} | sort -u > "${WORLDTYPE}"
+    cat ${WORLDCOMMON} ${WORLDTYPE} | sort -u > "${WORLDREF}"
 fi
 
 cat /var/lib/portage/world | sort -u > ${WORLDLOCAL}
 
 echo -e "\033[31;1m\033[1m Stuff to emerge:\033[0m"
 echo ""
-diff ${WORLDLOCAL} ${WORLDTYPE} | grep \> | awk {'print$2'}
+diff ${WORLDLOCAL} ${WORLDREF} | grep \> | awk {'print$2'}
 echo ""
+
 
 echo -e "\033[32;1m\033[1m Stuff to unemerge (maybe):\033[0m"
 echo ""
-diff ${WORLDLOCAL} ${WORLDTYPE} | grep \< | awk {'print$2'}
+diff ${WORLDLOCAL} ${WORLDREF} | grep \< | awk {'print$2'}
 echo ""
 
 if [ "${DO}" == "TRUE" ] ; then
-  emerge -uqvk `diff ${WORLDLOCAL} ${WORLDTYPE} | grep \> | awk {'print$2'}`
+  emerge -uqvk `diff ${WORLDLOCAL} ${WORLDREF} | grep \> | awk {'print$2'}`
 fi
