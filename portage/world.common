@@ -208,7 +208,7 @@ sys-kernel/linux-firmware
 sys-kernel/two-sources
 sys-power/acpi
 sys-power/acpid
-sys-power/cpufrequtils
+sys-power/cpupower
 sys-power/hibernate-script
 sys-power/iasl
 sys-power/suspend
