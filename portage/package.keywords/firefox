@@ -1,5 +1,7 @@
-=dev-libs/nss-3.17.1 ~x86 ~amd64
+=dev-libs/nss-3.17.2 ~x86 ~amd64
+=dev-libs/nspr-4.10.7-r1 ~x86 ~amd64
 mail-client/thunderbird ~x86 ~amd64
 mail-client/thunderbird-bin ~x86 ~amd64
+=media-libs/libpng-1.6.15 ~x86 ~amd64
 www-client/firefox ~x86 ~amd64
 www-client/firefox-bin ~x86 ~amd64

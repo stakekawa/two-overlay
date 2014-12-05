@@ -1,18 +1,4 @@
 #
-# set cflags to compile the optimised setiathome client
-#
-dev-libs/openssl				seti.conf
-sci-libs/fftw					seti.conf
-#
-# don't buildpkg
-#
-dev-libs/klibc					no-buildpkg.conf
-x11-drivers/nvidia-drivers			no-buildpkg.conf
-#
-# set LC_ALL="en_US.utf8"
-#
-dev-java/netbeans-websvccommon			lc-all-en.conf
-#
 # disable link time optimization
 #
 app-admin/sudo					no-lto.conf
@@ -54,6 +40,7 @@ sys-apps/coreutils				no-lto.conf
 sys-apps/gawk					no-lto.conf
 sys-apps/hdparm					no-lto.conf
 sys-apps/pciutils				no-lto.conf
+sys-boot/grub					no-lto.conf
 sys-fs/mtools					no-lto.conf
 net-analyzer/nmap				no-lto.conf
 net-fs/nfs-utils				no-lto.conf
@@ -65,9 +52,3 @@ x11-base/xorg-server				no-lto.conf
 x11-drivers/xf86-video-intel			no-lto.conf
 x11-libs/fltk					no-lto.conf
 x11-libs/wxGTK					no-lto.conf
-#
-# force single target to python2_7
-#
-app-text/asciidoc				python-single-2.7.conf
-kde-base/kate					python-single-2.7.conf
-media-gfx/hugin					python-single-2.7.conf

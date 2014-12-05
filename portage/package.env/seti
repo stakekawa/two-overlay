@@ -1,0 +1,6 @@
+#
+# set cflags to compile the optimised setiathome client
+#
+dev-libs/openssl                                seti.conf
+sci-libs/fftw                                   seti.conf
+
