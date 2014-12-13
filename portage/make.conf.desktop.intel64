@@ -41,4 +41,3 @@ APACHE2_MODULES="actions alias auth_basic auth_digest authn_anon authn_dbd authn
 PHP_TARGETS="php5.5"
 PYTHON_TARGETS="python2_7 python3_4"
 PYTHON_SINGLE_TARGET="python3_4"
-
