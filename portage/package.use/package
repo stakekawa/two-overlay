@@ -1,6 +1,7 @@
 app-arch/bzip2 static static-libs
 app-cdr/brasero libburn
 app-editors/nano justify
+app-emulation/qemu static-user
 app-emulation/virtualbox extensions
 app-office/akonadi-server soprano
 app-text/djvu qt3
@@ -13,6 +14,7 @@ dev-lang/lua deprecated
 dev-lang/mono moonlight
 dev-lang/php bcmath calendar cdb cgi cli ctype gd mysqli pcre posix sockets sysvipc tokenizer xmlreader xmlwriter xsl xslt zip
 dev-lang/python sqlite
+dev-libs/glib static-libs
 dev-libs/libgcrypt static-libs
 dev-libs/libgpg-error static-libs
 dev-libs/libxml2 python
