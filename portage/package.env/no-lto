@@ -18,6 +18,7 @@ dev-python/notify-python			no-lto.conf
 dev-util/boost-build				no-lto.conf
 dev-vcs/cvs					no-lto.conf
 dev-vcs/git					no-lto.conf
+kde-base/kdelibs				no-lto.conf
 media-gfx/sane-backends				no-lto.conf
 media-libs/avidemux				no-lto.conf
 media-libs/avidemux-core			no-lto.conf
