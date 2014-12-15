@@ -1,13 +1,14 @@
 =app-cdr/k3b-2.0.3-r1 ~x86 ~amd64
 =dev-libs/apr-1.5.1-r1 ~x86 ~amd64
 =dev-libs/apr-util-1.5.4 ~x86 ~amd64
+=dev-libs/libtasn1-4.0 ~x86 ~amd64
 =dev-libs/libltdl-2.4.3 ~x86 ~amd64
 =media-gfx/photoprint-0.4.2_pre2 ~x86 ~amd64
 =media-gfx/graphviz-2.36.0 ~x86 ~amd64
 =media-gfx/splashutils-1.5.4.4-r4 ~x86 ~amd64
 =media-sound/pulseaudio-5.0-r5 ~x86 ~amd64
 =media-video/2mandvd-1.8.5 ~x86 ~amd64
-=net-libs/gnutls-3.2.20 ~x86 ~amd64
+=net-libs/gnutls-3.3.10-r2 ~x86 ~amd64
 =sys-devel/libtool-2.4.3-r2 ~x86 ~amd64
 =x11-libs/cairo-1.12.16-r3 ~x86 ~amd64
 =x11-themes/clearlooks-phenix-5.0.7 ~x86 ~amd64
