@@ -1,14 +1,15 @@
 # Copyright 1999-2014 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-kernel/gentoo-sources/gentoo-sources-3.18.0.ebuild,v 1.2 2014/12/09 21:59:59 mpagano Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-kernel/gentoo-sources/gentoo-sources-3.18.1.ebuild,v 1.1 2014/12/16 20:04:03 mpagano Exp $
 
 EAPI="5"
 ETYPE="sources"
 K_WANT_GENPATCHES="base extras experimental"
-K_GENPATCHES_VER="2"
+K_GENPATCHES_VER="3"
 K_DEBLOB_AVAILABLE="1"
 UNIPATCH_LIST=" ${FILESDIR}/3.16-powernow-k8-vcore_list.patch
-                ${FILESDIR}/linux-3.12-xhci-trbspersegment.patch "
+                ${FILESDIR}/linux-3.12-xhci-trbspersegment.patch
+                ${FILESDIR}/3.18-sched-bfs-460.patch "
 inherit kernel-2
 detect_version
 detect_arch
