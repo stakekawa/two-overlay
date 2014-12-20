@@ -56,13 +56,13 @@ media-video/transcode -pic
 media-video/ushare dlna
 net-analyzer/zabbix agent curl frontend openipmi proxy ssh
 net-analyzer/wireshark gtk3 smi -gtk2 -qt4
-net-dns/avahi mdnsresponder-compat
+net-dns/avahi autoipd mdnsresponder-compat
 net-dns/bind dlz berkdb -threads
 net-fs/samba server
 net-libs/libsoup gnome
 net-misc/curl -gnutls
 net-misc/dhcp server
-net-misc/networkmanager dhcpd gnome modemmanager nss resolvconf -dhclient
+net-misc/networkmanager dhcpd gnome nss resolvconf -dhclient -modemmanager
 net-misc/openssh tcpd
 net-misc/tigervnc -server
 net-nds/openldap sasl
