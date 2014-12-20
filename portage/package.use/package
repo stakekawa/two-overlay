@@ -62,7 +62,7 @@ net-fs/samba server
 net-libs/libsoup gnome
 net-misc/curl -gnutls
 net-misc/dhcp server
-net-misc/networkmanager dhcpd gnome nss resolvconf -dhclient -modemmanager
+net-misc/networkmanager dhcpcd gnome nss resolvconf -dhclient -modemmanager
 net-misc/openssh tcpd
 net-misc/tigervnc -server
 net-nds/openldap sasl
