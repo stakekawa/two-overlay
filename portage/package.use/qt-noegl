@@ -1,0 +1,3 @@
+dev-qt/qtgui -egl
+dev-qt/qtopengl -egl
+

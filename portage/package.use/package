@@ -1,4 +1,3 @@
-app-arch/bzip2 static static-libs
 app-cdr/brasero libburn
 app-editors/nano justify
 app-emulation/qemu static-user
@@ -14,13 +13,7 @@ dev-lang/lua deprecated
 dev-lang/mono moonlight
 dev-lang/php bcmath calendar cdb cgi cli ctype gd mysqli pcre posix sockets sysvipc tokenizer xmlreader xmlwriter xsl xslt zip
 dev-lang/python sqlite
-dev-libs/glib static-libs
-dev-libs/libgcrypt static-libs
-dev-libs/libgpg-error static-libs
 dev-libs/libxml2 python
-dev-libs/lzo static-libs
-dev-libs/openssl static-libs
-dev-libs/popt static-libs
 dev-python/PyQt4 declarative script sql
 dev-vcs/git subversion
 dev-vcs/subversion extras webdav-serf -dso
@@ -35,14 +28,8 @@ media-gfx/graphicsmagick -imagemagick
 media-gfx/grub-splash-naturalgentoo grub2
 media-gfx/hugin enblend sift
 media-gfx/pstoedit plotutils
-media-libs/freetype static-libs
-media-libs/jpeg static-libs
-media-libs/lcms static-libs
 media-libs/libcanberra alsa
-media-libs/libjpeg-turbo static-libs
-media-libs/libmng lcms static-libs
 media-libs/libmp4v2 utils
-media-libs/libpng apng static-libs
 media-libs/mesa g3dvl gbm xa xvmc
 media-libs/mlt kdenlive melt movit
 media-plugins/audacious-plugins gtk3 -gtk
@@ -80,10 +67,6 @@ sys-apps/util-linux tty-helpers
 sys-cluster/maui pbs
 sys-fs/ntfs3g extras suid xattr -external-fuse
 sys-fs/udev extras gudev hwdb
-sys-libs/gpm static-libs
-sys-libs/zlib minizip static-libs
-sys-power/cpufreqd nforce2 nvidia
-virtual/jpeg static-libs
 virtual/udev gudev hwdb
 www-client/firefox pgo system-jpeg system-sqlite
 www-client/links suid
