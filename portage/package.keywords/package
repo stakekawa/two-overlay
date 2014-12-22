@@ -52,6 +52,7 @@ x11-libs/libva-vdpau-driver ~x86 ~amd64
 x11-libs/libvdpau ~x86 ~amd64
 x11-misc/pcmanfm ~x86 ~amd64
 x11-misc/redshift ~x86 ~amd64
+x11-misc/vdpauinfo ~x86 ~amd64
 x11-plugins/pidgin-encryption ~x86 ~amd64
 x11-plugins/pidgin-latex ~x86 ~amd64
 x11-plugins/pidgin-libnotify ~x86 ~amd64
