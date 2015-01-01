@@ -38,6 +38,7 @@ media-libs/avidemux-core			no-lto.conf
 media-libs/flac					no-lto.conf
 media-libs/libmimic				no-lto.conf
 media-libs/mesa					no-lto.conf
+media-libs/openexr				no-lto.conf
 media-libs/vigra				no-lto.conf
 media-plugins/audacious-plugins			no-lto.conf
 media-sound/audacious				no-lto.conf
