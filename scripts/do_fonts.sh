@@ -44,6 +44,7 @@ eselect fontconfig enable 60-liberation.conf
 eselect fontconfig enable 65-fonts-persian.conf
 eselect fontconfig enable 65-nonlatin.conf
 eselect fontconfig enable 69-unifont.conf
+eselect fontconfig enable 70-no-bitmaps.conf
 eselect fontconfig enable 80-delicious.conf
 eselect fontconfig enable 90-synthetic.conf
 eselect fontconfig enable 99pdftoopvp.conf
