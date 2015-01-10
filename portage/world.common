@@ -99,7 +99,6 @@ media-gfx/hugin
 media-gfx/inkscape
 media-gfx/iscan
 media-gfx/metapixel
-media-gfx/photoprint
 media-gfx/posterazor
 media-gfx/ristretto
 media-gfx/scrot
@@ -171,7 +170,6 @@ net-wireless/wireless-tools
 net-wireless/wpa_supplicant
 sci-astronomy/celestia
 sci-astronomy/stellarium
-sci-mathematics/octave
 sys-apps/ethtool
 sys-apps/freedoshd
 sys-apps/gentoo-functions
@@ -183,6 +181,7 @@ sys-apps/memtest86+
 sys-apps/microcode-ctl
 sys-apps/mlocate
 sys-apps/pciutils
+sys-apps/preload
 sys-apps/renameutils
 sys-apps/smartmontools
 sys-apps/tuxonice-userui
