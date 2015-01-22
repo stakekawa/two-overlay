@@ -37,7 +37,7 @@ app-misc/cmatrix
 app-misc/screen
 app-misc/symlinks
 app-mobilephone/obexftp
-app-office/openoffice-bin
+app-office/libreoffice-bin
 app-pda/gtkpod
 app-portage/eix
 app-portage/elogv
