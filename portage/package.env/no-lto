@@ -10,6 +10,7 @@ app-editors/xemacs				no-lto.conf
 app-emulation/virtualbox			no-lto.conf
 app-text/aspell					no-lto.conf
 app-text/rarian					no-lto.conf
+dev-db/mysql					no-lto.conf
 dev-lang/python					no-lto.conf
 dev-lang/ruby					no-lto.conf
 dev-libs/boost					no-lto.conf
