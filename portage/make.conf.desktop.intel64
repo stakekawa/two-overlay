@@ -22,7 +22,7 @@ EMERGE_DEFAULT_OPTS="--with-bdeps=y --autounmask=n"
 
 MAKEOPTS="-j3"
 
-FEATURES="-buildpkg candy cgroup collision-protect -distcc -distcc-pump downgrade-backup fixlafiles parallel-fetch preserve-libs sandbox unmerge-orphans userfetch usersandbox usersync"
+FEATURES="-buildpkg candy cgroup collision-protect -distcc -distcc-pump downgrade-backup fixlafiles nodoc noinfo parallel-fetch preserve-libs sandbox unmerge-orphans userfetch usersandbox usersync"
 
 CCACHE_SIZE="1G"
 
