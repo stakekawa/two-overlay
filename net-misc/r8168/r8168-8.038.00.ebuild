@@ -19,6 +19,9 @@ MODULE_NAMES="r8168(net:${S}/src)"
 BUILD_TARGETS="modules"
 
 src_prepare() {
+	if kernel_is gt 3 15 99 ; then
+		epatch ${FILESDIR}/${PN}-build-3.16.patch
+	fi
 	if kernel_is gt 3 14 99 ; then
 		cd ${S}
 		sed -i 's/PREPARE_DELAYED_WORK/INIT_DELAYED_WORK/' src/r8168_n.c
