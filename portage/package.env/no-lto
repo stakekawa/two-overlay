@@ -52,6 +52,7 @@ net-ftp/vsftpd					no-lto.conf
 net-libs/webkit-gtk				no-lto.conf
 net-misc/openssh				no-lto.conf
 net-nds/rpcbind					no-lto.conf
+net-print/cups					no-lto.conf
 sci-libs/hdf5					no-lto.conf
 sci-mathematics/octave				no-lto.conf
 sys-apps/coreutils				no-lto.conf
