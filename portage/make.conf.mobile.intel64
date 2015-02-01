@@ -29,7 +29,7 @@ CCACHE_SIZE="1G"
 PORTAGE_NICENESS=5
 
 LINGUAS="it en ja"
-VIDEO_CARDS="intel i965 vesa none"
+VIDEO_CARDS="intel i965 modesetting nvdia vesa none"
 INPUT_DEVICES="mouse keyboard synaptics evdev"
 CAMERAS="canon ptp2"
 NETBEANS_MODULES="apisupport cnd dlight ergonomics java mobility php profiler webcommon websvccommon"
