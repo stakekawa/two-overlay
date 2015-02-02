@@ -36,6 +36,7 @@ kde-base/kdelibs				no-lto.conf
 media-gfx/sane-backends				no-lto.conf
 media-libs/avidemux				no-lto.conf
 media-libs/avidemux-core			no-lto.conf
+media-libs/avidemux-plugins			no-lto.conf
 media-libs/flac					no-lto.conf
 media-libs/libmimic				no-lto.conf
 media-libs/mesa					no-lto.conf
