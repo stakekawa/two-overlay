@@ -10,6 +10,7 @@ app-editors/xemacs				no-lto.conf
 app-emulation/virtualbox			no-lto.conf
 app-text/aspell					no-lto.conf
 app-text/rarian					no-lto.conf
+dev-db/mysql					no-lto.conf
 dev-lang/python					no-lto.conf
 dev-lang/ruby					no-lto.conf
 dev-libs/boost					no-lto.conf
@@ -35,6 +36,7 @@ kde-base/kdelibs				no-lto.conf
 media-gfx/sane-backends				no-lto.conf
 media-libs/avidemux				no-lto.conf
 media-libs/avidemux-core			no-lto.conf
+media-libs/avidemux-plugins			no-lto.conf
 media-libs/flac					no-lto.conf
 media-libs/libmimic				no-lto.conf
 media-libs/mesa					no-lto.conf
@@ -51,6 +53,7 @@ net-ftp/vsftpd					no-lto.conf
 net-libs/webkit-gtk				no-lto.conf
 net-misc/openssh				no-lto.conf
 net-nds/rpcbind					no-lto.conf
+net-print/cups					no-lto.conf
 sci-libs/hdf5					no-lto.conf
 sci-mathematics/octave				no-lto.conf
 sys-apps/coreutils				no-lto.conf

@@ -15,7 +15,7 @@ SRC_URI="mirror://kde/stable/${PN}/${PV}/src/${P}.tar.bz2"
 
 LICENSE="GPL-2"
 SLOT="4"
-KEYWORDS="~amd64 ~ppc ~x86 ~x86-linux"
+KEYWORDS="amd64 ~ppc x86 x86-linux"
 IUSE="debug semantic-desktop"
 
 RDEPEND="
