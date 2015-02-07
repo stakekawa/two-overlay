@@ -13,9 +13,9 @@ ACCEPT_KEYWORDS="amd64"
 
 DISTDIR="/home/distfiles"
 PKGDIR=/mnt/packages
-PORTDIR="/usr/portage"
+#PORTDIR="/usr/portage"
 #PORTDIR_OVERLAY="/usr/local/overlays/two-overlay"
-#PORTAGE_TMPDIR="/home/portage/"
+PORTAGE_TMPDIR="/home/portage/"
 
 SYNC="rsync://rsync.gentoo.org/gentoo-portage"
 
