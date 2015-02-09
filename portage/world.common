@@ -39,6 +39,7 @@ app-misc/symlinks
 app-mobilephone/obexftp
 app-office/libreoffice-bin
 app-pda/gtkpod
+app-portage/cpuinfo2cpuflags
 app-portage/eix
 app-portage/elogv
 app-portage/genlop
