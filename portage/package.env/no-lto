@@ -49,6 +49,8 @@ media-video/ffmpeg				no-lto.conf
 media-video/movit				no-lto.conf
 media-video/mplayer				no-lto.conf
 media-video/mplayer2				no-lto.conf
+net-analyzer/nmap				no-lto.conf
+net-fs/nfs-utils				no-lto.conf
 net-ftp/vsftpd					no-lto.conf
 net-libs/webkit-gtk				no-lto.conf
 net-misc/openssh				no-lto.conf
@@ -61,11 +63,11 @@ sys-apps/gawk					no-lto.conf
 sys-apps/hdparm					no-lto.conf
 sys-apps/pciutils				no-lto.conf
 sys-boot/grub					no-lto.conf
+sys-fs/e2fsprogs				no-lto.conf
 sys-fs/mtools					no-lto.conf
-net-analyzer/nmap				no-lto.conf
-net-fs/nfs-utils				no-lto.conf
 sys-devel/llvm					no-lto.conf
 sys-fs/xfsprogs					no-lto.conf
+sys-libs/e2fsprogs-libs				no-lto.conf
 sys-power/suspend				no-lto.conf
 www-misc/htdig					no-lto.conf
 x11-base/xorg-server				no-lto.conf
