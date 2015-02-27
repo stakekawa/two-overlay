@@ -1,6 +1,6 @@
 #
 # don't buildpkg
 #
-dev-libs/klibc                                  no-buildpkg.conf
-x11-drivers/nvidia-drivers                      no-buildpkg.conf
+dev-libs/klibc					no-buildpkg.conf
+x11-drivers/nvidia-drivers			no-buildpkg.conf
 
