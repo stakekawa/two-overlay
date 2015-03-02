@@ -29,6 +29,7 @@ dev-qt/qtsvg					no-lto.conf
 dev-qt/qttest					no-lto.conf
 dev-qt/qtwebkit					no-lto.conf
 dev-qt/qtxmlpatterns				no-lto.conf
+dev-util/android-tools				no-lto.conf
 dev-util/boost-build				no-lto.conf
 dev-vcs/cvs					no-lto.conf
 dev-vcs/git					no-lto.conf
