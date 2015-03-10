@@ -50,6 +50,7 @@ media-video/ffmpeg				no-lto.conf
 media-video/movit				no-lto.conf
 media-video/mplayer				no-lto.conf
 media-video/mplayer2				no-lto.conf
+media-video/vlc					no-lto.conf
 net-analyzer/nmap				no-lto.conf
 net-fs/nfs-utils				no-lto.conf
 net-ftp/vsftpd					no-lto.conf
