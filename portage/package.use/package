@@ -28,9 +28,10 @@ media-gfx/graphicsmagick -imagemagick
 media-gfx/grub-splash-naturalgentoo grub2
 media-gfx/hugin enblend sift
 media-gfx/pstoedit plotutils
+media-libs/cogl gles2
 media-libs/libcanberra alsa
 media-libs/libmp4v2 utils
-media-libs/mesa g3dvl gbm xa xvmc
+media-libs/mesa g3dvl gbm gles2 xa xvmc
 media-libs/mlt kdenlive melt movit
 media-plugins/audacious-plugins gtk3 -gtk
 media-sound/audacious gtk3 -gtk
