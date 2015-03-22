@@ -13,6 +13,7 @@ app-text/rarian					no-lto.conf
 dev-db/mysql					no-lto.conf
 dev-lang/python					no-lto.conf
 dev-lang/ruby					no-lto.conf
+dev-libs/appstream-glib				no-lto.conf
 dev-libs/boost					no-lto.conf
 dev-libs/crypto++				no-lto.conf
 dev-python/notify-python			no-lto.conf
