@@ -5,12 +5,12 @@ EXE="ora"
 OVERLAY="two-overlay"
 
 if [ ! -e /usr/local/sbin/${EXE} ] ; then
-  ln -s /usr/local/overlays/${OVERLAY}/scripts/${EXE} /usr/local/sbin/${EXE}
+  ln -s /home/overlays/${OVERLAY}/scripts/${EXE} /usr/local/sbin/${EXE}
 fi
 
 if [ ! -h /usr/local/sbin/${EXE} ] ; then
   rm -f /usr/local/sbin/${EXE}
-  ln -s /usr/local/overlays/${OVERLAY}/scripts/${EXE} /usr/local/sbin/${EXE}
+  ln -s /home/overlays/${OVERLAY}/scripts/${EXE} /usr/local/sbin/${EXE}
 fi
 
 NTPSERVER=`cat /etc/conf.d/net | grep ntp | awk -F '="' {'print$2'} | sed -e 's/"//g' | sort -u | head -n 1`

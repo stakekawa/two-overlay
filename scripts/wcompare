@@ -14,6 +14,10 @@ WORLDOVERLAY="two-overlay"
 
 GCCOVERLAY="`ls -altrh /etc/portage/make.conf | awk -F "/" {'print$8'}`"
 
+if [ "${OVERLAY}" == "two-overlay" ] ; then
+  GCCOVERLAY="`ls -altrh /etc/portage/make.conf | awk -F "/" {'print$7'}`"
+fi
+
 if [ "${GCCOVERLAY}" == "two-overlay" ] ; then
   TYPE="`ls -altrh /etc/portage/make.conf | awk -F ">" {'print$2'} | awk -F "." {'print$3'}`"
 else
@@ -33,21 +37,21 @@ fi
 echo ""
 
 if [ ! -e /usr/local/sbin/${EXE} ] ; then
-  ln -s /usr/local/overlays/${OVERLAY}/scripts/${EXE} /usr/local/sbin/${EXE}
+  ln -s /home/overlays/${OVERLAY}/scripts/${EXE} /usr/local/sbin/${EXE}
 fi
 
 if [ ! -h /usr/local/sbin/${EXE} ] ; then
   rm -f /usr/local/sbin/${EXE}
-  ln -s /usr/local/overlays/${OVERLAY}/scripts/${EXE} /usr/local/sbin/${EXE}
+  ln -s /home/overlays/${OVERLAY}/scripts/${EXE} /usr/local/sbin/${EXE}
 fi
 
-WORLDCOMMON="/usr/local/overlays/${WORLDOVERLAY}/portage/world.common"
-WORLDTYPE="/usr/local/overlays/${WORLDOVERLAY}/portage/world.${TYPE}"
+WORLDCOMMON="/home/overlays/${WORLDOVERLAY}/portage/world.common"
+WORLDTYPE="/home/overlays/${WORLDOVERLAY}/portage/world.${TYPE}"
 WORLDLOCAL="/tmp/world.local"
 WORLDREF="/tmp/world"
 
 if [ "`uname -m`" == "x86_64" ] ; then
-    cat ${WORLDCOMMON} ${WORLDTYPE} /usr/local/overlays/${GCCOVERLAY}/portage/world.64 | sort -u > ${WORLDREF}
+    cat ${WORLDCOMMON} ${WORLDTYPE} /home/overlays/${GCCOVERLAY}/portage/world.64 | sort -u > ${WORLDREF}
 else
     cat ${WORLDCOMMON} ${WORLDTYPE} | sort -u > "${WORLDREF}"
 fi

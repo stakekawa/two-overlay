@@ -11,15 +11,15 @@ fi
 OVERLAY="two-overlay"
 
 if [ ! -e /usr/local/sbin/${EXE} ] ; then
-  ln -sf /usr/local/overlays/${OVERLAY}/scripts/${EXE} /usr/local/sbin/${EXE}
+  ln -sf /home/overlays/${OVERLAY}/scripts/${EXE} /usr/local/sbin/${EXE}
 fi
 
 if [ ! -h /usr/local/sbin/${EXE} ] ; then
   rm -f /usr/local/sbin/${EXE}
-  ln -sf /usr/local/overlays/${OVERLAY}/scripts/${EXE} /usr/local/sbin/${EXE}
+  ln -sf /home/overlays/${OVERLAY}/scripts/${EXE} /usr/local/sbin/${EXE}
 fi
 
-for i in `cat /usr/local/overlays/${OVERLAY}/txt/libs.txt` ; do
+for i in `cat /home/overlays/${OVERLAY}/txt/libs.txt` ; do
 
   LIB=${i}
 
