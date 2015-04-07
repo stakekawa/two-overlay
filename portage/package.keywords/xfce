@@ -1,6 +1,6 @@
 # xfce 4.12
 =dev-libs/libinput-0.9.0 ~x86 ~amd64
-=x11-drivers/xf86-input-libinput-0.8.0 ~x86 ~amd64
+=x11-drivers/xf86-input-libinput-0.13.0 ~x86 ~amd64
 =xfce-base/garcon-0.4.0 ~x86 ~amd64
 =xfce-base/libxfcegui4-4.10.0-r1 ~x86 ~amd64
 =xfce-base/libxfce4ui-4.12.0 ~x86 ~amd64
@@ -14,3 +14,5 @@
 =xfce-base/xfconf-4.12.0 ~x86 ~amd64
 =xfce-base/xfdesktop-4.12.0 ~x86 ~amd64
 =xfce-base/xfwm4-4.12.0 ~x86 ~amd64
+# normal
+xfce-extra/xfce4-pulseaudio-plugin ~x86 ~amd64
