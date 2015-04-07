@@ -26,7 +26,6 @@ app-editors/scite-locale-it
 app-editors/xemacs
 app-emacs/auctex
 app-emacs/psgml
-app-emulation/emul-linux-x86-qt3support
 app-emulation/qemu
 app-emulation/virtualbox
 app-emulation/virtualbox-extpack-oracle
