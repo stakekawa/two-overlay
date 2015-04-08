@@ -82,9 +82,8 @@ games-fps/quake3-data
 games-puzzle/pushover
 games-strategy/smac
 gnome-extra/nm-applet
-kde-base/kdeartwork-iconthemes
+kde-base/kdeartwork-meta
 kde-base/kdebase-startkde
-kde-base/kdegraphics-meta
 kde-base/kdm
 kde-misc/krename
 mail-client/thunderbird
@@ -171,6 +170,7 @@ net-wireless/wireless-tools
 net-wireless/wpa_supplicant
 sci-astronomy/celestia
 sci-astronomy/stellarium
+sci-calculators/galculator
 sys-apps/ethtool
 sys-apps/freedoshd
 sys-apps/gentoo-functions
