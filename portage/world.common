@@ -81,9 +81,11 @@ games-fps/quake3-bin
 games-fps/quake3-data
 games-puzzle/pushover
 games-strategy/smac
-games-strategy/warzone2100
 gnome-extra/nm-applet
-kde-base/kde-meta
+kde-base/kdeartwork-iconthemes
+kde-base/kdebase-startkde
+kde-base/kdegraphics-meta
+kde-base/kdm
 kde-misc/krename
 mail-client/thunderbird
 mail-filter/bogofilter
@@ -225,7 +227,6 @@ www-plugins/google-talkplugin
 www-servers/lighttpd
 x11-apps/mesa-progs
 x11-apps/xbacklight
-x11-apps/xcalc
 x11-apps/xev
 x11-apps/xkill
 x11-base/xorg-x11
