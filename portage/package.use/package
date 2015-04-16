@@ -15,6 +15,7 @@ dev-lang/php bcmath calendar cdb cgi cli ctype gd mysqli pcre posix sockets sysv
 dev-lang/python sqlite
 dev-libs/libxml2 python
 dev-python/PyQt4 declarative script sql
+dev-util/codeblocks contrib
 dev-vcs/git subversion
 dev-vcs/subversion extras webdav-serf -dso
 games-fps/quake2-data videos
@@ -26,7 +27,7 @@ mail-client/thunderbird replytolist system-sqlite
 media-gfx/blender player python_single_target_python3_3
 media-gfx/graphicsmagick -imagemagick
 media-gfx/grub-splash-naturalgentoo grub2
-media-gfx/hugin enblend sift
+media-gfx/hugin enblend sift -python
 media-gfx/pstoedit plotutils
 media-libs/cogl gles2
 media-libs/libcanberra alsa
