@@ -5,6 +5,7 @@ app-admin/monit
 app-admin/syslog-ng
 app-admin/testdisk
 app-arch/lha
+app-arch/lzop
 app-arch/p7zip
 app-arch/stuffit
 app-arch/unace

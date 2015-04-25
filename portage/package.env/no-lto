@@ -156,6 +156,8 @@ sys-apps/coreutils				no-lto.conf
 sys-apps/dbus					no-lto.conf
 sys-apps/gawk					no-lto.conf
 sys-apps/hdparm					no-lto.conf
+sys-apps/iproute2				no-lto.conf
+sys-apps/kmod					no-lto.conf
 sys-apps/pciutils				no-lto.conf
 sys-apps/util-linux				no-lto.conf
 sys-boot/grub					no-lto.conf
@@ -189,3 +191,4 @@ x11-libs/pixman					no-lto.conf
 x11-libs/wxGTK					no-lto.conf
 x11-libs/xcb-util-cursor			no-lto.conf
 x11-misc/synergy				no-lto.conf
+xfce-base/garcon				no-lto.conf

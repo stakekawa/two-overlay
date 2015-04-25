@@ -1,3 +1,4 @@
+app-admin/testdisk ntfs
 app-cdr/brasero libburn
 app-editors/nano justify
 app-emulation/qemu static-user
@@ -70,7 +71,7 @@ sys-cluster/maui pbs
 sys-fs/ntfs3g extras suid xattr -external-fuse
 sys-fs/udev extras gudev hwdb
 virtual/udev gudev hwdb
-www-client/firefox pgo system-jpeg system-sqlite
+www-client/firefox custom-optimization pgo system-icu system-jpeg system-libvpx system-sqlite
 www-client/links suid
 www-plugins/adobe-flash 32bit 64bit -sse2check
 www-servers/lighttpd fastcgi memcache mysql php
