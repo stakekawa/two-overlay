@@ -54,8 +54,10 @@ dev-vcs/cvs					no-lto.conf
 dev-vcs/git					no-lto.conf
 games-board/gnugo				no-lto.conf
 gnome-base/libglade				no-lto.conf
+gnome-base/librsvg				no-lto.conf
 gnome-extra/libgda				no-lto.conf
 kde-base/kdelibs				no-lto.conf
+media-gfx/gimp					no-lto.conf
 media-gfx/inkscape				no-lto.conf
 media-gfx/sane-backends				no-lto.conf
 media-libs/a52dec				no-lto.conf
