@@ -58,6 +58,7 @@ games-board/gnugo				no-lto.conf
 gnome-base/libglade				no-lto.conf
 gnome-base/librsvg				no-lto.conf
 gnome-extra/libgda				no-lto.conf
+gnome-extra/nm-applet				no-lto.conf
 kde-base/kdelibs				no-lto.conf
 media-gfx/gimp					no-lto.conf
 media-gfx/inkscape				no-lto.conf
@@ -139,6 +140,7 @@ media-video/mpv					no-lto.conf
 media-video/vcdimager				no-lto.conf
 media-video/vlc					no-lto.conf
 net-analyzer/nmap				no-lto.conf
+net-analyzer/wireshark				no-lto.conf
 net-dialup/lrzsz				no-lto.conf
 net-dns/avahi					no-lto.conf
 net-dns/bind-tools				no-lto.conf
@@ -151,6 +153,7 @@ net-libs/libupnp				no-lto.conf
 net-libs/webkit-gtk				no-lto.conf
 net-misc/dhcp					no-lto.conf
 net-misc/openssh				no-lto.conf
+net-misc/tigervnc				no-lto.conf
 net-nds/openldap				no-lto.conf
 net-nds/rpcbind					no-lto.conf
 net-print/cups					no-lto.conf
@@ -191,6 +194,7 @@ x11-libs/cairo					no-lto.conf
 x11-libs/fltk					no-lto.conf
 x11-libs/gdk-pixbuf				no-lto.conf
 x11-libs/gtkglext				no-lto.conf
+x11-libs/gtksourceview				no-lto.conf
 x11-libs/libnotify				no-lto.conf
 x11-libs/libva					no-lto.conf
 x11-libs/motif					no-lto.conf
