@@ -17,7 +17,7 @@ PKGDIR=/mnt/packages
 #PORTDIR_OVERLAY="/usr/local/overlays/two-overlay"
 PORTAGE_TMPDIR="/home/portage/"
 
-SYNC="rsync://rsync.gentoo.org/gentoo-portage"
+#SYNC="rsync://rsync.gentoo.org/gentoo-portage"
 
 EMERGE_DEFAULT_OPTS="--with-bdeps=y --autounmask=n"
 
