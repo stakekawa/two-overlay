@@ -19,6 +19,7 @@ app-text/texlive-core				no-lto.conf
 dev-db/mysql					no-lto.conf
 dev-db/unixODBC					no-lto.conf
 dev-lang/lua					no-lto.conf
+dev-lang/luajit					no-lto.conf
 dev-lang/orc					no-lto.conf
 dev-lang/python					no-lto.conf
 dev-lang/ruby					no-lto.conf
