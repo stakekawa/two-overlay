@@ -174,6 +174,7 @@ sys-apps/kmod					no-lto.conf
 sys-apps/pciutils				no-lto.conf
 sys-apps/util-linux				no-lto.conf
 sys-boot/grub					no-lto.conf
+sys-devel/flex					no-lto.conf
 sys-devel/gettext				no-lto.conf
 sys-devel/llvm					no-lto.conf
 sys-devel/patch					no-lto.conf
