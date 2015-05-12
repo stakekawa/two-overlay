@@ -92,6 +92,7 @@ media-libs/sbc					no-lto.conf
 media-libs/schroedinger				no-lto.conf
 media-libs/vigra				no-lto.conf
 media-libs/x264					no-lto.conf
+media-plugins/alsa-plugins			no-lto.conf
 media-plugins/audacious-plugins			no-lto.conf
 media-plugins/gst-plugins-a52dec		no-lto.conf
 media-plugins/gst-plugins-alsa			no-lto.conf
@@ -147,6 +148,7 @@ net-dns/avahi					no-lto.conf
 net-dns/bind-tools				no-lto.conf
 net-dns/libidn					no-lto.conf
 net-fs/nfs-utils				no-lto.conf
+net-fs/samba					no-lto.conf
 net-ftp/vsftpd					no-lto.conf
 net-libs/farstream				no-lto.conf
 net-libs/gnutls					no-lto.conf
