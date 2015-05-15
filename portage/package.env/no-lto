@@ -1,6 +1,7 @@
 #
 # disable link time optimization
 #
+app-admin/monit					no-lto.conf
 app-admin/sudo					no-lto.conf
 app-arch/bzip2					no-lto.conf
 app-arch/cabextract				no-lto.conf
@@ -10,6 +11,7 @@ app-cdr/cdrtools				no-lto.conf
 app-crypt/gcr					no-lto.conf
 app-crypt/mit-krb5				no-lto.conf
 app-crypt/p11-kit				no-lto.conf
+app-editors/scite				no-lto.conf
 app-editors/xemacs				no-lto.conf
 app-emulation/virtualbox			no-lto.conf
 app-text/aspell					no-lto.conf
@@ -209,3 +211,4 @@ x11-libs/wxGTK					no-lto.conf
 x11-libs/xcb-util-cursor			no-lto.conf
 x11-misc/synergy				no-lto.conf
 xfce-base/garcon				no-lto.conf
+xfce-extra/xfce4-pulseaudio-plugin		no-lto.conf
