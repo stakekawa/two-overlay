@@ -138,6 +138,7 @@ media-video/cheese				no-lto.conf
 media-video/dirac				no-lto.conf
 media-video/ffmpeg				no-lto.conf
 media-video/mjpegtools				no-lto.conf
+media-video/mkvtoolnix				no-lto.conf
 media-video/movit				no-lto.conf
 media-video/mplayer				no-lto.conf
 media-video/mpv					no-lto.conf
@@ -183,6 +184,7 @@ sys-devel/gettext				no-lto.conf
 sys-devel/llvm					no-lto.conf
 sys-devel/patch					no-lto.conf
 sys-fs/e2fsprogs				no-lto.conf
+sys-fs/exfat-utils				no-lto.conf
 sys-fs/mtools					no-lto.conf
 sys-fs/udisks					no-lto.conf
 sys-fs/xfsprogs					no-lto.conf
