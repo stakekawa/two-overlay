@@ -13,6 +13,7 @@ app-crypt/mit-krb5				no-lto.conf
 app-crypt/p11-kit				no-lto.conf
 app-editors/scite				no-lto.conf
 app-editors/xemacs				no-lto.conf
+app-emulation/qemu				no-lto.conf
 app-emulation/virtualbox			no-lto.conf
 app-text/aspell					no-lto.conf
 app-text/evince					no-lto.conf
@@ -20,6 +21,7 @@ app-text/rarian					no-lto.conf
 app-text/texlive-core				no-lto.conf
 dev-db/mysql					no-lto.conf
 dev-db/unixODBC					no-lto.conf
+dev-java/antlr					no-lto.conf
 dev-lang/lua					no-lto.conf
 dev-lang/luajit					no-lto.conf
 dev-lang/orc					no-lto.conf
@@ -158,6 +160,7 @@ net-libs/gnutls					no-lto.conf
 net-libs/libupnp				no-lto.conf
 net-libs/webkit-gtk				no-lto.conf
 net-misc/dhcp					no-lto.conf
+net-misc/networkmanager				no-lto.conf
 net-misc/openssh				no-lto.conf
 net-misc/tigervnc				no-lto.conf
 net-nds/openldap				no-lto.conf
@@ -172,6 +175,7 @@ sys-apps/acl					no-lto.conf
 sys-apps/attr					no-lto.conf
 sys-apps/coreutils				no-lto.conf
 sys-apps/dbus					no-lto.conf
+sys-apps/dtc					no-lto.conf
 sys-apps/gawk					no-lto.conf
 sys-apps/hdparm					no-lto.conf
 sys-apps/iproute2				no-lto.conf
