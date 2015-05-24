@@ -15,6 +15,7 @@ app-editors/scite				no-lto.conf
 app-editors/xemacs				no-lto.conf
 app-emulation/qemu				no-lto.conf
 app-emulation/virtualbox			no-lto.conf
+app-shells/bash					no-lto.conf
 app-text/aspell					no-lto.conf
 app-text/evince					no-lto.conf
 app-text/rarian					no-lto.conf
@@ -198,6 +199,7 @@ sys-libs/ncurses				no-lto.conf
 sys-libs/pam					no-lto.conf
 sys-libs/tevent					no-lto.conf
 sys-libs/zlib					no-lto.conf
+sys-power/apcupsd				no-lto.conf
 sys-power/suspend				no-lto.conf
 www-misc/htdig					no-lto.conf
 x11-base/xorg-server				no-lto.conf
