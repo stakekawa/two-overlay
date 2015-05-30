@@ -17,6 +17,8 @@ app-emulation/qemu				no-lto.conf
 app-emulation/virtualbox			no-lto.conf
 app-text/aspell					no-lto.conf
 app-text/evince					no-lto.conf
+app-text/libebook				no-lto.conf
+app-text/libmspub				no-lto.conf
 app-text/rarian					no-lto.conf
 app-text/texlive-core				no-lto.conf
 dev-db/mysql					no-lto.conf
@@ -81,6 +83,7 @@ media-libs/giflib				no-lto.conf
 media-libs/glu					no-lto.conf
 media-libs/gst-plugins-base			no-lto.conf
 media-libs/gstreamer				no-lto.conf
+media-libs/libcdr				no-lto.conf
 media-libs/libdc1394				no-lto.conf
 media-libs/libdca				no-lto.conf
 media-libs/libdvdnav				no-lto.conf
