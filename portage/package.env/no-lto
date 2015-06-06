@@ -11,6 +11,7 @@ app-cdr/cdrtools				no-lto.conf
 app-crypt/gcr					no-lto.conf
 app-crypt/mit-krb5				no-lto.conf
 app-crypt/p11-kit				no-lto.conf
+app-doc/doxygen					no-lto.conf
 app-editors/scite				no-lto.conf
 app-editors/xemacs				no-lto.conf
 app-emulation/qemu				no-lto.conf
@@ -185,6 +186,7 @@ sys-apps/hdparm					no-lto.conf
 sys-apps/iproute2				no-lto.conf
 sys-apps/kmod					no-lto.conf
 sys-apps/pciutils				no-lto.conf
+sys-apps/usbutils				no-lto.conf
 sys-apps/util-linux				no-lto.conf
 sys-boot/grub					no-lto.conf
 sys-devel/flex					no-lto.conf
