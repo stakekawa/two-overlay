@@ -82,7 +82,7 @@ games-fps/quake3-bin
 games-fps/quake3-data
 games-puzzle/pushover
 gnome-extra/nm-applet
-kde-base/kdeartwork-meta
+kde-apps/kdeartwork-meta
 kde-base/kdebase-startkde
 kde-base/kdm
 kde-misc/krename
@@ -223,7 +223,6 @@ www-client/links
 www-client/lynx
 www-plugins/adobe-flash
 www-plugins/gecko-mediaplayer
-www-plugins/google-talkplugin
 www-servers/lighttpd
 x11-apps/mesa-progs
 x11-apps/xbacklight
@@ -275,6 +274,7 @@ xfce-extra/xfce4-notes-plugin
 xfce-extra/xfce4-notifyd
 xfce-extra/xfce4-places-plugin
 xfce-extra/xfce4-power-manager
+xfce-extra/xfce4-pulseaudio-plugin
 xfce-extra/xfce4-quicklauncher-plugin
 xfce-extra/xfce4-screenshooter
 xfce-extra/xfce4-sensors-plugin
