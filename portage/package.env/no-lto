@@ -64,6 +64,7 @@ dev-util/codeblocks				no-lto.conf
 dev-vcs/cvs					no-lto.conf
 dev-vcs/git					no-lto.conf
 games-board/gnugo				no-lto.conf
+gnome-base/dconf				no-lto.conf
 gnome-base/libglade				no-lto.conf
 gnome-base/librsvg				no-lto.conf
 gnome-extra/libgda				no-lto.conf
@@ -151,6 +152,7 @@ media-video/mplayer				no-lto.conf
 media-video/mpv					no-lto.conf
 media-video/vcdimager				no-lto.conf
 media-video/vlc					no-lto.conf
+media-video/xine-ui				no-lto.conf
 net-analyzer/nmap				no-lto.conf
 net-analyzer/wireshark				no-lto.conf
 net-dialup/lrzsz				no-lto.conf
@@ -196,6 +198,7 @@ sys-devel/patch					no-lto.conf
 sys-fs/e2fsprogs				no-lto.conf
 sys-fs/exfat-utils				no-lto.conf
 sys-fs/mtools					no-lto.conf
+sys-fs/ntfs3g					no-lto.conf
 sys-fs/udisks					no-lto.conf
 sys-fs/xfsprogs					no-lto.conf
 sys-libs/e2fsprogs-libs				no-lto.conf
