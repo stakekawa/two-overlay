@@ -15,6 +15,7 @@ dev-libs/gmp abi_x86_32
 dev-libs/icu abi_x86_32
 dev-libs/iniparser abi_x86_32
 dev-libs/json-c abi_x86_32
+dev-libs/libaio abi_x86_32
 dev-libs/libcroco abi_x86_32
 dev-libs/libffi abi_x86_32
 dev-libs/libgamin abi_x86_32
