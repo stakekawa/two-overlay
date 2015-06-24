@@ -1,4 +1,4 @@
-=dev-libs/nss-3.19-r1 ~x86 ~amd64
+=dev-libs/nss-3.19.1 ~x86 ~amd64
 =dev-libs/nspr-4.10.7-r1 ~x86 ~amd64
 mail-client/thunderbird ~x86 ~amd64
 mail-client/thunderbird-bin ~x86 ~amd64
