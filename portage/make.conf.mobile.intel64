@@ -3,11 +3,16 @@ CPU_FLAGS_X86="aes avx avx2 fma3 mmx mmxext popcnt sse sse2 sse3 sse4_1 sse4_2 s
 
 CHOST="x86_64-pc-linux-gnu"
 
-CFLAGS="-march=native -O2 -pipe -fomit-frame-pointer -flto=2 -fuse-linker-plugin"
+MYLTO="-flto=3 -fuse-linker-plugin -fno-fat-lto-objects"
+
+#MYGRAPHITE="-fgraphite -fgraphite-identity -floop-block -floop-interchange -floop-strip-mine -floop-parallelize-all -ftree-loop-linear"
+MYGRAPHITE=""
+
+CFLAGS="-march=native -O2 -pipe -fomit-frame-pointer ${MYLTO} ${MYGRAPHITE}"
 
 CXXFLAGS="${CFLAGS}"
 
-LDFLAGS="-Wl,-O1 -Wl,--as-needed -flto=2 -fuse-linker-plugin"
+LDFLAGS="-Wl,-O1 -Wl,--as-needed ${MYLTO} ${MYGRAPHITE}"
 
 ACCEPT_KEYWORDS="amd64"
 
