@@ -1,0 +1,5 @@
+dev-libs/cloog ~x86 ~amd64
+dev-libs/cloog-ppl ~x86 ~amd64
+=dev-libs/gmp-6.0.0a ~x86 ~amd64
+=dev-libs/isl-0.15 ~x86 ~amd64
+dev-libs/ppl ~x86 ~amd64
