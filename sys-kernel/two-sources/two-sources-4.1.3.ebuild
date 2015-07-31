@@ -1,19 +1,19 @@
 # Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-kernel/gentoo-sources/gentoo-sources-4.0.2.ebuild,v 1.1 2015/05/07 19:44:27 mpagano Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-kernel/gentoo-sources/gentoo-sources-4.1.3.ebuild,v 1.1 2015/07/22 14:35:20 mpagano Exp $
 
 EAPI="5"
 ETYPE="sources"
 K_WANT_GENPATCHES="base extras experimental"
-K_GENPATCHES_VER="4"
-K_DEBLOB_AVAILABLE="0"
-UNIPATCH_LIST=" ${FILESDIR}/4.0-sched-bfs-462.patch "
-#                ${FILESDIR}/4.0-bfq.patch "
+K_GENPATCHES_VER="7"
+K_DEBLOB_AVAILABLE="1"
+K_KDBUS_AVAILABLE="1"
+
 inherit kernel-2
 detect_version
 detect_arch
 
-KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86"
+KEYWORDS="~alpha ~amd64 ~arm ~arm64 -hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86"
 HOMEPAGE="http://dev.gentoo.org/~mpagano/genpatches"
 IUSE="deblob +experimental"
 
