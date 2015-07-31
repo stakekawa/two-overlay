@@ -14,6 +14,7 @@ dev-lang/lua deprecated
 dev-lang/mono moonlight
 dev-lang/php bcmath calendar cdb cgi cli ctype gd mysqli pcre posix sockets sysvipc tokenizer xmlreader xmlwriter xsl xslt zip
 dev-lang/python sqlite
+dev-libs/libpcre pcre16
 dev-libs/libxml2 python
 dev-python/PyQt4 declarative script sql
 dev-util/codeblocks contrib
@@ -65,6 +66,7 @@ sci-astronomy/stellarium stars
 sci-libs/hdf5 -threads
 sci-mathematics/octave-forge ginac qhull
 sci-physics/root castor cern fits graphviz qt4 rfio -debug -mysql -reflex
+sys-apps/openrc	tools
 sys-apps/pciutils network-cron
 sys-apps/util-linux tty-helpers
 sys-cluster/maui pbs

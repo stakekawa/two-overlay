@@ -8,12 +8,14 @@ dev-db/sqlite abi_x86_32
 dev-lang/orc abi_x86_32
 dev-lang/tcl abi_x86_32
 dev-libs/atk abi_x86_32
+dev-libs/cloog abi_x86_32
 dev-libs/elfutils abi_x86_32
 dev-libs/expat abi_x86_32
 dev-libs/glib abi_x86_32
 dev-libs/gmp abi_x86_32
 dev-libs/icu abi_x86_32
 dev-libs/iniparser abi_x86_32
+dev-libs/isl abi_x86_32
 dev-libs/json-c abi_x86_32
 dev-libs/libaio abi_x86_32
 dev-libs/libcroco abi_x86_32
@@ -121,6 +123,7 @@ virtual/libiconv abi_x86_32
 virtual/libintl abi_x86_32
 virtual/libudev abi_x86_32
 virtual/libusb abi_x86_32
+dev-libs/libusb-compat abi_x86_32
 virtual/mysql abi_x86_32
 virtual/opengl abi_x86_32
 virtual/pam abi_x86_32
