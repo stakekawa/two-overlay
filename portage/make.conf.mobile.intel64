@@ -5,14 +5,15 @@ CHOST="x86_64-pc-linux-gnu"
 
 MYLTO="-flto=3 -fuse-linker-plugin -fno-fat-lto-objects"
 
-#MYGRAPHITE="-fgraphite -fgraphite-identity -floop-block -floop-interchange -floop-strip-mine -floop-parallelize-all -ftree-loop-linear"
-MYGRAPHITE=""
+MYGRAPHITE="-fgraphite -fgraphite-identity -floop-block -floop-interchange -floop-strip-mine -floop-parallelize-all -ftree-loop-linear"
 
-CFLAGS="-march=native -O2 -pipe -fomit-frame-pointer ${MYLTO} ${MYGRAPHITE}"
+CFLAGS="-march=native -O2 -pipe -fomit-frame-pointer"
+#CFLAGS="-march=native -O2 -pipe -fomit-frame-pointer ${MYLTO} ${MYGRAPHITE}"
 
 CXXFLAGS="${CFLAGS}"
 
-LDFLAGS="-Wl,-O1 -Wl,--as-needed ${MYLTO} ${MYGRAPHITE}"
+LDFLAGS="-Wl,-O1 -Wl,--as-needed"
+#LDFLAGS="-Wl,-O1 -Wl,--as-needed ${MYLTO}"
 
 ACCEPT_KEYWORDS="amd64"
 

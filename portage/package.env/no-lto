@@ -2,6 +2,7 @@
 # disable link time optimization
 #
 app-admin/monit					no-lto.conf
+app-admin/syslog-ng				no-lto.conf
 app-admin/sudo					no-lto.conf
 app-arch/bzip2					no-lto.conf
 app-arch/cabextract				no-lto.conf
@@ -10,6 +11,7 @@ app-arch/pax					no-lto.conf
 app-cdr/cdrdao					no-lto.conf
 app-cdr/cdrtools				no-lto.conf
 app-crypt/gcr					no-lto.conf
+app-crypt/gnupg					no-lto.conf
 app-crypt/mit-krb5				no-lto.conf
 app-crypt/p11-kit				no-lto.conf
 app-crypt/libsecret				no-lto.conf
@@ -32,8 +34,8 @@ dev-db/mysql					no-lto.conf
 dev-db/sqlitebrowser				no-lto.conf
 dev-db/unixODBC					no-lto.conf
 dev-java/antlr					no-lto.conf
-dev-java/bsf
-dev-java/jython
+dev-java/bsf					no-lto.conf
+dev-java/jython					no-lto.conf
 dev-lang/lua					no-lto.conf
 dev-lang/luajit					no-lto.conf
 dev-lang/orc					no-lto.conf
@@ -50,6 +52,7 @@ dev-libs/fribidi				no-lto.conf
 dev-libs/glib					no-lto.conf
 dev-libs/libaio					no-lto.conf
 dev-libs/libconfig				no-lto.conf
+dev-libs/libinput				no-lto.conf
 dev-libs/leveldb				no-lto.conf
 dev-libs/libltdl				no-lto.conf
 dev-libs/libtasn1				no-lto.conf
@@ -75,6 +78,7 @@ dev-qt/qttest					no-lto.conf
 dev-qt/qttranslations				no-lto.conf
 dev-qt/qtwebkit					no-lto.conf
 dev-qt/qtxmlpatterns				no-lto.conf
+dev-tcltk/blt					no-lto.conf
 dev-tex/luatex					no-lto.conf
 dev-tex/tex4ht					no-lto.conf
 dev-texlive/texlive-context			no-lto.conf
@@ -106,6 +110,7 @@ media-gfx/hugin					no-lto.conf
 media-gfx/inkscape				no-lto.conf
 media-gfx/iscan					no-lto.conf
 media-gfx/sane-backends				no-lto.conf
+media-gfx/splashutils				no-lto.conf
 media-libs/a52dec				no-lto.conf
 media-libs/alsa-lib				no-lto.conf
 media-libs/avidemux-core			no-lto.conf
@@ -114,6 +119,7 @@ media-libs/avidemux-plugins			no-lto.conf
 media-libs/clutter-gst				no-lto.conf
 media-libs/cogl					no-lto.conf
 media-libs/flac					no-lto.conf
+media-libs/freetype				no-lto.conf
 media-libs/gavl					no-lto.conf
 media-libs/gegl					no-lto.conf
 media-libs/giflib				no-lto.conf
@@ -125,8 +131,10 @@ media-libs/libdc1394				no-lto.conf
 media-libs/libdca				no-lto.conf
 media-libs/libdvdnav				no-lto.conf
 media-libs/libdvdread				no-lto.conf
+media-libs/libjpeg-turbo			no-lto.conf
 media-libs/libmimic				no-lto.conf
 media-libs/libmpeg2				no-lto.conf
+media-libs/libpng				no-lto.conf
 media-libs/libvpx				no-lto.conf
 media-libs/libwebp				no-lto.conf
 media-libs/mesa					no-lto.conf
@@ -257,6 +265,7 @@ sys-power/suspend				no-lto.conf
 sys-power/upower				no-lto.conf
 www-misc/htdig					no-lto.conf
 x11-base/xorg-server				no-lto.conf
+x11-drivers/xf86-input-libinput			no-lto.conf
 x11-drivers/xf86-video-intel			no-lto.conf
 x11-libs/cairo					no-lto.conf
 x11-libs/fltk					no-lto.conf
@@ -298,4 +307,3 @@ xfce-extra/xfce4-systemload-plugin		no-lto.conf
 xfce-extra/xfce4-time-out-plugin		no-lto.conf
 xfce-extra/xfce4-verve-plugin			no-lto.conf
 xfce-extra/xfce4-weather-plugin			no-lto.conf
-
