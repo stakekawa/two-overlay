@@ -1,7 +1,0 @@
-#
-# disable graphite
-#
-dev-cpp/tbb					no-graphite.conf
-dev-libs/cloog					no-graphite.conf
-dev-libs/cloog-ppl				no-graphite.conf
-dev-libs/ppl					no-graphite.conf
