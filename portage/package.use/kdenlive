@@ -1,0 +1,6 @@
+#dev-libs/libdbusmenu-qt qt5
+#media-libs/phonon-gstreamer qt5
+#media-libs/mlt -kde -qt4
+#media-libs/phonon-vlc qt5
+#media-libs/phonon qt5
+#sys-auth/polkit-qt qt5 -qt4

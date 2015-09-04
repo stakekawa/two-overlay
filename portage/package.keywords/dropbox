@@ -6,7 +6,7 @@
 =dev-qt/qtopengl-5.4.2 ~x86 ~amd64
 =dev-qt/qtprintsupport-5.4.2 ~x86 ~amd64
 =dev-qt/qtquick1-5.4.2 ~x86 ~amd64
-=dev-qt/qtscript-5.4.2 ~x86 ~amd64
+=dev-qt/qtscript-5.4.2-r1 ~x86 ~amd64
 =dev-qt/qtsql-5.4.2 ~x86 ~amd64
 =dev-qt/qtwebkit-5.4.2 ~x86 ~amd64
 =dev-qt/qtwidgets-5.4.2 ~x86 ~amd64
