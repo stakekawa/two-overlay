@@ -12,8 +12,8 @@ CFLAGS="-march=native -O2 -pipe -fomit-frame-pointer"
 
 CXXFLAGS="${CFLAGS}"
 
-LDFLAGS="-Wl,-O1 -Wl,--as-needed ${MYLTO}"
-#LDFLAGS="-Wl,-O1 -Wl,--as-needed"
+LDFLAGS="-Wl,-O1 -Wl,--as-needed"
+#LDFLAGS="-Wl,-O1 -Wl,--as-needed ${MYLTO}"
 
 ACCEPT_KEYWORDS="amd64"
 
