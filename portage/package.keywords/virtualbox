@@ -1,4 +1,5 @@
-=app-emulation/virtualbox-5.0.0* ~x86 ~amd64
-=app-emulation/virtualbox-additions-5.0.0* ~x86 ~amd64
-=app-emulation/virtualbox-extpack-oracle-5.0.0* ~x86 ~amd64
+=app-emulation/virtualbox-5.0.2* ~x86 ~amd64
+=app-emulation/virtualbox-additions-5.0.2* ~x86 ~amd64
+=app-emulation/virtualbox-extpack-oracle-5.0.2* ~x86 ~amd64
 =app-emulation/virtualbox-modules-5.0.0* ~x86 ~amd64
+=app-emulation/virtualbox-modules-5.0.2* ~x86 ~amd64
