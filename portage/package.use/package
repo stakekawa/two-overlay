@@ -1,5 +1,6 @@
 app-admin/testdisk ntfs
 app-cdr/brasero libburn
+app-crypt/pinentry gnome-keyring
 app-editors/nano justify
 app-emulation/qemu static-user
 app-emulation/virtualbox extensions
