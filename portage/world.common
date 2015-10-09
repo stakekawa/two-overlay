@@ -84,6 +84,7 @@ games-puzzle/pushover
 gnome-extra/nm-applet
 kde-apps/kdeartwork-meta
 kde-base/kdebase-startkde
+kde-apps/kdenlive
 kde-base/kdm
 kde-misc/krename
 mail-client/thunderbird
@@ -125,7 +126,6 @@ media-video/cheese
 media-video/dvdrip
 media-video/gtk-recordmydesktop
 media-video/image2mpeg
-media-video/kdenlive
 media-video/mkvtoolnix
 media-video/mplayer
 media-video/mpv

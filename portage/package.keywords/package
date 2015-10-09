@@ -17,7 +17,6 @@ media-video/mplayer2 ~x86 ~amd64
 media-video/videocut ~x86 ~amd64
 net-im/emesene ~x86 ~amd64
 net-im/pidgin ~x86 ~amd64
-net-im/skype ~x86 ~amd64
 net-misc/clusterssh ~x86 ~amd64
 net-misc/corkscrew ~x86 ~amd64
 net-misc/dropbox ~x86 ~amd64

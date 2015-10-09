@@ -19,6 +19,7 @@ dev-libs/isl abi_x86_32
 dev-libs/json-c abi_x86_32
 dev-libs/libaio abi_x86_32
 dev-libs/libcroco abi_x86_32
+dev-libs/libdbusmenu-qt abi_x86_32
 dev-libs/libffi abi_x86_32
 dev-libs/libgamin abi_x86_32
 dev-libs/libgcrypt abi_x86_32
@@ -30,6 +31,7 @@ dev-libs/libxml2 abi_x86_32
 dev-libs/lzo abi_x86_32
 dev-libs/nettle abi_x86_32
 dev-libs/openssl abi_x86_32
+dev-libs/sni-qt	abi_x86_32
 dev-qt/designer abi_x86_32
 dev-qt/qt3support abi_x86_32
 dev-qt/qtchooser abi_x86_32
