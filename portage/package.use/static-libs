@@ -11,6 +11,7 @@ media-libs/lcms static-libs
 media-libs/libjpeg-turbo static-libs
 media-libs/libmng lcms static-libs
 media-libs/libpng apng static-libs
+sys-apps/attr static-libs
 sys-libs/gpm static-libs
 sys-libs/zlib minizip static-libs
 virtual/jpeg static-libs
