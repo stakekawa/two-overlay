@@ -1,5 +1,6 @@
-=dev-libs/nss-3.19.1 ~x86 ~amd64
-=dev-libs/nspr-4.10.7-r1 ~x86 ~amd64
+=dev-db/sqlite-3.8.11.1 ~x86 ~amd64
+=dev-libs/nss-3.20.1 ~x86 ~amd64
+=dev-libs/nspr-4.10.10 ~x86 ~amd64
 mail-client/thunderbird ~x86 ~amd64
 mail-client/thunderbird-bin ~x86 ~amd64
 =media-libs/libpng-1.6.17 ~x86 ~amd64
