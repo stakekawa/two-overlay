@@ -24,7 +24,7 @@ dev-vcs/subversion extras webdav-serf -dso
 games-fps/quake2-data videos
 games-fps/worldofpadman maps
 games-strategy/warzone2100 videos
-gnome-base/gvfs archive gdu gnome
+gnome-base/gvfs archive gdu gnome gnome-keyring libsecret
 gnome-extra/nm-applet -bluetooth
 mail-client/thunderbird replytolist system-sqlite
 media-gfx/blender player python_single_target_python3_3
@@ -59,10 +59,10 @@ net-misc/networkmanager dhcpcd gnome nss resolvconf -dhclient -modemmanager
 net-misc/openssh tcpd
 net-misc/tigervnc -server
 net-nds/openldap sasl
-net-p2p/transmission xfs
+net-p2p/transmission xfs -qt4
 net-print/cups avahi usb
 net-print/hplip hpcups hpijs
-net-wireless/wpa_supplicant ap eap-sim p2p smartcard wps
+net-wireless/wpa_supplicant ap eap-sim p2p smartcard wps -qt4
 razorqt-base/razorqt-panel alsa clock colorpicker cpuload desktopswitch mainmenu mount networkmonitor pulseaudio quicklaunch screensaver sensors showdesktop taskbar tray volume
 sci-astronomy/stellarium stars
 sci-libs/hdf5 -threads
