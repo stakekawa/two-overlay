@@ -10,6 +10,7 @@ app-arch/p7zip
 app-arch/stuffit
 app-arch/unace
 app-arch/unrar
+app-arch/xarchiver
 app-benchmarks/i7z
 app-cdr/acetoneiso
 app-cdr/b5i2iso
@@ -21,6 +22,7 @@ app-cdr/nrg2iso
 app-dicts/aspell-en
 app-dicts/aspell-it
 app-editors/kile
+app-editors/mousepad
 app-editors/nano
 app-editors/scite
 app-editors/scite-locale-it
@@ -29,6 +31,7 @@ app-emacs/auctex
 app-emacs/psgml
 app-emulation/qemu
 app-emulation/virtualbox
+app-emulation/virtualbox-additions
 app-emulation/virtualbox-extpack-oracle
 app-emulation/virtualbox-modules
 app-forensics/chkrootkit
@@ -238,8 +241,8 @@ x11-plugins/pidgin-latex
 x11-plugins/pidgin-libnotify
 x11-terms/xfce4-terminal
 x11-terms/xterm
-x11-themes/awoken-icon-theme
 x11-themes/clearlooks-phenix
+x11-themes/elementary-xfce-icon-theme
 x11-themes/faenza-icon-theme
 x11-themes/gentoo-artwork
 x11-themes/gnome-themes-standard
@@ -248,7 +251,6 @@ x11-themes/gtk-engines-murrine
 x11-themes/gtk-engines-xfce:3
 x11-themes/kdm-appletuxblack
 x11-themes/kdm-naturalgentoo
-x11-themes/nitruxos-icon-theme
 x11-themes/noia
 x11-themes/xfwm4-themes
 xfce-base/xfce4-meta
