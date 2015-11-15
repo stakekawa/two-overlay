@@ -1,4 +1,5 @@
 dev-db/sqlitebrowser -qt4
 dev-libs/libdbusmenu-qt qt4
 dev-libs/qcustomplot -qt4
+dev-util/cmake -qt4
 media-video/vlc -qt4
