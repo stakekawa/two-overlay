@@ -49,6 +49,7 @@ media-video/transcode -pic
 media-video/ushare dlna
 net-analyzer/zabbix agent curl frontend openipmi proxy ssh
 net-analyzer/wireshark gtk3 smi -gtk2 -qt4
+net-dialup/ppp dhcp eap-tls
 net-dns/avahi autoipd mdnsresponder-compat
 net-dns/bind dlz berkdb -threads
 net-fs/samba server
@@ -62,7 +63,8 @@ net-nds/openldap sasl
 net-p2p/transmission xfs -qt4
 net-print/cups avahi usb
 net-print/hplip hpcups hpijs
-net-wireless/wpa_supplicant ap eap-sim p2p smartcard wps -qt4
+net-wireless/blueman thunar
+net-wireless/wpa_supplicant ap eap-sim gnutls p2p uncommon-eap-types wps -qt4 -smartcard -ssl
 razorqt-base/razorqt-panel alsa clock colorpicker cpuload desktopswitch mainmenu mount networkmonitor pulseaudio quicklaunch screensaver sensors showdesktop taskbar tray volume
 sci-astronomy/stellarium stars
 sci-libs/hdf5 -threads
