@@ -1,0 +1,47 @@
+#!/sbin/openrc-run
+
+CLIENTNAME="Cisco AnyConnect Secure Mobility Client Agent"
+VPNDBIN="/opt/cisco/anyconnect/bin/vpnagentd"
+VPND_PIDFILE="/run/vpnagentd.pid"
+
+description="${CLIENTNAME}"
+
+depend()
+{
+	need net
+}
+
+
+load_modules()
+{
+	/sbin/lsmod | grep tun > /dev/null
+	if [ $? -ne 0 ] ; then
+                /sbin/modprobe tun
+		if [ $? -ne 0 ] ; then
+			eerror "Could not load tun module!"
+		else
+			einfo "Loaded tun module"
+		fi
+
+	fi
+}
+
+
+start()
+{
+	ebegin "Starting ${CLIENTNAME}"
+	load_modules
+	start-stop-daemon --start --quiet --pidfile ${VPND_PIDFILE} --exec ${VPNDBIN}
+        local _retval=$?
+	eend "${_retval}"
+	return "${_retval}" 
+}
+
+
+stop()
+{
+	ebegin "Stopping ${CLIENTNAME}"
+	kill `cat ${VPND_PIDFILE}` &> /dev/null
+	rm -f ${VPND_PIDFILE} &> /dev/null
+        eend ${ret}
+}
