@@ -1,0 +1,4 @@
+=sys-apps/util-linux-2.27.1 ~x86 ~amd64
+=sys-fs/udev-228 ~x86 ~amd64
+=sys-fs/udev-init-scripts-30 ~x86 ~amd64
+=virtual/udev-217 ~x86 ~amd64
