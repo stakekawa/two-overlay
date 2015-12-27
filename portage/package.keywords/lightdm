@@ -1,0 +1,3 @@
+x11-misc/lightdm ~x86 ~amd64
+x11-misc/lightdm-gtk-greeter ~x86 ~amd64
+x11-misc/lightdm-kde ~x86 ~amd64

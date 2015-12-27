@@ -1,5 +1,7 @@
 app-emulation/virtualbox ~x86 ~amd64
 app-emulation/virtualbox-additions ~x86 ~amd64
 app-emulation/virtualbox-extpack-oracle ~x86 ~amd64
+app-emulation/virtualbox-guest-additions ~x86 ~amd64
 app-emulation/virtualbox-modules ~x86 ~amd64
 app-emulation/virtualbox-modules ~x86 ~amd64
+x11-drivers/xf86-video-virtualbox ~x86 ~amd64
