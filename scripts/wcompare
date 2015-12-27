@@ -26,7 +26,7 @@ fi
 
 echo ""
 
-if [ "${TYPE}" == "desktop" ] || [ "${TYPE}" == "server" ] || [ "${TYPE}" == "node" ] || [ "${TYPE}" == "mobile" ] || [ "${TYPE}" == "minimal" ] ; then
+if [ "${TYPE}" == "desktop" ] || [ "${TYPE}" == "server" ] || [ "${TYPE}" == "node" ] || [ "${TYPE}" == "mobile" ] || [ "${TYPE}" == "minimal" ] || [ "${TYPE}" == "vbox" ] ; then
   echo -e " TYPE is \033[36;1m\033[1m${TYPE}\033[0m ... Good!"
   echo -e " GCC is \033[36;1m\033[1m${GCCOVERLAY}\033[0m ... Good!"
 else
