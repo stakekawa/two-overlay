@@ -52,7 +52,7 @@ net-analyzer/wireshark gtk3 smi -gtk2 -qt4
 net-dialup/ppp dhcp eap-tls
 net-dns/avahi autoipd mdnsresponder-compat
 net-dns/bind dlz berkdb -threads
-net-fs/samba server
+net-fs/samba client server
 net-libs/libsoup gnome
 net-misc/curl -gnutls
 net-misc/dhcp server
