@@ -19,14 +19,6 @@ DEPEND="splash? ( >=media-gfx/splashutils-1.5.4 )"
 
 S="${WORKDIR}/natural_gentoo-8.0"
 
-pkg_setup() {
-	if ! built_with_use media-gfx/splashutils mng
-	then
-		ewarn "MNG support is missing from splashutils.  You will not see the"
-		ewarn "service icons as services are starting."
-	fi
-}
-
 src_install() {
 	mv ${S}/boot/grub/gentoo.xpm.gz ${S}/boot/grub/n_gentoo.xpm.gz
 	dodir /boot/grub

@@ -15,14 +15,6 @@ DEPEND=">=media-gfx/splashutils-1.5.4"
 
 S="${WORKDIR}/BlueCurls"
 
-pkg_setup() {
-	if ! built_with_use media-gfx/splashutils mng
-	then
-		ewarn "MNG support is missing from splashutils.  You will not see the"
-		ewarn "service icons as services are starting."
-	fi
-}
-
 src_install() {
 	dodir /etc/splash/BlueCurls/
 	cp -R ${S}/* ${D}/etc/splash/BlueCurls/

@@ -17,14 +17,6 @@ DEPEND=">=media-gfx/splashutils-1.5.4"
 
 S="${WORKDIR}/gentoo-blue/"
 
-pkg_setup() {
-	if ! built_with_use media-gfx/splashutils mng
-	then
-		ewarn "MNG support is missing from splashutils.  You will not see the"
-		ewarn "service icons as services are starting."
-	fi
-}
-
 src_install() {
 	dodir /etc/splash/gentoo-blue/
 	cd ${S}
