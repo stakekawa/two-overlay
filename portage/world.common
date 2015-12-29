@@ -87,12 +87,13 @@ games-puzzle/pushover
 gnome-extra/nm-applet
 kde-apps/kdeartwork-meta
 kde-base/kdebase-startkde
+kde-base/kstyles
 kde-apps/kdenlive
-kde-base/kdm
 kde-misc/krename
 mail-client/thunderbird
 mail-filter/bogofilter
 mail-filter/spamassassin
+media-fonts/droid
 media-fonts/freefonts
 media-fonts/terminus-font
 media-fonts/ubuntu-font-family
@@ -161,7 +162,6 @@ net-misc/tigervnc
 net-misc/whois
 net-misc/youtube-dl
 net-p2p/transmission
-net-p2p/vuze
 net-print/cups
 net-print/epson-inkjet-printer-escpr
 net-print/gutenprint
@@ -233,6 +233,7 @@ x11-apps/xev
 x11-apps/xkill
 x11-base/xorg-x11
 x11-misc/arandr
+x11-misc/lightdm
 x11-misc/redshift
 x11-misc/synergy
 x11-misc/vdpauinfo
@@ -249,8 +250,7 @@ x11-themes/gnome-themes-standard
 x11-themes/gtk-engines-aurora
 x11-themes/gtk-engines-murrine
 x11-themes/gtk-engines-xfce:3
-x11-themes/kdm-appletuxblack
-x11-themes/kdm-naturalgentoo
+x11-themes/lightdm-kde-appletuxblack
 x11-themes/noia
 x11-themes/xfwm4-themes
 xfce-base/xfce4-meta
