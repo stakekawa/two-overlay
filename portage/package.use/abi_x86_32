@@ -33,6 +33,7 @@ dev-libs/lzo abi_x86_32
 dev-libs/nettle abi_x86_32
 dev-libs/openssl abi_x86_32
 dev-libs/sni-qt	abi_x86_32
+dev-libs/wayland abi_x86_32
 dev-qt/designer abi_x86_32
 dev-qt/qt3support abi_x86_32
 dev-qt/qtchooser abi_x86_32
@@ -158,6 +159,7 @@ x11-libs/libXext abi_x86_32
 x11-libs/libXfixes abi_x86_32
 x11-libs/libXft abi_x86_32
 x11-libs/libXi abi_x86_32
+x11-libs/libxkbcommon abi_x86_32
 x11-libs/libXrandr abi_x86_32
 x11-libs/libXrender abi_x86_32
 x11-libs/libXScrnSaver abi_x86_32
