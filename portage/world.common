@@ -250,7 +250,7 @@ x11-themes/gnome-themes-standard
 x11-themes/gtk-engines-aurora
 x11-themes/gtk-engines-murrine
 x11-themes/gtk-engines-xfce:3
-x11-themes/lightdm-kde-appletuxblack
+x11-themes/lightdm-appletuxblack
 x11-themes/noia
 x11-themes/xfwm4-themes
 xfce-base/xfce4-meta
