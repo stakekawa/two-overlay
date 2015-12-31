@@ -1,0 +1,3 @@
+lxqt-base/lxqt-meta about admin filemanager icons lightdm lximage oxygen policykit powermanagement ssh-askpass sudo -sddm
+lxqt-base/lxqt-panel alsa clock desktopswitch kbindicator mainmenu mount pulseaudio quicklaunch showdesktop taskbar tray volume colorpicker cpuload dom networkmonitor screensaver sensors statusnotifier sysstat worldclock
+x11-wm/openbox xdg
