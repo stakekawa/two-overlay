@@ -34,4 +34,5 @@ RDEPEND="${DEPEND}"
 
 src_prepare() {
 	epatch "${FILESDIR}"/${P}-cstring.patch
+	epatch "${FILESDIR}"/${P}-gcc5.patch
 }

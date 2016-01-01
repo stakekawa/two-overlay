@@ -1,0 +1,22 @@
+--- gtkmorph/utils.h.orig	2016-01-01 21:29:52.306656234 +0100
++++ gtkmorph/utils.h	2016-01-01 21:31:56.859654535 +0100
+@@ -63,7 +63,7 @@
+  *  shows libc error 
+  */
+ 
+-inline  void 
++void 
+ showerr(const char *file, const  char *msg);
+ 
+ 
+--- gtkmorph/loadsave.c.orig	2016-01-01 21:32:26.141654136 +0100
++++ gtkmorph/loadsave.c	2016-01-01 21:30:49.478655454 +0100
+@@ -59,7 +59,7 @@
+ 
+ ************************************************************************/
+ 
+-inline  void 
++void 
+ showerr(const char *file, const char *msg)
+ {
+   char *s = 
