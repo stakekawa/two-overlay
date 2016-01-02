@@ -13,11 +13,14 @@ KEYWORDS="amd64 x86"
 IUSE=""
 RESTRICT="binchecks strip"
 
-DEPEND="x11-misc/lightdm-kde"
+DEPEND="x11-misc/lightdm"
 
 S="${WORKDIR}/"
 
 src_install() {
+	insinto /etc/lightdm/
+	doins "${FILESDIR}/lightdm-gtk-greeter.conf"
+
 	dodir /
 	cp -aR ${S}/* ${D}/
 }
