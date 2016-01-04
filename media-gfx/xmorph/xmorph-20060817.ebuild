@@ -4,7 +4,7 @@
 
 EAPI=4
 
-inherit eutils
+inherit eutils flag-o-matic
 
 DESCRIPTION="Image warping and dissolving (morphing) programs"
 
@@ -35,4 +35,18 @@ RDEPEND="${DEPEND}"
 src_prepare() {
 	epatch "${FILESDIR}"/${P}-cstring.patch
 	epatch "${FILESDIR}"/${P}-gcc5.patch
+}
+
+src_configure() {
+	filter-flags -O1
+	filter-flags -O2
+	filter-flags -O3
+	filter-flags -Os
+	append-cflags -g
+	append-cxxflags -g
+
+	econf --with-xmorph \
+	      --with-gtk=2 \
+	      --with-gtkmorph \
+	      --with-fftw || die "Configure failed"
 }
