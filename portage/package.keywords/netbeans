@@ -20,4 +20,5 @@
 =dev-java/netbeans-profiler-8.1 ~x86 ~amd64
 =dev-java/netbeans-webcommon-8.1 ~x86 ~amd64
 =dev-java/netbeans-websvccommon-8.1 ~x86 ~amd64
+=dev-java/snakeyaml-1.16 ~x86 ~amd64
 =dev-util/netbeans-8.1 ~x86 ~amd64
