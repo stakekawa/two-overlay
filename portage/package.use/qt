@@ -1,3 +1,4 @@
-dev-qt/qtgui -egl
+dev-qt/qtgui -egl -gles2
+dev-qt/qtmultimedia qml widgets -egl
 dev-qt/qtopengl -egl
-
+dev-qt/qtwebkit multimedia -gstreamer
