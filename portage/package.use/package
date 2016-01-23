@@ -38,8 +38,8 @@ media-libs/libmp4v2 utils
 media-libs/mesa g3dvl gbm gles2 xa xvmc
 media-libs/mlt kdenlive melt movit -kde -qt4
 media-libs/vigra openexr
-media-plugins/audacious-plugins gtk3 -gtk
-media-sound/audacious gtk3 -gtk
+media-plugins/audacious-plugins gtk3 -gtk -qt4 -qt5
+media-sound/audacious gtk3 -gtk -qt5
 media-sound/audacity vamp
 media-video/dvd-slideshow themes
 media-video/ffmpeg fdk opus

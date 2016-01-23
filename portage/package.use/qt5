@@ -4,4 +4,6 @@ dev-libs/libdbusmenu-qt qt4
 dev-libs/qcustomplot -qt4
 dev-util/cmake -qt4
 media-libs/opencv -qt4
+media-plugins/audacious-plugins -qt5
+media-sound/audacious -qt5
 media-video/vlc -qt4
