@@ -90,3 +90,4 @@ x11-themes/gnome-themes-standard abi_x86_32
 xfce-base/thunar plugins
 xfce-base/xfce4-session gnome-keyring
 xfce-base/xfdesktop thunar
+xfce-extra/xfce4-sensors-plugin -nvidia
