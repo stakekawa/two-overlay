@@ -2,6 +2,7 @@ app-crypt/pinentry -qt4
 dev-db/sqlitebrowser -qt4
 dev-libs/libdbusmenu-qt qt4
 dev-libs/qcustomplot -qt4
+dev-libs/quazip -qt4
 dev-util/cmake -qt4
 media-libs/opencv -qt4
 media-plugins/audacious-plugins -qt5
