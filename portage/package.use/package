@@ -82,7 +82,7 @@ www-client/firefox custom-optimization pgo system-icu system-jpeg system-libeven
 www-client/links suid
 www-plugins/adobe-flash 32bit 64bit -sse2check
 www-servers/lighttpd fastcgi memcache mysql php
-x11-base/xorg-server xnest xorg xvfb
+x11-base/xorg-server kdrive xephyr xorg xvfb -xnest
 x11-drivers/xf86-video-ati glamor
 x11-libs/libva egl
 #x11-misc/lightdm gtk qt5 -kde -qt4
