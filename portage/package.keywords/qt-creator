@@ -1,0 +1,2 @@
+dev-qt/qt-creator ~x86 ~amd64
+=sys-devel/clang-3.7.1-r100 ~x86 ~amd64

@@ -1,4 +1,5 @@
 app-crypt/pinentry -qt4
+app-office/texmaker -qt4
 dev-db/sqlitebrowser -qt4
 dev-libs/libdbusmenu-qt qt4
 dev-libs/qcustomplot -qt4
