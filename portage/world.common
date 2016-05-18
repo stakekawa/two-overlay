@@ -21,7 +21,6 @@ app-cdr/k3b
 app-cdr/nrg2iso
 app-dicts/aspell-en
 app-dicts/aspell-it
-app-editors/kile
 app-editors/mousepad
 app-editors/nano
 app-editors/scite
@@ -34,7 +33,6 @@ app-emulation/virtualbox
 app-emulation/virtualbox-additions
 app-emulation/virtualbox-extpack-oracle
 app-emulation/virtualbox-modules
-app-forensics/chkrootkit
 app-forensics/magicrescue
 app-misc/cmatrix
 app-misc/screen
@@ -54,6 +52,7 @@ app-text/dos2unix
 app-text/evince
 app-text/pdf2html
 app-text/texlive
+app-office/texmaker
 app-text/xpdf
 app-xemacs/auctex
 app-xemacs/cc-mode
@@ -86,10 +85,10 @@ games-fps/quake3-data
 games-puzzle/pushover
 gnome-extra/nm-applet
 kde-apps/kdeartwork-meta
-kde-base/kdebase-startkde
-kde-base/kstyles
 kde-apps/kdenlive
+kde-apps/konsole
 kde-misc/krename
+kde-plasma/plasma-meta
 mail-client/thunderbird
 mail-filter/bogofilter
 mail-filter/spamassassin
@@ -146,6 +145,7 @@ net-dialup/ppp
 net-dns/bind-tools
 net-fs/nfs-utils
 net-fs/samba
+net-ftp/filezilla
 net-ftp/ftp
 net-ftp/vsftpd
 net-im/pidgin
@@ -169,6 +169,7 @@ net-print/hplip
 net-wireless/aircrack-ng
 net-wireless/blueman
 net-wireless/iw
+net-wireless/rfkill
 net-wireless/wireless-tools
 net-wireless/wpa_supplicant
 sci-astronomy/celestia
@@ -194,6 +195,7 @@ sys-apps/v86d
 sys-block/gpart
 sys-boot/grub
 sys-boot/syslinux
+sys-boot/winusb
 sys-devel/gdb
 sys-fs/dosfstools
 sys-fs/exfat-utils
@@ -204,7 +206,7 @@ sys-fs/fuse-exfat
 sys-fs/ntfs3g
 sys-fs/obexfs
 sys-fs/safecopy
-sys-fs/sshfs-fuse
+sys-fs/sshfs
 sys-fs/xfsprogs
 sys-kernel/genkernel-next
 sys-kernel/linux-firmware
