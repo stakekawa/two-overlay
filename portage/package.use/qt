@@ -1,4 +1,5 @@
 dev-qt/qtgui -egl -gles2
 dev-qt/qtmultimedia qml widgets -egl
 dev-qt/qtopengl -egl
+dev-qt/qtscript scripttools
 dev-qt/qtwebkit multimedia printsupport -exceptions -gstreamer

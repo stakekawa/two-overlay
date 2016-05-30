@@ -10,6 +10,8 @@ app-text/texlive cjk context doc epspdf extra games graphics humanities jadetex 
 app-text/texlive-core cjk xetex
 dev-cpp/glog gflags
 dev-db/sqlite fts3 secure-delete unlock-notify
+dev-java/icedtea-bin -nsplugin
+dev-java/icedtea-web -nsplugin
 dev-java/swing-layout source
 dev-lang/lua deprecated
 dev-lang/mono moonlight
@@ -27,7 +29,7 @@ games-strategy/warzone2100 videos
 gnome-base/gvfs archive gdu gnome gnome-keyring libsecret
 mail-client/thunderbird replytolist system-sqlite
 media-gfx/blender player python_single_target_python3_3
-media-gfx/graphicsmagick -imagemagick
+media-gfx/graphicsmagick imagemagick
 media-gfx/grub-splash-naturalgentoo grub2
 media-gfx/hugin enblend sift -python
 media-gfx/pstoedit plotutils
