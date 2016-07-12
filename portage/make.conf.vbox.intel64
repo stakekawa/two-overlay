@@ -35,6 +35,7 @@ CCACHE_SIZE="1G"
 PORTAGE_NICENESS=5
 
 LINGUAS="it en ja"
+L10N="it en ja"
 VIDEO_CARDS="modesetting vesa none"
 INPUT_DEVICES="libinput mouse keyboard synaptics evdev"
 CAMERAS="canon ptp2"

@@ -10,7 +10,8 @@ MYGRAPHITE="-fgraphite -fgraphite-identity -floop-block -floop-interchange -floo
 CFLAGS="-march=native -O2 -pipe -fomit-frame-pointer"
 #CFLAGS="-march=native -O2 -pipe -fomit-frame-pointer ${MYLTO} ${MYGRAPHITE}"
 
-CXXFLAGS="${CFLAGS}"
+#CXXFLAGS="${CFLAGS}"
+CXXFLAGS="${CFLAGS} -std=c++11"
 
 LDFLAGS="-Wl,-O1 -Wl,--as-needed"
 #LDFLAGS="-Wl,-O1 -Wl,--as-needed ${MYLTO}"
@@ -35,6 +36,7 @@ CCACHE_SIZE="1G"
 PORTAGE_NICENESS=5
 
 LINGUAS="it en ja"
+L10N="it en ja"
 VIDEO_CARDS="intel i965 modesetting nvidia vesa none"
 INPUT_DEVICES="libinput mouse keyboard synaptics evdev"
 CAMERAS="canon ptp2"
