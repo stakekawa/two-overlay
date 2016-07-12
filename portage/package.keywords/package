@@ -1,3 +1,4 @@
+
 app-admin/testdisk ~x86 ~amd64
 app-benchmarks/i7z ~x86 ~amd64
 app-laptop/radeontool ~x86 ~amd64
@@ -31,12 +32,12 @@ sci-physics/jaxodraw ~x86 ~amd64
 sci-visualization/xyscan ~x86 ~amd64
 sys-apps/lm_sensors ~x86 ~amd64
 sys-apps/microcode-ctl ~x86 ~amd64
-sys-apps/microcode-data ~x86 ~amd64
 sys-apps/renameutils ~x86 ~amd64
 sys-apps/smartmontools ~x86 ~amd64
 sys-block/scsirastools ~x86 ~amd64
 sys-cluster/maui ~x86 ~amd64
 sys-cluster/torque ~x86 ~amd64
+sys-firmware/intel-microcode ~x86 ~amd64
 sys-firmware/iwl6005-ucode ~x86 ~amd64
 sys-fs/f2fs-tools ~x86 ~amd64
 sys-fs/xfsdump ~x86 ~amd64
