@@ -5,10 +5,9 @@
 EAPI="5"
 ETYPE="sources"
 K_WANT_GENPATCHES="base extras experimental"
-K_GENPATCHES_VER="1"
-K_DEBLOB_AVAILABLE="0"
-K_KDBUS_AVAILABLE="0"
-UNIPATCH_LIST=" ${FILESDIR}/4.5-bfq.patch "
+K_GENPATCHES_VER="5"
+UNIPATCH_LIST=" ${FILESDIR}/4.6-sched-bfs-470.patch
+                ${FILESDIR}/4.5-bfq.patch "
 
 inherit kernel-2
 detect_version
