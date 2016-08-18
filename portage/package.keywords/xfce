@@ -1,20 +1,6 @@
-# xfce 4.12
-=dev-libs/libinput-0.21.0 ~x86 ~amd64
-=sys-libs/timezone-data-2015c-r1 ~x86 ~amd64
-=x11-drivers/xf86-input-libinput-0.13.0 ~x86 ~amd64
-=xfce-base/garcon-0.5.0-r1 ~x86 ~amd64
-=xfce-base/libxfcegui4-4.10.0-r1 ~x86 ~amd64
-=xfce-base/libxfce4ui-4.12.1-r2 ~x86 ~amd64
-=xfce-base/libxfce4util-4.12.1 ~x86 ~amd64
-=xfce-base/xfce4-appfinder-4.12.0-r1 ~x86 ~amd64
-=xfce-base/xfce4-meta-4.12 ~x86 ~amd64
-=xfce-base/xfce4-panel-4.12.0 ~x86 ~amd64
-=xfce-base/xfce4-session-4.12.0-r1 ~x86 ~amd64
-=xfce-base/xfce4-settings-4.12.0 ~x86 ~amd64
-=xfce-base/libxfce4ui-4.12.1 ~x86 ~amd64
-=xfce-base/xfconf-4.12.0-r1 ~x86 ~amd64
-=xfce-base/xfdesktop-4.12.0 ~x86 ~amd64
-=xfce-base/xfwm4-4.12.0 ~x86 ~amd64
 # normal
 x11-themes/elementary-xfce-icon-theme ~x86 ~amd64
 xfce-extra/xfce4-pulseaudio-plugin ~x86 ~amd64
+# fix keypressed 255
+=xfce-extra/xfce4-power-manager-1.6.0 ~x86 ~amd64
+
