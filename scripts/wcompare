@@ -3,9 +3,18 @@
 EXE="wcompare"
 
 DO="FALSE"
+DEVEL="FALSE"
 
-if [ "${1}" == "do" ] ; then
-  DO="TRUE"
+echo ${@} | grep do &> /dev/null
+
+if [ "${?}" == "0" ] ; then
+    DO="TRUE"
+fi
+
+echo ${@} | grep devel &> /dev/null
+
+if [ "${?}" == "0" ] ; then
+    DEVEL="TRUE"
 fi
 
 OVERLAY="two-overlay"
@@ -15,45 +24,50 @@ WORLDOVERLAY="two-overlay"
 GCCOVERLAY="`ls -altrh /etc/portage/make.conf | awk -F "/" {'print$8'}`"
 
 if [ "${OVERLAY}" == "two-overlay" ] ; then
-  GCCOVERLAY="`ls -altrh /etc/portage/make.conf | awk -F "/" {'print$7'}`"
+    GCCOVERLAY="`ls -altrh /etc/portage/make.conf | awk -F "/" {'print$7'}`"
 fi
 
 if [ "${GCCOVERLAY}" == "two-overlay" ] ; then
-  TYPE="`ls -altrh /etc/portage/make.conf | awk -F ">" {'print$2'} | awk -F "." {'print$3'}`"
+    TYPE="`ls -altrh /etc/portage/make.conf | awk -F ">" {'print$2'} | awk -F "." {'print$3'}`"
 else
-  TYPE="`ls -altrh /etc/portage/make.conf | awk -F ">" {'print$2'} | awk -F "." {'print$4'}`"
+    TYPE="`ls -altrh /etc/portage/make.conf | awk -F ">" {'print$2'} | awk -F "." {'print$4'}`"
 fi
 
 echo ""
 
 if [ "${TYPE}" == "desktop" ] || [ "${TYPE}" == "server" ] || [ "${TYPE}" == "node" ] || [ "${TYPE}" == "mobile" ] || [ "${TYPE}" == "minimal" ] || [ "${TYPE}" == "vbox" ] ; then
-  echo -e " TYPE is \033[36;1m\033[1m${TYPE}\033[0m ... Good!"
-  echo -e " GCC is \033[36;1m\033[1m${GCCOVERLAY}\033[0m ... Good!"
+    echo -e " TYPE is \033[36;1m\033[1m${TYPE}\033[0m ... Good!"
+    echo -e " GCC is  \033[36;1m\033[1m${GCCOVERLAY}\033[0m ... Good!"
 else
-  echo -e "\033[31;1m\033[1m TYPE ${TYPE} is not known! Exiting...\033[0m"
-  exit 1
+    echo -e "\033[31;1m\033[1m TYPE ${TYPE} is not known! Exiting...\033[0m"
+    exit 1
 fi
 
 echo ""
 
 if [ ! -e /usr/local/sbin/${EXE} ] ; then
-  ln -s /home/overlays/${OVERLAY}/scripts/${EXE} /usr/local/sbin/${EXE}
+    ln -s /home/overlays/${OVERLAY}/scripts/${EXE} /usr/local/sbin/${EXE}
 fi
 
 if [ ! -h /usr/local/sbin/${EXE} ] ; then
-  rm -f /usr/local/sbin/${EXE}
-  ln -s /home/overlays/${OVERLAY}/scripts/${EXE} /usr/local/sbin/${EXE}
+    rm -f /usr/local/sbin/${EXE}
+    ln -s /home/overlays/${OVERLAY}/scripts/${EXE} /usr/local/sbin/${EXE}
 fi
 
 WORLDCOMMON="/home/overlays/${WORLDOVERLAY}/portage/world.common"
 WORLDTYPE="/home/overlays/${WORLDOVERLAY}/portage/world.${TYPE}"
+WORLDDEVEL="/home/overlays/${WORLDOVERLAY}/portage/world.devel"
 WORLDLOCAL="/tmp/world.local"
 WORLDREF="/tmp/world"
 
+if [ "${DEVEL}" == "FALSE" ] ; then
+    WORLDDEVEL=""
+fi
+
 if [ "`uname -m`" == "x86_64" ] ; then
-    cat ${WORLDCOMMON} ${WORLDTYPE} /home/overlays/${GCCOVERLAY}/portage/world.64 | sort -u > ${WORLDREF}
+    cat ${WORLDCOMMON} ${WORLDTYPE} ${WORLDDEVEL} /home/overlays/${GCCOVERLAY}/portage/world.64 | sort -u > ${WORLDREF}
 else
-    cat ${WORLDCOMMON} ${WORLDTYPE} | sort -u > "${WORLDREF}"
+    cat ${WORLDCOMMON} ${WORLDTYPE} ${WORLDDEVEL}| sort -u > "${WORLDREF}"
 fi
 
 cat /var/lib/portage/world | sort -u > ${WORLDLOCAL}
@@ -70,5 +84,11 @@ diff ${WORLDLOCAL} ${WORLDREF} | grep \< | awk {'print$2'}
 echo ""
 
 if [ "${DO}" == "TRUE" ] ; then
-  emerge -uqvk `diff ${WORLDLOCAL} ${WORLDREF} | grep \> | awk {'print$2'}`
+
+    if [ `diff ${WORLDLOCAL} ${WORLDREF} | grep \> | awk {'print$2'} | wc -l` -gt 1 ] ; then
+        emerge -uqvk `diff ${WORLDLOCAL} ${WORLDREF} | grep \> | awk {'print$2'}`
+    else
+        echo " Nothing to emerge. Have a nice day!"
+        echo ""
+    fi
 fi

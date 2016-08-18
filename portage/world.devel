@@ -1,0 +1,14 @@
+app-doc/doxygen
+app-editors/dhex
+dev-db/sqlitebrowser
+dev-qt/qt-creator
+dev-util/argouml
+dev-util/cloc
+dev-util/codeblocks
+dev-util/cppcheck
+dev-util/eclipse-sdk-bin
+dev-util/meld
+dev-util/valgrind
+dev-util/vbindiff
+dev-vcs/cvs
+
