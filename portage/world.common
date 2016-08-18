@@ -40,7 +40,6 @@ app-misc/symlinks
 app-mobilephone/obexftp
 app-office/libreoffice-bin
 app-pda/gtkpod
-app-portage/cpuinfo2cpuflags
 app-portage/eix
 app-portage/elogv
 app-portage/genlop
@@ -84,8 +83,9 @@ games-fps/quake3-bin
 games-fps/quake3-data
 games-puzzle/pushover
 gnome-extra/nm-applet
-kde-apps/kdeartwork-meta
+kde-apps/kdegraphics-meta
 kde-apps/kdenlive
+kde-apps/konqueror
 kde-apps/konsole
 kde-misc/krename
 kde-plasma/plasma-meta
@@ -123,6 +123,7 @@ media-sound/pavucontrol
 media-sound/pavumeter
 media-sound/pulseaudio
 media-sound/shntool
+media-sound/spotify
 media-video/2mandvd
 media-video/avidemux
 media-video/cheese
