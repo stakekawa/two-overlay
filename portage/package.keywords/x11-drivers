@@ -1,5 +1,6 @@
+dev-libs/libinput ~x86 ~amd64
 x11-drivers/ati-drivers ~x86 ~amd64
+x11-drivers/xf86-input-libinput ~x86 ~amd64
 x11-drivers/xf86-video-ati ~x86 ~amd64
 x11-drivers/xf86-video-intel ~x86 ~amd64
 x11-drivers/xf86-video-modesetting ~x86 ~amd64
-
