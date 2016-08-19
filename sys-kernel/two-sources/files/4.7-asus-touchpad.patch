@@ -1,0 +1,175 @@
+--- drivers/input/mouse/elan_i2c_core.c.orig	2016-08-10 11:40:12.040649616 +0200
++++ drivers/input/mouse/elan_i2c_core.c	2016-08-18 08:30:31.116999181 +0200
+@@ -3,8 +3,8 @@
+  *
+  * Copyright (c) 2013 ELAN Microelectronics Corp.
+  *
+- * Author: 林政維 (Duson Lin) <dusonlin@emc.com.tw>
+- * Version: 1.6.0
++ * Author: KT Liao <kt.liao@emc.com.tw>
++ * Version: 1.6.2
+  *
+  * Based on cyapa driver:
+  * copyright (c) 2011-2012 Cypress Semiconductor, Inc.
+@@ -40,7 +40,7 @@
+ #include "elan_i2c.h"
+ 
+ #define DRIVER_NAME		"elan_i2c"
+-#define ELAN_DRIVER_VERSION	"1.6.1"
++#define ELAN_DRIVER_VERSION	"1.6.2"
+ #define ELAN_VENDOR_ID		0x04f3
+ #define ETP_MAX_PRESSURE	255
+ #define ETP_FWIDTH_REDUCE	90
+@@ -95,6 +95,8 @@
+ 	bool			baseline_ready;
+ };
+ 
++static int check_ASUS_special_fw(struct elan_tp_data *data);
++
+ static int elan_get_fwinfo(u8 iap_version, u16 *validpage_count,
+ 			   u16 *signature_address)
+ {
+@@ -210,21 +212,40 @@
+ 		return error;
+ 	}
+ 
+-	data->mode |= ETP_ENABLE_ABS;
+-	error = data->ops->set_mode(client, data->mode);
+-	if (error) {
+-		dev_err(&client->dev,
+-			"failed to switch to absolute mode: %d\n", error);
+-		return error;
+-	}
++	/* If it's the special FW, it need a different flow for mode change.*/
++	if (check_ASUS_special_fw(data)) {
++		error = data->ops->sleep_control(client, false);
++		if (error) {
++			dev_err(&client->dev,
++				"failed to wake device up: %d\n", error);
++			return error;
++		}
+ 
+-	error = data->ops->sleep_control(client, false);
+-	if (error) {
+-		dev_err(&client->dev,
+-			"failed to wake device up: %d\n", error);
+-		return error;
+-	}
++		msleep(200);
+ 
++		data->mode |= ETP_ENABLE_ABS;
++		error = data->ops->set_mode(client, data->mode);
++		if (error) {
++			dev_err(&client->dev,
++				"failed to switch to absolute mode: %d\n", error);
++			return error;
++		}
++	} else {
++		data->mode |= ETP_ENABLE_ABS;
++		error = data->ops->set_mode(client, data->mode);
++		if (error) {
++			dev_err(&client->dev,
++				"failed to switch to absolute mode: %d\n", error);
++			return error;
++		}
++
++		error = data->ops->sleep_control(client, false);
++		if (error) {
++			dev_err(&client->dev,
++				"failed to wake device up: %d\n", error);
++			return error;
++		}
++	}
+ 	return 0;
+ }
+ 
+@@ -244,7 +265,7 @@
+ 	return error;
+ }
+ 
+-static int elan_query_device_info(struct elan_tp_data *data)
++static int elan_query_device_pid_smver(struct elan_tp_data *data)
+ {
+ 	int error;
+ 
+@@ -252,17 +273,24 @@
+ 	if (error)
+ 		return error;
+ 
+-	error = data->ops->get_version(data->client, false, &data->fw_version);
++	error = data->ops->get_sm_version(data->client, &data->ic_type,
++					  &data->sm_version);
+ 	if (error)
+ 		return error;
+ 
+-	error = data->ops->get_checksum(data->client, false,
+-					&data->fw_checksum);
++	return 0;
++}
++
++static int elan_query_device_info(struct elan_tp_data *data)
++{
++	int error;
++
++	error = data->ops->get_version(data->client, false, &data->fw_version);
+ 	if (error)
+ 		return error;
+ 
+-	error = data->ops->get_sm_version(data->client, &data->ic_type,
+-					  &data->sm_version);
++	error = data->ops->get_checksum(data->client, false,
++					&data->fw_checksum);
+ 	if (error)
+ 		return error;
+ 
+@@ -419,6 +447,7 @@
+ 		data->ops->iap_reset(client);
+ 	} else {
+ 		/* Reinitialize TP after fw is updated */
++		elan_query_device_pid_smver(data);
+ 		elan_initialize(data);
+ 		elan_query_device_info(data);
+ 	}
+@@ -757,6 +786,22 @@
+ 	return retval;
+ }
+ 
++static int check_ASUS_special_fw(struct elan_tp_data *data)
++{
++	if (data->ic_type != 0x0E)
++		return false;
++
++	switch (data->product_id) {
++	case 0x05:
++	case 0x06:
++	case 0x07:
++	case 0x09:
++	case 0x013:
++		return true;
++	default:
++		return false;
++	}
++}
+ 
+ static DEVICE_ATTR_WO(acquire);
+ static DEVICE_ATTR_RO(min);
+@@ -1033,6 +1078,10 @@
+ 		return error;
+ 	}
+ 
++	error = elan_query_device_pid_smver(data);
++	if (error)
++		return error;
++
+ 	/* Initialize the touchpad. */
+ 	error = elan_initialize(data);
+ 	if (error)
+@@ -1186,6 +1235,8 @@
+ 	{ "ELAN0100", 0 },
+ 	{ "ELAN0600", 0 },
+ 	{ "ELAN1000", 0 },
++	{ "ELAN2097", 0 },
++	{ "FTE1001",   0 },
+ 	{ }
+ };
+ MODULE_DEVICE_TABLE(acpi, elan_acpi_id);
