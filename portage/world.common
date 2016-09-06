@@ -205,7 +205,6 @@ sys-fs/f2fs-tools
 sys-fs/fuse
 sys-fs/fuse-exfat
 sys-fs/ntfs3g
-sys-fs/obexfs
 sys-fs/safecopy
 sys-fs/sshfs
 sys-fs/xfsprogs
