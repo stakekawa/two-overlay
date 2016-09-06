@@ -20,6 +20,7 @@ dev-lang/python sqlite
 dev-libs/libpcre pcre16
 dev-libs/libxml2 python
 dev-python/PyQt4 declarative script sql
+dev-qt/qt-creator clangcodemodel clangstaticanalyzer
 dev-util/codeblocks contrib
 dev-util/cppcheck htmlreport
 dev-vcs/git subversion
@@ -40,7 +41,7 @@ media-libs/libcanberra alsa
 media-libs/libmp4v2 utils
 media-libs/libsdl2 gles
 media-libs/libvpx svc
-media-libs/mesa g3dvl gbm gles2 xa xvmc
+media-libs/mesa g3dvl gbm gles2 opencl xa xvmc
 media-libs/mlt kdenlive melt movit -kde -qt4
 media-libs/vigra openexr
 media-plugins/audacious-plugins gtk3 -gtk -qt4 -qt5
@@ -83,7 +84,7 @@ sys-fs/ntfs3g extras suid xattr -external-fuse
 sys-fs/udev extras gudev hwdb
 virtual/udev gudev hwdb
 www-client/chromium system-ffmpeg
-www-client/firefox custom-optimization pgo system-icu system-jpeg system-libevent system-libvpx system-sqlite
+www-client/firefox custom-optimization pgo system-harfbuzz system-icu system-jpeg system-libevent system-libvpx system-sqlite
 www-client/links suid
 www-plugins/adobe-flash 32bit 64bit -sse2check
 www-servers/lighttpd fastcgi memcache mysql php
