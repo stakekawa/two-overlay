@@ -30,6 +30,7 @@ dev-libs/libffi abi_x86_32
 dev-libs/libgamin abi_x86_32
 dev-libs/libgcrypt abi_x86_32
 dev-libs/libgpg-error abi_x86_32
+dev-libs/libltdl abi_x86_32
 dev-libs/libpthread-stubs abi_x86_32
 dev-libs/libtasn1 abi_x86_32
 dev-libs/libusb abi_x86_32
@@ -76,6 +77,7 @@ media-libs/gst-plugins-ugly abi_x86_32
 media-libs/gstreamer abi_x86_32
 media-libs/harfbuzz abi_x86_32
 media-libs/lcms abi_x86_32
+media-libs/libcanberra abi_x86_32
 media-libs/libdc1394 abi_x86_32
 media-libs/libepoxy abi_x86_32
 media-libs/libjpeg-turbo abi_x86_32
@@ -117,6 +119,7 @@ sys-apps/systemd abi_x86_32
 sys-apps/util-linux abi_x86_32
 sys-devel/gettext abi_x86_32
 sys-devel/flex abi_x86_32
+sys-devel/clang abi_x86_32
 sys-devel/llvm abi_x86_32
 sys-fs/udev abi_x86_32
 sys-libs/binutils-libs abi_x86_32
@@ -142,6 +145,7 @@ virtual/fam abi_x86_32
 virtual/ffmpeg abi_x86_32
 virtual/glu abi_x86_32
 virtual/jpeg abi_x86_32
+virtual/libelf abi_x86_32
 virtual/libffi abi_x86_32
 virtual/libiconv abi_x86_32
 virtual/libintl abi_x86_32
