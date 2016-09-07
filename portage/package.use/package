@@ -4,6 +4,7 @@ app-crypt/pinentry gnome-keyring
 app-editors/nano justify
 app-emulation/qemu static-user
 app-emulation/virtualbox extensions
+app-emulation/wine s3tc staging
 app-office/akonadi-server soprano
 app-text/djvu qt3
 app-text/texlive cjk context doc epspdf extra games graphics humanities jadetex music omega pstricks publishers science tex4ht xetex
@@ -58,7 +59,7 @@ net-analyzer/wireshark gtk3 smi -gtk2 -qt4
 net-dialup/ppp dhcp eap-tls
 net-dns/avahi autoipd mdnsresponder-compat
 net-dns/bind dlz berkdb -threads
-net-fs/samba client server
+net-fs/samba client server winbind
 net-libs/libsoup gnome
 net-misc/curl -gnutls
 net-misc/dhcp server
