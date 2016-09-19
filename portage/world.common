@@ -146,11 +146,12 @@ net-dialup/ppp
 net-dns/bind-tools
 net-fs/nfs-utils
 net-fs/samba
+net-fs/sshfs
 net-ftp/filezilla
 net-ftp/ftp
 net-ftp/vsftpd
 net-im/pidgin
-net-im/skype
+net-im/skype:1
 net-irc/hexchat
 net-misc/dhcp
 net-misc/dropbox
@@ -206,7 +207,6 @@ sys-fs/fuse
 sys-fs/fuse-exfat
 sys-fs/ntfs3g
 sys-fs/safecopy
-sys-fs/sshfs
 sys-fs/xfsprogs
 sys-kernel/genkernel-next
 sys-kernel/linux-firmware

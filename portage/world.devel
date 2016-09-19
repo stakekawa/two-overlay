@@ -5,6 +5,7 @@ dev-qt/qt-creator
 dev-util/argouml
 dev-util/cloc
 dev-util/codeblocks
+dev-util/CodeReview
 dev-util/cppcheck
 dev-util/eclipse-sdk-bin
 dev-util/meld

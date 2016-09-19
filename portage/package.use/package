@@ -24,6 +24,7 @@ dev-python/PyQt4 declarative script sql
 dev-qt/qt-creator clangcodemodel clangstaticanalyzer
 dev-util/codeblocks contrib
 dev-util/cppcheck htmlreport
+dev-util/geany-plugins -python
 dev-vcs/git subversion
 dev-vcs/subversion extras webdav-serf -dso
 games-fps/quake2-data videos

@@ -4,6 +4,7 @@ dev-libs/libgcrypt static-libs
 dev-libs/libgpg-error static-libs
 dev-libs/lzo static-libs
 dev-libs/openssl static-libs
+dev-libs/libpcre static-libs
 dev-libs/popt static-libs
 media-libs/freetype static-libs
 media-libs/jpeg static-libs

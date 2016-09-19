@@ -1,3 +1,4 @@
 media-libs/libopenshot ~x86 ~amd64
 media-libs/libopenshot-audio ~x86 ~amd64
 media-video/openshot ~x86 ~amd64
+net-libs/cppzmq ~x86 ~amd64

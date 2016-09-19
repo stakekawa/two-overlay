@@ -5,9 +5,8 @@
 EAPI="5"
 ETYPE="sources"
 K_WANT_GENPATCHES="base extras experimental"
-K_GENPATCHES_VER="2"
-UNIPATCH_LIST=" ${FILESDIR}/4.7-sched-bfs-472.patch
-		${FILESDIR}/4.7-asus-touchpad.patch "
+K_GENPATCHES_VER="5"
+UNIPATCH_LIST=" ${FILESDIR}/4.7-sched-bfs-497.patch "
 
 
 inherit kernel-2
