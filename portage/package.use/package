@@ -94,8 +94,7 @@ x11-base/xorg-server kdrive xephyr xorg xvfb -xnest
 x11-drivers/xf86-video-ati glamor
 x11-libs/cairo -xlib-xcb
 x11-libs/libva egl
-#x11-misc/lightdm gtk qt5 -kde -qt4
-x11-themes/gnome-themes-standard abi_x86_32
+x11-themes/arc-theme xfce
 xfce-base/thunar plugins
 xfce-base/xfce4-session gnome-keyring
 xfce-base/xfdesktop thunar

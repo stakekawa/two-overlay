@@ -56,6 +56,7 @@ x11-misc/vdpauinfo ~x86 ~amd64
 x11-plugins/pidgin-encryption ~x86 ~amd64
 x11-plugins/pidgin-latex ~x86 ~amd64
 x11-plugins/pidgin-libnotify ~x86 ~amd64
+x11-themes/arc-theme ~x86 ~amd64
 x11-themes/faenza-icon-theme ~x86 ~amd64
 x11-themes/gtk-engines-nodoka ~x86 ~amd64
 x11-themes/gtk-engines-quartz ~x86 ~amd64
