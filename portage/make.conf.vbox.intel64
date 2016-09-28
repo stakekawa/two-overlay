@@ -10,8 +10,8 @@ MYGRAPHITE="-fgraphite -fgraphite-identity -floop-block -floop-interchange -floo
 CFLAGS="-march=native -O2 -pipe -fomit-frame-pointer"
 #CFLAGS="-march=native -O2 -pipe -fomit-frame-pointer ${MYLTO} ${MYGRAPHITE}"
 
-#CXXFLAGS="${CFLAGS}"
-CXXFLAGS="${CFLAGS} -std=c++11"
+CXXFLAGS="${CFLAGS}"
+#CXXFLAGS="${CFLAGS} -std=c++11"
 
 LDFLAGS="-Wl,-O1 -Wl,--as-needed"
 #LDFLAGS="-Wl,-O1 -Wl,--as-needed ${MYLTO}"
