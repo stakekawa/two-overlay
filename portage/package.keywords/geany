@@ -1,0 +1,3 @@
+dev-util/geany ~x86 ~amd64
+dev-util/geany-plugins ~x86 ~amd64
+x11-themes/geany-themes ~x86 ~amd64
