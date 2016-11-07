@@ -2,6 +2,7 @@ app-arch/bzip2 static static-libs
 dev-libs/glib static-libs
 dev-libs/libgcrypt static-libs
 dev-libs/libgpg-error static-libs
+dev-libs/libpfm static-libs
 dev-libs/lzo static-libs
 dev-libs/openssl static-libs
 dev-libs/libpcre static-libs
