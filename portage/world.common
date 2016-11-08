@@ -45,6 +45,7 @@ app-portage/elogv
 app-portage/genlop
 app-portage/gentoolkit
 app-portage/portage-utils
+app-shells/bash-completion
 app-shells/tcsh
 app-text/acroread
 app-text/dos2unix
@@ -64,7 +65,6 @@ app-xemacs/psgml
 app-xemacs/texinfo
 app-xemacs/textools
 app-xemacs/vhdl
-dev-java/jmf-bin
 dev-java/oracle-jdk-bin
 dev-lang/gnat-gcc
 dev-tex/cpp2latex
@@ -133,6 +133,7 @@ media-video/image2mpeg
 media-video/mkvtoolnix
 media-video/mplayer
 media-video/mpv
+media-video/openshot
 media-video/recordmydesktop
 media-video/rtmpdump
 media-video/xine-ui
@@ -151,7 +152,7 @@ net-ftp/filezilla
 net-ftp/ftp
 net-ftp/vsftpd
 net-im/pidgin
-net-im/skype:1
+net-im/skypeforlinux
 net-irc/hexchat
 net-misc/dhcp
 net-misc/dropbox
@@ -177,6 +178,7 @@ net-wireless/wpa_supplicant
 sci-astronomy/celestia
 sci-astronomy/stellarium
 sci-calculators/galculator
+sys-apps/dmidecode
 sys-apps/ethtool
 sys-apps/freedoshd
 sys-apps/gentoo-functions

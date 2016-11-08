@@ -8,8 +8,12 @@ dev-util/codeblocks
 dev-util/CodeReview
 dev-util/cppcheck
 dev-util/eclipse-sdk-bin
+dev-util/editorconfig-geany
+dev-util/geany
+dev-util/geany-plugins
 dev-util/meld
 dev-util/valgrind
 dev-util/vbindiff
 dev-vcs/cvs
-
+x11-themes/geany-themes
+xfce-extra/thunar-vcs-plugin
