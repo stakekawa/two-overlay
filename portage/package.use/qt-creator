@@ -1,2 +1,2 @@
-dev-qt/qt-creator autotools clang cmake subversion valgrind
+dev-qt/qt-creator autotools clang cmake modeling subversion valgrind
 sys-devel/llvm clang
