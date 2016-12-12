@@ -49,6 +49,7 @@ media-libs/vigra openexr
 media-plugins/audacious-plugins gtk3 -gtk -qt4 -qt5
 media-sound/audacious gtk3 -gtk -qt5
 media-sound/audacity vamp
+media-sound/pulseaudio gnome
 media-video/dvd-slideshow themes
 media-video/ffmpeg fdk opus
 media-video/mplayer2 quvi real yuv4mpeg
@@ -89,7 +90,7 @@ www-client/chromium system-ffmpeg
 www-client/firefox custom-optimization pgo system-harfbuzz system-icu system-jpeg system-libevent system-libvpx system-sqlite
 www-client/links suid
 www-plugins/adobe-flash 32bit 64bit -sse2check
-www-servers/lighttpd fastcgi memcache mysql php
+www-servers/lighttpd fastcgi memcached mysql php
 x11-base/xorg-server kdrive xephyr xorg xvfb -xnest
 x11-drivers/xf86-video-ati glamor
 x11-libs/cairo -xlib-xcb
