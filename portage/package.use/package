@@ -79,6 +79,7 @@ sci-astronomy/stellarium stars
 sci-libs/hdf5 -threads
 sci-mathematics/octave-forge ginac qhull
 sci-physics/root castor cern fits graphviz qt4 rfio -debug -mysql -reflex
+sys-apps/busybox -pam
 sys-apps/openrc	tools
 sys-apps/pciutils network-cron
 sys-apps/util-linux tty-helpers

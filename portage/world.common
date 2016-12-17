@@ -71,7 +71,6 @@ dev-tex/cpp2latex
 dev-tex/latex-calendar
 dev-util/android-sdk-update-manager
 dev-util/cgdb
-dev-util/netbeans
 dev-vcs/git
 dev-vcs/subversion
 games-arcade/pangzero

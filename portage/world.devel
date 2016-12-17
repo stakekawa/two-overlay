@@ -12,6 +12,7 @@ dev-util/editorconfig-geany
 dev-util/geany
 dev-util/geany-plugins
 dev-util/meld
+dev-util/netbeans
 dev-util/valgrind
 dev-util/vbindiff
 dev-vcs/cvs
