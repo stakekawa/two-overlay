@@ -104,7 +104,9 @@ media-libs/libmpeg2 abi_x86_32
 media-libs/libogg abi_x86_32
 media-libs/libpng abi_x86_32
 media-libs/libquicktime abi_x86_32
+media-libs/libsamplerate abi_x86_32
 media-libs/libsdl abi_x86_32
+media-libs/libsdl2 abi_x86_32
 media-libs/libsndfile abi_x86_32
 media-libs/libtheora abi_x86_32
 media-libs/libtxc_dxtn abi_x86_32
@@ -115,9 +117,11 @@ media-libs/libwebp abi_x86_32
 media-libs/mesa abi_x86_32
 media-libs/opencore-amr abi_x86_32
 media-libs/opus abi_x86_32
+media-libs/rubberband abi_x86_32
 media-libs/schroedinger abi_x86_32
 media-libs/taglib abi_x86_32
 media-libs/tiff abi_x86_32
+media-libs/vamp-plugin-sdk abi_x86_32
 media-libs/vo-aacenc abi_x86_32
 media-libs/x264 abi_x86_32
 media-libs/x265 abi_x86_32
@@ -158,6 +162,7 @@ net-libs/gnutls abi_x86_32
 net-libs/libasyncns abi_x86_32
 net-libs/socket_wrapper abi_x86_32
 net-print/cups abi_x86_32
+sci-libs/fftw abi_x86_32
 sys-apps/attr abi_x86_32
 sys-apps/dbus abi_x86_32
 sys-apps/keyutils abi_x86_32

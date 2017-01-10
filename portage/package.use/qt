@@ -3,4 +3,6 @@ dev-qt/qtmultimedia gstreamer qml widgets -egl
 dev-qt/qtopengl -egl
 dev-qt/qtscript scripttools
 dev-qt/qtwayland -egl
+dev-qt/qtwebchannel qml
+dev-qt/qtwebengine widgets
 dev-qt/qtwebkit multimedia printsupport -exceptions -gstreamer
