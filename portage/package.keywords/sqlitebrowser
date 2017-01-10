@@ -6,3 +6,4 @@ dev-db/sqlitebrowser ~x86 ~amd64
 =dev-java/jaxme-0.5.2-r2 ~x86 ~amd64
 =dev-libs/qcustomplot-1.3.1 ~x86 ~amd64
 =dev-java/stringtemplate-3.2.1-r1 ~x86 ~amd64
+=x11-libs/qscintilla-2.9.3-r2 ~x86 ~amd64
