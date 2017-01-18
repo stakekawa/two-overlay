@@ -21,6 +21,7 @@ dev-libs/gmp abi_x86_32
 dev-libs/icu abi_x86_32
 dev-libs/iniparser abi_x86_32
 dev-libs/isl abi_x86_32
+dev-libs/jansson abi_x86_32
 dev-libs/json-c abi_x86_32
 dev-libs/libaio abi_x86_32
 dev-libs/libbsd abi_x86_32
