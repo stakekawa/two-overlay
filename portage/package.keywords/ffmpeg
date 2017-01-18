@@ -1,5 +1,2 @@
 =media-libs/opencv-2.4.13 ~x86 ~amd64
-=media-libs/x265-1.9 ~x86 ~amd64
 =media-video/ffmpeg-3.2.2 ~x86 ~amd64
-=media-video/ffmpegthumbnailer-2.2.0 ~x86 ~amd64
-=media-video/vlc-2.1.5 ~x86 ~amd64

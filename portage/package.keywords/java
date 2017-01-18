@@ -2,7 +2,3 @@ dev-java/oracle-jdk-bin ~x86 ~amd64
 dev-java/oracle-jre-bin ~x86 ~amd64
 dev-java/sun-jdk ~x86 ~amd64
 dev-java/sun-jre ~x86 ~amd64
-=virtual/jdk-1.7.0 ~x86 ~amd64
-=virtual/jdk-1.8.0-r3 ~x86 ~amd64
-=virtual/jre-1.7.0 ~x86 ~amd64
-=virtual/jre-1.8.0-r1 ~x86 ~amd64

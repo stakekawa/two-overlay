@@ -1,10 +1,4 @@
-=dev-db/sqlite-3.13.0 ~x86 ~amd64
 =dev-libs/nss-3.27.2 ~x86 ~amd64
 =dev-libs/nspr-4.12 ~x86 ~amd64
-mail-client/thunderbird ~x86 ~amd64
-mail-client/thunderbird-bin ~x86 ~amd64
-=media-libs/gd-2.1.1-r1 ~x86 ~amd64
-=media-libs/libpng-1.6.17 ~x86 ~amd64
-=media-libs/libvpx-1.5.0 ~x86 ~amd64
 www-client/firefox ~x86 ~amd64
 www-client/firefox-bin ~x86 ~amd64
