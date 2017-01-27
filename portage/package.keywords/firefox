@@ -1,3 +1,4 @@
+=dev-db/sqlite-3.15.2 ~x86 ~amd64
 =dev-libs/nss-3.27.2 ~x86 ~amd64
 =dev-libs/nspr-4.12 ~x86 ~amd64
 www-client/firefox ~x86 ~amd64
