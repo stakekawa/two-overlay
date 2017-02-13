@@ -49,9 +49,9 @@ media-libs/vigra openexr
 media-plugins/audacious-plugins gtk3 -gtk -qt4 -qt5
 media-sound/audacious gtk3 -gtk -qt5
 media-sound/audacity vamp
-media-sound/pulseaudio gnome
+media-sound/pulseaudio equalizer gnome native-headset
 media-video/dvd-slideshow themes
-media-video/ffmpeg fdk opus
+media-video/ffmpeg fdk nvenc opus
 media-video/mplayer2 quvi real yuv4mpeg
 media-video/totem -nsplugin
 media-video/transcode -pic
