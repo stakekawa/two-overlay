@@ -47,7 +47,6 @@ app-portage/gentoolkit
 app-portage/portage-utils
 app-shells/bash-completion
 app-shells/tcsh
-app-text/acroread
 app-text/dos2unix
 app-text/evince
 app-text/pdf2html
