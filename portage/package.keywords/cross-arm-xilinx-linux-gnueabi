@@ -1,4 +1,5 @@
 cross-arm-xilinx-linux-gnueabi/binutils arm -amd64 -~amd64
+cross-arm-xilinx-linux-gnueabi/binutils-libs arm -amd64 -~amd64
 cross-arm-xilinx-linux-gnueabi/gcc arm -amd64 -~amd64
 cross-arm-xilinx-linux-gnueabi/linux-headers arm -amd64 -~amd64
 cross-arm-xilinx-linux-gnueabi/glibc arm -amd64 -~amd64
