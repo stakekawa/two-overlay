@@ -87,7 +87,7 @@ sys-cluster/maui pbs
 sys-fs/ntfs3g extras suid xattr -external-fuse
 sys-fs/udev extras gudev hwdb
 virtual/udev gudev hwdb
-www-client/chromium system-ffmpeg
+www-client/chromium system-ffmpeg widevine
 www-client/firefox custom-optimization pgo system-harfbuzz system-icu system-jpeg system-libevent system-libvpx system-sqlite
 www-client/links suid
 www-plugins/adobe-flash 32bit 64bit -sse2check

@@ -1,3 +1,4 @@
+app-admin/testdisk -qt4
 app-crypt/pinentry -qt4
 app-office/texmaker -qt4
 dev-db/sqlitebrowser -qt4

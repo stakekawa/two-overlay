@@ -1,11 +1,12 @@
 app-arch/bzip2 static static-libs
 dev-libs/glib static-libs
+dev-libs/libaio static-libs
 dev-libs/libgcrypt static-libs
 dev-libs/libgpg-error static-libs
+dev-libs/libpcre static-libs
 dev-libs/libpfm static-libs
 dev-libs/lzo static-libs
 dev-libs/openssl static-libs
-dev-libs/libpcre static-libs
 dev-libs/popt static-libs
 media-libs/freetype static-libs
 media-libs/jpeg static-libs
@@ -13,7 +14,14 @@ media-libs/lcms static-libs
 media-libs/libjpeg-turbo static-libs
 media-libs/libmng lcms static-libs
 media-libs/libpng apng static-libs
+media-libs/libsdl static-libs
+net-misc/curl static-libs
 sys-apps/attr static-libs
+sys-apps/dtc static-libs
 sys-libs/gpm static-libs
+sys-libs/libcap-ng static-libs
+sys-libs/libseccomp static-libs
+sys-libs/ncurses static-libs
 sys-libs/zlib minizip static-libs
 virtual/jpeg static-libs
+x11-libs/pixman static-libs
