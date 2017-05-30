@@ -1,3 +1,3 @@
 sys-kernel/ck-sources ~x86 ~amd64
 sys-kernel/tuxonice-sources ~x86 ~amd64
-sys-kernel/two-sources ~amd64
+sys-kernel/two-sources ~x86 ~amd64
