@@ -159,6 +159,7 @@ media-video/libav abi_x86_32
 media-video/mjpegtools abi_x86_32
 net-dns/avahi abi_x86_32
 net-dns/libidn abi_x86_32
+net-dns/libidn2 abi_x86_32
 net-fs/samba abi_x86_32
 net-libs/gnutls abi_x86_32
 net-libs/libasyncns abi_x86_32
