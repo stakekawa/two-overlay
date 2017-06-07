@@ -49,7 +49,7 @@ media-libs/mlt kdenlive melt movit -kde -qt4
 media-libs/vigra openexr
 media-plugins/audacious-plugins gtk3 -gtk -qt4 -qt5
 media-sound/audacious gtk3 -gtk -qt5
-media-sound/audacity vamp
+media-sound/audacity soundtouch vamp
 media-sound/pulseaudio equalizer gnome native-headset
 media-video/dvd-slideshow themes
 media-video/ffmpeg fdk nvenc opus
