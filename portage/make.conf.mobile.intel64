@@ -37,7 +37,7 @@ PORTAGE_NICENESS=5
 
 LINGUAS="it en ja"
 L10N="it en ja"
-VIDEO_CARDS="intel i965 modesetting nvidia vesa none"
+VIDEO_CARDS="intel modesetting nvidia vesa none"
 INPUT_DEVICES="libinput mouse keyboard synaptics evdev"
 CAMERAS="canon ptp2"
 SANE_BACKENDS="epjitsu epson epson2"
