@@ -4,8 +4,8 @@
 EAPI="6"
 ETYPE="sources"
 K_WANT_GENPATCHES="base extras experimental"
-K_GENPATCHES_VER="2"
-UNIPATCH_LIST=" ${FILESDIR}/4.11-bfq.patch ${FILESDIR}/4.11-sched-MuQSS_155.patch "
+K_GENPATCHES_VER="5"
+UNIPATCH_LIST=" ${FILESDIR}/4.11-sched-MuQSS_155.patch "
 
 inherit kernel-2
 detect_version
