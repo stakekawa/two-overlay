@@ -6,6 +6,7 @@ app-emulation/qemu static-user
 app-emulation/virtualbox extensions
 app-emulation/wine s3tc staging
 app-office/akonadi-server soprano
+app-office/mdbtools gnome odbc
 app-text/djvu qt3
 app-text/texlive cjk context doc epspdf extra games graphics humanities jadetex music omega pstricks publishers science tex4ht xetex
 app-text/texlive-core cjk xetex
@@ -32,6 +33,8 @@ games-fps/quake2-data videos
 games-fps/worldofpadman maps
 games-strategy/warzone2100 videos
 gnome-base/gvfs archive gdu gnome gnome-keyring libsecret
+gnome-extra/nm-applet -modemmanager
+mail-client/evolution highlight
 mail-client/thunderbird replytolist system-sqlite
 media-gfx/blender player python_single_target_python3_3
 media-gfx/graphicsmagick imagemagick
@@ -89,7 +92,7 @@ sys-fs/ntfs3g extras suid xattr -external-fuse
 sys-fs/udev extras gudev hwdb
 virtual/udev gudev hwdb
 www-client/chromium system-ffmpeg widevine
-www-client/firefox custom-optimization pgo system-harfbuzz system-icu system-jpeg system-libevent system-libvpx system-sqlite
+www-client/firefox custom-optimization hwaccel pgo system-harfbuzz system-icu system-jpeg system-libevent system-libvpx system-sqlite
 www-client/links suid
 www-plugins/adobe-flash 32bit 64bit -sse2check
 www-servers/lighttpd fastcgi memcached mysql php
