@@ -88,6 +88,7 @@ sys-apps/openrc	tools
 sys-apps/pciutils network-cron
 sys-apps/util-linux tty-helpers
 sys-cluster/maui pbs
+sys-firmware/intel-microcode monolithic
 sys-fs/ntfs3g extras suid xattr -external-fuse
 sys-fs/udev extras gudev hwdb
 virtual/udev gudev hwdb
