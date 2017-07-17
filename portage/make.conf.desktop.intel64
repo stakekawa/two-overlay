@@ -7,7 +7,7 @@ MYLTO="-flto=3 -fuse-linker-plugin -fno-fat-lto-objects"
 
 MYGRAPHITE="-fgraphite -fgraphite-identity -floop-block -floop-interchange -floop-strip-mine -floop-parallelize-all -ftree-loop-linear"
 
-CFLAGS="-march=native -O3 -pipe -fomit-frame-pointer"
+CFLAGS="-march=native -O2 -pipe -fomit-frame-pointer"
 #CFLAGS="-march=native -O2 -pipe ${MYLTO} ${MYGRAPHITE}"
 
 CXXFLAGS="${CFLAGS}"
