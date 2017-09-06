@@ -1,10 +1,11 @@
 =dev-db/sqlite-3.17.0 ~x86 ~amd64
 =dev-lang/rust-1.16.0 ~x86 ~amd64
-=dev-libs/nss-3.31 ~x86 ~amd64
-=dev-libs/nspr-4.15 ~x86 ~amd64
+=dev-libs/nss-3.32 ~x86 ~amd64
+=dev-libs/nspr-4.16 ~x86 ~amd64
 =dev-util/cargo-0.17.0 ~x86 ~amd64
 =media-gfx/graphite2-1.3.10 ~x86 ~amd64
 =media-libs/harfbuzz-1.3.4 ~x86 ~amd64
 =media-libs/libpng-1.6.29 ~x86 ~amd64
+=virtual/rust-1.16.0 ~x86 ~amd64
 www-client/firefox ~x86 ~amd64
 www-client/firefox-bin ~x86 ~amd64
