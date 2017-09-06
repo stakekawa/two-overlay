@@ -18,10 +18,10 @@ media-video/videocut ~x86 ~amd64
 net-im/emesene ~x86 ~amd64
 net-im/pidgin ~x86 ~amd64
 net-misc/clusterssh ~x86 ~amd64
-net-misc/corkscrew ~x86 ~amd64
 net-misc/dropbox ~x86 ~amd64
 net-misc/minidlna ~x86 ~amd64
 net-misc/youtube-dl ~x86 ~amd64
+net-vpn/corkscrew ~x86 ~amd64
 net-wireless/iw ~x86 ~amd64
 net-wireless/ndiswrapper ~x86 ~amd64
 net-wireless/wpa_supplicant ~x86 ~amd64

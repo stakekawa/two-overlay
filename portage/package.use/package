@@ -43,6 +43,7 @@ media-gfx/hugin enblend sift -python
 media-gfx/pstoedit plotutils
 media-libs/cogl gles2
 media-libs/gexiv2 introspection
+media-libs/freetype infinality
 media-libs/libcanberra alsa
 media-libs/libmp4v2 utils
 media-libs/libsdl2 gles
@@ -67,7 +68,7 @@ net-dns/avahi autoipd mdnsresponder-compat
 net-dns/bind dlz berkdb -threads
 net-fs/samba client server winbind
 net-libs/libsoup gnome
-net-misc/curl -gnutls
+net-misc/curl http2 -gnutls
 net-misc/dhcp server
 net-misc/networkmanager dhcpcd gnome nss resolvconf -dhclient -modemmanager
 net-misc/openssh tcpd
@@ -93,7 +94,7 @@ sys-fs/ntfs3g extras suid xattr -external-fuse
 sys-fs/udev extras gudev hwdb
 virtual/udev gudev hwdb
 www-client/chromium system-ffmpeg widevine
-www-client/firefox custom-optimization hwaccel pgo system-harfbuzz system-icu system-jpeg system-libevent system-libvpx system-sqlite
+www-client/firefox custom-optimization hwaccel pgo system-harfbuzz system-icu system-jpeg system-libevent system-libvpx system-sqlite -pgo
 www-client/links suid
 www-plugins/adobe-flash 32bit 64bit -sse2check
 www-servers/lighttpd fastcgi memcached mysql php

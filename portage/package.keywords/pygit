@@ -1,2 +1,2 @@
-dev-libs/libgit2 ~x86 ~amd64
+=dev-libs/libgit2-0.26.0 ~x86 ~amd64
 dev-python/pygit2 ~x86 ~amd64
