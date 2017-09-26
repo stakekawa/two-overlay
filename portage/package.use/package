@@ -92,6 +92,7 @@ sys-cluster/maui pbs
 sys-firmware/intel-microcode monolithic
 sys-fs/ntfs3g extras suid xattr -external-fuse
 sys-fs/udev extras gudev hwdb
+sys-libs/ncurses tinfo
 virtual/udev gudev hwdb
 www-client/chromium system-ffmpeg widevine
 www-client/firefox custom-optimization hwaccel pgo system-harfbuzz system-icu system-jpeg system-libevent system-libvpx system-sqlite -pgo
