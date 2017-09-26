@@ -1,5 +1,6 @@
 sys-kernel/ck-sources ~x86 ~amd64
 =sys-kernel/gentoo-sources-4.12.5 ~x86 ~amd64
 =sys-kernel/gentoo-sources-4.13.0 ~x86 ~amd64
+=sys-kernel/gentoo-sources-4.13.2 ~x86 ~amd64
 sys-kernel/tuxonice-sources ~x86 ~amd64
 sys-kernel/two-sources ~x86 ~amd64
