@@ -11,6 +11,7 @@ app-text/djvu qt3
 app-text/texlive cjk context doc epspdf extra games graphics humanities jadetex music omega pstricks publishers science tex4ht xetex
 app-text/texlive-core cjk xetex
 dev-cpp/glog gflags
+dev-db/mysql server
 dev-db/sqlite fts3 secure-delete unlock-notify
 dev-java/icedtea-bin -nsplugin
 dev-java/icedtea-web -nsplugin
@@ -46,6 +47,7 @@ media-libs/gexiv2 introspection
 media-libs/freetype infinality
 media-libs/libcanberra alsa
 media-libs/libmp4v2 utils
+media-libs/libmypaint gegl
 media-libs/libsdl2 gles
 media-libs/libvpx svc
 media-libs/mesa g3dvl gbm gles2 opencl xa xvmc
