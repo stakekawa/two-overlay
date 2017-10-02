@@ -12,12 +12,10 @@ app-arch/unace
 app-arch/unrar
 app-arch/xarchiver
 app-benchmarks/i7z
-app-cdr/acetoneiso
 app-cdr/b5i2iso
 app-cdr/bin2iso
 app-cdr/ccd2iso
 app-cdr/cuetools
-app-cdr/k3b
 app-cdr/nrg2iso
 app-dicts/aspell-en
 app-dicts/aspell-it
@@ -65,7 +63,6 @@ app-xemacs/texinfo
 app-xemacs/textools
 app-xemacs/vhdl
 dev-java/oracle-jdk-bin
-dev-lang/gnat-gcc
 dev-tex/cpp2latex
 dev-tex/latex-calendar
 dev-util/android-sdk-update-manager
@@ -81,6 +78,7 @@ games-fps/quake3-bin
 games-fps/quake3-data
 games-puzzle/pushover
 gnome-extra/nm-applet
+kde-apps/k3b
 kde-apps/kdegraphics-meta
 kde-apps/kdenlive
 kde-apps/konqueror
@@ -135,7 +133,6 @@ media-video/openshot
 media-video/recordmydesktop
 media-video/rtmpdump
 media-video/xine-ui
-net-analyzer/arping
 net-analyzer/ifstat
 net-analyzer/iptraf-ng
 net-analyzer/nmap
@@ -210,7 +207,6 @@ sys-fs/safecopy
 sys-fs/xfsprogs
 sys-kernel/genkernel-next
 sys-kernel/linux-firmware
-sys-kernel/two-sources
 sys-power/acpi
 sys-power/acpid
 sys-power/cpupower
@@ -270,7 +266,6 @@ xfce-extra/xfce4-eyes-plugin
 xfce-extra/xfce4-fsguard-plugin
 xfce-extra/xfce4-genmon-plugin
 xfce-extra/xfce4-mailwatch-plugin
-xfce-extra/xfce4-mixer
 xfce-extra/xfce4-mount-plugin
 xfce-extra/xfce4-netload-plugin
 xfce-extra/xfce4-netspeed-plugin
