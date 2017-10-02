@@ -1,4 +1,7 @@
+=x11-libs/libxklavier-5.4 ~x86 ~amd64
 x11-themes/elementary-xfce-icon-theme ~x86 ~amd64
 =xfce-base/thunar-1.6.12 ~x86 ~amd64
+=xfce-base/xfconf-4.12.1 ~x86 ~amd64
 xfce-extra/xfce4-pulseaudio-plugin ~x86 ~amd64
+=xfce-extra/xfce4-xkb-plugin-0.8.1 ~x86 ~amd64
 =xfce-extra/xfce4-weather-plugin-0.8.9 ~x86 ~amd64
