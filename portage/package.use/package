@@ -92,6 +92,7 @@ sys-apps/pciutils network-cron
 sys-apps/util-linux tty-helpers
 sys-cluster/maui pbs
 sys-firmware/intel-microcode monolithic
+sys-fs/cryptsetup -gcrypt
 sys-fs/ntfs3g extras suid xattr -external-fuse
 sys-fs/udev extras gudev hwdb
 sys-libs/ncurses tinfo
