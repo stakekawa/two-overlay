@@ -1,4 +1,0 @@
-PATH="/opt/clhep/bin"
-LDPATH="/opt/clhep/lib"
-LD_LIBRARY_PATH="/opt/clhep/lib"
-CLHEP_BASE_DIR="/opt/clhep"
