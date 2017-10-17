@@ -24,6 +24,7 @@ dev-libs/libpcre pcre16
 dev-libs/libxml2 python
 dev-python/PyQt4 declarative script sql
 dev-qt/qt-creator clangcodemodel clangstaticanalyzer
+dev-util/cmake server
 dev-util/codeblocks contrib
 dev-util/cppcheck htmlreport
 dev-util/geany-plugins -python
